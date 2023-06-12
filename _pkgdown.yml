@@ -1,0 +1,3 @@
+url: https://rmi-pacta.github.io/pacta.portfolio.report
+template:
+  package: pacta.pkgdown.template

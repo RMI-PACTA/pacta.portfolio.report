@@ -1,0 +1,12 @@
+id_data,id_column,en,de,fr,es
+data_included_table,asset_type_analysis,Asset Class,Anlageklasse,Catégorie d'actifs,Tipo de Activo
+data_included_table,total_value_invested,Portfolio value invested (M _CUR_),Investierter Portfoliowert (M _CUR_),Valeur du portefeuille investi (M _CUR_),Valor del portafolio invertido (M _CUR_)
+data_included_table,percentage_value_invested,Portfolio value invested (%),Investierter Portfoliowert (%),Valeur du portefeuille investi (%),Valor del portafolio invertido (%)
+data_included_table,included,Included in the analysis,In der Analyse enthalten,Inclus dans l'analyse,Incluído en el análisis
+data_included_table,value_invested,Value breakout per means of investment,Wertaufteilung pro Investitionsmittel,Répartition de la valeur par moyen d'investissement,Desglose de valor por tipo de inversión
+data_included_table,investment_means,_,_,_,_
+data_peer_table,Asset Class,Asset Class,Anlageklasse,Catégorie d'actifs,Tipo de Activo
+data_peer_table,Sector,Sector,Sektor,Secteur,Sector
+data_peer_table,Technology,Technology,Technologie,Technologie,Tecnología
+data_peer_table,Rank among peer group,Rank among peer group,Rang in der Peer-Gruppe,Classement dans le groupe de pairs,Clasificación entre el grupo de pares
+data_peer_table,Rank among all participants,Rank among all participants,Rang unter allen Teilnehmern,Classement parmi tous les participants,Clasificación entre los participantes

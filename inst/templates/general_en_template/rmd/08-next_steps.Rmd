@@ -1,0 +1,11 @@
+# Climate Actions and Next Steps
+
+Upon reading this report, one can understand that PACTA is a tool that informs two objectives.  First, it informs financial institutions on defining climate actions and setting aspirations related to the alignment of their portfolio with climate goals. While it does not measure the contribution that financial institutions make in terms of real-world emissions reduction, it represents a first step on that journey. A related project (Evidence for Impact) is currently under way to help design methods and approaches to better understand the real-world impact of climate actions by financial market actors.  
+ 
+Second, PACTA can also be considered a mechanism to understand the evolution of transition risk. By measuring portfolio alignment, it informs on the extent to which companies are adapting their business plans to climate scenarios. Misalignment can then speak to potential higher future risk. A number of financial supervisors are currently using the PACTA model for this purpose. However, while PACTA can be an input into risk frameworks, it does not model actual financial losses. 
+
+## Climate Action Guide
+
+The information in this report serves as a starting point for better understanding the possible climate actions and strategies that can be implemented. To assist in planning the next steps, 2DII have developed a Climate Action Guide that serves to breakdown the avenues to achieving impact in the real economy.  
+
+The Climate Action Guide provides information on climate actions that can be taken and summarises the current evidence that links these climate actions with CO2 reductions. It also can be used to simulate the implementation of climate actions and what effect these would have on your portfolio. This guide can be accessed [here](https://platform.transitionmonitor.com/climate-action-guide#/start){target="_blank"} through the website where you have received these results.

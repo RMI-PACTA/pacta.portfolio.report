@@ -1,0 +1,810 @@
+[
+  {
+    "id": "default_opts",
+    "label": "no_data_message",
+    "en": "This portfolio does not contain holdings relevant to this section of the report, therefore no graph could be produced. An example graph can be viewed ",
+    "de": "Dieses Portfolio enthält keine Bestände, die für diesen Abschnitt des Berichts relevant sind, daher konnte keine Grafik erstellt werden. Ein Beispieldiagramm finden Sie ",
+    "fr": "Ce portefeuille ne contient pas de participations pertinentes pour cette section du rapport, donc aucun graphique n'a pu être produit. Un exemple de graphique peut être consulté ",
+    "es": "Este portafolio no contiene participaciones relevantes para esta sección del informe, por lo que no se ha podido elaborar ningún gráfico. Un ejemplo de gráfico puede verse "
+  },
+  {
+    "id": "default_opts",
+    "label": "here",
+    "en": "here.",
+    "de": "hier.",
+    "fr": "ici.",
+    "es": "aquí."
+  },
+  {
+    "id": "default_opts",
+    "label": "on_error_message",
+    "en": "An error was encountered for this chart and it can't be displayed. Please, let us know about the error using the 'Give feedback' button on the right. Changing browsers may alleviate this issue temporarily while we work on a longer-term solution.",
+    "de": "Es ist ein Fehler aufgetreten, der mit ihrem Internet-Browser zusammenhängt. Wir arbeiten derzeit an der Lösung des Problems. Bis das Problem behoben wurde kann das Problem durch die Nutzung eines anderen Browsers umgangen werden.",
+    "fr": "Une erreur s'est produite dans ce graphique et il ne peut pas être affiché. Veuillez nous en informer en utilisant le bouton 'Donnez votre avis' sur la droite. Le changement de navigateur peut atténuer temporairement ce problème pendant que nous travaillons sur une solution à plus long terme.",
+    "es": "Se encontró un error para este gráfico y no se puede mostrar. Por favor, avísenos sobre el error usando el botón 'Enviar comentarios' a la derecha. Cambiar de navegador puede aliviar este problema temporalmente mientras trabajamos en una solución a más largo plazo."
+  },
+  {
+    "id": "default_opts",
+    "label": "feedback_message",
+    "en": "Thank you for your feedback! Your answer has been recorded'",
+    "de": "Vielen Dank für Ihr Feedback! Ihre Antwort wurde aufgezeichnet.",
+    "fr": "Merci pour vos commentaires ! Votre réponse a été enregistrée.",
+    "es": "¡Gracias por sus comentarios! Su respuesta ha sido grabada."
+  },
+  {
+    "id": "default_opts",
+    "label": "listed_equity",
+    "en": "Listed Equity",
+    "de": "Aktien",
+    "fr": "Actions",
+    "es": "Acciones"
+  },
+  {
+    "id": "default_opts",
+    "label": "corporate_bonds",
+    "en": "Corporate Bonds",
+    "de": "Unternehmensanleihen",
+    "fr": "Obligations d'entreprises",
+    "es": "Bonos corporativos"
+  },
+  {
+    "id": "default_opts",
+    "label": "sector_emissions",
+    "en": "tonnes CO<sub>2<\/sub> emissions",
+    "de": "Tonnen CO<sub>2<\/sub>-Emissionen",
+    "fr": "tonnes d'émissions de CO<sub>2<\/sub>",
+    "es": "toneladas de emisiones de CO<sub>2<\/sub>"
+  },
+  {
+    "id": "default_opts",
+    "label": "global_market",
+    "en": "Global Market",
+    "de": "Globaler Markt",
+    "fr": "Marché mondial",
+    "es": "Mercado Global"
+  },
+  {
+    "id": "default_opts",
+    "label": "all_automotive",
+    "en": "All Automotive",
+    "de": "Automobilindustrie (Alle)",
+    "fr": "L'industrie automobile (globale)",
+    "es": "Todo el sector automotriz"
+  },
+  {
+    "id": "default_opts",
+    "label": "ice",
+    "en": "ICE",
+    "de": "Verbrennungsmotor",
+    "fr": "Moteur à combustion interne",
+    "es": "Vehículos de combustión interna"
+  },
+  {
+    "id": "default_opts",
+    "label": "automotive",
+    "en": "Automotive",
+    "de": "Automobilindustrie",
+    "fr": "Industrie automobile",
+    "es": "Automotriz"
+  },
+  {
+    "id": "default_opts",
+    "label": "equity",
+    "en": "Equity",
+    "de": "Aktien",
+    "fr": "Actions",
+    "es": "Acciones"
+  },
+  {
+    "id": "default_opts",
+    "label": "bonds",
+    "en": "Bonds",
+    "de": "Unternehmensanleihen",
+    "fr": "Obligations",
+    "es": "Corporate bonds"
+  },
+  {
+    "id": "pie",
+    "label": "comment",
+    "en": [" of the _PORT_ portfolio", "covered by PACTA"],
+    "de": [" des Portfolios der _PORT_", "durch PACTA abgedeckt"],
+    "fr": [" du portefeuille d'_PORT_", "est couvert par PACTA"],
+    "es": [" _PORT_ del portafolio", "está cubierto por PACTA"]
+  },
+  {
+    "id": "pie",
+    "label": "asset_class",
+    "en": {
+      "equity": "Equity",
+      "bonds": "Bonds"
+    },
+    "de": {
+      "equity": "Aktien",
+      "bonds": "Unternehmensanleihen"
+    },
+    "fr": {
+      "equity": "actions",
+      "bonds": "obligations"
+    },
+    "es": {
+      "equity": "Acciones",
+      "bonds": "Bonos corporativos"
+    }
+  },
+  {
+    "id": "pie",
+    "label": "numbers_long",
+    "en": {
+      "M": " million",
+      "G": " billion",
+      "T": " trillion"
+    },
+    "de": {
+      "M": " Million",
+      "G": " Milliarde",
+      "T": " Billion"
+    },
+    "fr": {
+      "M": " Million",
+      "G": " Milliard",
+      "T": " Billion"
+    },
+    "es": {
+      "M": " millones",
+      "G": " miles de millones",
+      "T": " bilones"
+    }
+  },
+  {
+    "id": "value_pie",
+    "label": "title",
+    "en": ": Financial exposure to climate relevant sectors",
+    "de": ": Finanzielle Exposition gegenüber klimarelevanten Sektoren",
+    "fr": ": Exposition financières aux secteurs clés pour le climat",
+    "es": ": Exposición financiera a sectores relevantes para el clima"
+  },
+  {
+    "id": "emissions_pie",
+    "label": "title",
+    "en": ": Emissions exposure from climate relevant sectors",
+    "de": ": Emissionen durch klimarelevante Sektoren",
+    "fr": ": Exposition aux emissions des secteurs relatifs au climat",
+    "es": ": Exposición a emisiones de sectores relevantes para el clima"
+  },
+  {
+    "id": "techexposure",
+    "label": "title_what",
+    "en": ": Technology mix ",
+    "de": ": Technologiemix ",
+    "fr": ": Mix technologique ",
+    "es": ": Combinación tecnológica "
+  },
+  {
+    "id": "techexposure",
+    "label": "title_opts_how",
+    "en": {
+      "opt_asset": "as % of assets under management",
+      "opt_sec": "as % of sector"
+    },
+    "de": {
+      "opt_asset": "in % des verwalteten Vermögens",
+      "opt_sec": "in % des Sektors"
+    },
+    "fr": {
+      "opt_asset": "en % des actifs sous gestion",
+      "opt_sec": "en % du secteur"
+    },
+    "es": {
+      "opt_asset": "como % de los activos bajo gestión",
+      "opt_sec": "como % del sector"
+    }
+  },
+  {
+    "id": "techexposure",
+    "label": "title_how",
+    "en": " compared to ",
+    "de": " im Vergleich zu ",
+    "fr": " comparé à ",
+    "es": " comparado con "
+  },
+  {
+    "id": "techexposure",
+    "label": "caption_market",
+    "en": "Equity market: ",
+    "de": "Aktienmarkt: ",
+    "fr": "Marché boursier: ",
+    "es": "Mercado de acciones: "
+  },
+  {
+    "id": "techexposure",
+    "label": "port_label",
+    "en": "This portfolio",
+    "de": "Dieses Portfolio",
+    "fr": "Ce portefeuille",
+    "es": "Este portafolio"
+  },
+  {
+    "id": "techexposure",
+    "label": "comp_label",
+    "en": "Benchmark",
+    "de": "Benchmark",
+    "fr": "Référence",
+    "es": "Portafolio de Referencia"
+  },
+  {
+    "id": "techexposure",
+    "label": "hover_over_asset",
+    "en": " of assets under management<br>",
+    "de": " der verwalteten Vermögen<br>",
+    "fr": " des actifs sous gestion<br>",
+    "es": " de los activos bajo gestión<br>"
+  },
+  {
+    "id": "techexposure",
+    "label": "hover_over_sec",
+    "en": {
+      "before_sec": " of ",
+      "after_sec": " sector"
+    },
+    "de": {
+      "before_sec": " von ",
+      "after_sec": " Sektor"
+    },
+    "fr": {
+      "before_sec": " de ",
+      "after_sec": " secteur"
+    },
+    "es": {
+      "before_sec": " del ",
+      "after_sec": " sector"
+    }
+  },
+  {
+    "id": "techexposure",
+    "label": "hover_over_low_carbon",
+    "en": {
+      "before_sec": "Low-carbon ",
+      "after_sec": " technologies"
+    },
+    "de": {
+      "before_sec": "Kohlenstoffarm ",
+      "after_sec": " Technologien"
+    },
+    "fr": {
+      "before_sec": "Bas-carbone ",
+      "after_sec": " technologies"
+    },
+    "es": {
+      "before_sec": "Tecnologías ",
+      "after_sec": " bajas en carbono"
+    }
+  },
+  {
+    "id": "techexposure",
+    "label": "green_legend_label",
+    "en": {
+      "top": "Low-carbon technologies",
+      "bottom": "within a sector"
+    },
+    "de": {
+      "top": "Kohlenstoffarm Technologien",
+      "bottom": "innerhalb eines Sektors"
+    },
+    "fr": {
+      "top": "Bas-carbone technologies",
+      "bottom": "dans un secteur"
+    },
+    "es": {
+      "top": "Tecnologías bajas en carbono",
+      "bottom": "dentro de un sector"
+    }
+  },
+  {
+    "id": "techexposure_future",
+    "label": "title_up",
+    "en": ": Future technology mix as % of sector based on ",
+    "de": ": Zukünftiger Technologiemix in % des Sektors basierend auf dem ",
+    "fr": ": Mix technologique futur en % du secteur sur la base du ",
+    "es": ": Combinación tecnolófica futura como% del sector basado en "
+  },
+  {
+    "id": "techexposure_future",
+    "label": "title_scenario",
+    "en": " scenario",
+    "de": " Szenario",
+    "fr": " scénario",
+    "es": " escenario"
+  },
+  {
+    "id": "techexposure_future",
+    "label": "title_down",
+    "en": "compared to ",
+    "de": "im Vergleich zu ",
+    "fr": "comparé à ",
+    "es": "comparado con "
+  },
+  {
+    "id": "techexposure_future",
+    "label": "title_market",
+    "en": " as a subset of ",
+    "de": " als eine Teilmenge des ",
+    "fr": "  comme un sous-ensemble du ",
+    "es": " como un subconjunto de "
+  },
+  {
+    "id": "techexposure_future",
+    "label": "hover_over_sec",
+    "en": {
+      "before_sec": " of ",
+      "after_sec": " sector"
+    },
+    "de": {
+      "before_sec": " von ",
+      "after_sec": " Sektor"
+    },
+    "fr": {
+      "before_sec": " de ",
+      "after_sec": " secteur"
+    },
+    "es": {
+      "before_sec": " del ",
+      "after_sec": " sector"
+    }
+  },
+  {
+    "id": "trajectory_alignment",
+    "label": "title_what",
+    "en": ": Production trajectory of ",
+    "de": ": Produktionsverlauf von ",
+    "fr": ": Trajectoire de production de ",
+    "es": ": Trayectoria de producción de "
+  },
+  {
+    "id": "trajectory_alignment",
+    "label": "title_how",
+    "en": " compared to ",
+    "de": " im Vergleich zu ",
+    "fr": " comparé à ",
+    "es": " comparado con "
+  },
+  {
+    "id": "trajectory_alignment",
+    "label": "caption_alloc",
+    "en": "Allocation method: ",
+    "de": "Zuweisungsmethode: ",
+    "fr": "Méthode de répartition: ",
+    "es": "Método de alocación: "
+  },
+  {
+    "id": "trajectory_alignment",
+    "label": "caption_market",
+    "en": "Equity market: ",
+    "de": "Aktienmarkt: ",
+    "fr": "Marché boursier: ",
+    "es": "Mercado de acciones: "
+  },
+  {
+    "id": "trajectory_alignment",
+    "label": "caption_geography",
+    "en": "Scenario geography: ",
+    "de": "Szenario-Geographie: ",
+    "fr": "Géographie des scénarios: ",
+    "es": "Geografía de escenarios: "
+  },
+  {
+    "id": "trajectory_alignment",
+    "label": "caption_source",
+    "en": "Scenario source: ",
+    "de": "Szenarioquelle: ",
+    "fr": "Source du scénario: ",
+    "es": "Fuente de escenario: "
+  },
+  {
+    "id": "trajectory_alignment",
+    "label": "ytitle",
+    "en": " production in ",
+    "de": " Produktion in ",
+    "fr": " Production en ",
+    "es": " producción en "
+  },
+  {
+    "id": "trajectory_alignment",
+    "label": "portfolio_label",
+    "en": "Portfolio",
+    "de": "Portfolio",
+    "fr": "Portefeuille",
+    "es": "Portafolio"
+  },
+  {
+    "id": "trajectory_alignment",
+    "label": "benchmark_label",
+    "en": "Benchmark",
+    "de": "Benchmark",
+    "fr": "Référence",
+    "es": "Portafolio de referencia"
+  },
+  {
+    "id": "trajectory_alignment",
+    "label": "label_dots_legend",
+    "en": {"top": "Yearly production", "bottom": "volume"},
+    "de": {"top": "Jährliche", "bottom": "Produktionsmenge"},
+    "fr": {"top": "Volume annuel", "bottom": "de production"},
+    "es": {"top": "Volumen anual", "bottom": "de producción"}
+  },
+  {
+    "id": "trajectory_alignment",
+    "label": "footnote",
+    "en": "* Start date of the analysis.",
+    "de": "* Startdatum der Analyse.",
+    "fr": "* Date de début de l'analyse.",
+    "es": "* Fecha de inicio del análisis."
+  },
+  {
+    "id": "trajectory_alignment",
+    "label": "hoverover_value_label",
+    "en": "(Planned) yearly production: ",
+    "de": "(Geplante) jährliche Produktion: ",
+    "fr": "Production annuelle (prévisionnelle): ",
+    "es": "Producción anual (prevista): "
+  },
+  {
+    "id": "map",
+    "label": "title_what",
+    "en": "Regional exposure of ",
+    "de": "Regionale Exposition von ",
+    "fr": "Exposition régionale de ",
+    "es": "Exposición reginal de "
+  },
+  {
+    "id": "map",
+    "label": "title_how",
+    "en": " towards ",
+    "de": " in Richtung ",
+    "fr": " vers ",
+    "es": " hacia "
+  },
+  {
+    "id": "emissions_time_line",
+    "label": "title_what",
+    "en": ": 5-year emission intensity trend of ",
+    "de": ": 5-Jahres-Emissionsintensitäts-Trend von ",
+    "fr": ": Tendance des émissions sur 5 ans de ",
+    "es": ": Tendencia de intensidad de emisiones de 5 años de "
+  },
+  {
+    "id": "emissions_time_line",
+    "label": "caption_alloc",
+    "en": "Allocation method: ",
+    "de": "Zuweisungsmethode: ",
+    "fr": "Méthode de répartition: ",
+    "es": "Método de alocación: "
+  },
+  {
+    "id": "emissions_time_line",
+    "label": "caption_market",
+    "en": "Equity market: ",
+    "de": "Aktienmarkt: ",
+    "fr": "Marché boursier: ",
+    "es": "Mercado de acciones: "
+  },
+  {
+    "id": "emissions_time_line",
+    "label": "scen_label",
+    "en": "Scenario",
+    "de": "Szenario",
+    "fr": "Scénario",
+    "es": "Escenario"
+  },
+  {
+    "id": "emissions_time_line",
+    "label": "port_label",
+    "en": "Portfolio",
+    "de": "Portfolio",
+    "fr": "Portefeuille",
+    "es": "Portafolio"
+  },
+  {
+    "id": "emissions_time_line",
+    "label": "hoverover_value",
+    "en": "Value: ",
+    "de": "Wert: ",
+    "fr": "Valeur: ",
+    "es": "Valor: "
+  },
+  {
+    "id": "emissions_time_line",
+    "label": "footnote",
+    "en": "* Start date of the analysis.",
+    "de": "* Startdatum der Analyse.",
+    "fr": "* Date de début de l'analyse.",
+    "es": "* Fecha de inicio del análisis."
+  },
+  {
+    "id": "peercomparison",
+    "label": "title",
+    "en": ": Exposure to high-carbon economic activities sorted by ",
+    "de": ": Exposition gegenüber kohlenstoffintensiver wirtschaftlicher Aktivität sortiert nach ",
+    "fr": ": Exposition aux activités à haute teneur en carbone triée par ",
+    "es": ": Exposición a actividades económicas con alto contenido de carbono ordenadas por "
+  },
+  {
+    "id": "peercomparison",
+    "label": "ytitle",
+    "en": "% of assets under management",
+    "de": "% des verwalteten Vermögens",
+    "fr": "% des actifs sous gestion",
+    "es": "como % de los activos bajo gestión"
+  },
+  {
+    "id": "peercomparison",
+    "label": "port_label",
+    "en": "This portfolio",
+    "de": "Dieses Portfolio",
+    "fr": "Ce Portefeuille",
+    "es": "Este portafolio"
+  },
+  {
+    "id": "peercomparison",
+    "label": "categories",
+    "en": {
+      "High-carbon Transportion": "High-carbon Transportion",
+      "High-carbon Power Production": "High-carbon Power Production",
+      "High-carbon Industry": "High-carbon Industry",
+      "Fossil Fuels": "Fossil Fuels"
+    },
+    "de": {
+      "High-carbon Transportion": "Emissionsintensives Transportwesen",
+      "High-carbon Power Production": "Emissionsintensive Stromerzeugung",
+      "High-carbon Industry": "Kohlenstoffintensive Industrie",
+      "Fossil Fuels": "Fossile Brennstoffe"
+    },
+    "fr": {
+      "High-carbon Transportion": "Transport à haute teneur en carbone",
+      "High-carbon Power Production": "Production d'électricité à haute teneur en carbone",
+      "High-carbon Industry": "Industrie à forte teneur de carbone",
+      "Fossil Fuels": "Combustibles fossiles"
+    },
+    "es": {
+      "High-carbon Transportion": "Transporte con alto contenido de carbono",
+      "High-carbon Power Production": "Producción de energía con alto contenido de carbono",
+      "High-carbon Industry": "Industria con alto contenido de carbono",
+      "Fossil Fuels": "Combustibles fósiles"
+    }
+  },
+  {
+    "id": "peercomparison",
+    "label": "total",
+    "en": "All technologies",
+    "de": "Alle emissionsintensiven Technologien",
+    "fr": "Toutes les technologies",
+    "es": "Todas las tecnologías"
+  },
+  {
+    "id": "company_bubble",
+    "label": "title_what",
+    "en": ": Current low carbon technology share vs. future scenario compatibility of planned production of ",
+    "de": ": Aktueller Anteil kohlenstoffarmer Technologien im Vergleich zur Kompatibilität der geplanten Produktion der ",
+    "fr": ": Part actuelle des technologies à faible émission de carbone par rapport à la compatibilité du scénario futur de la production prévue des entreprises ",
+    "es": ": Cuota actual de la tecnología de baja emisión de carbono frente a la compatibilidad con el escenario futuro de la producción prevista de las empresas de "
+  },
+  {
+    "id": "company_bubble",
+    "label": "title_what_after",
+    "en": " companies in this portfolio.",
+    "de": "unternehmen in diesem Portfolio.",
+    "fr": " de ce portefeuille.",
+    "es": " en esta cartera."
+  },
+  {
+    "id": "company_bubble",
+    "label": "xtitle",
+    "en": "Current capacity in low-carbon technologies",
+    "de": "Derzeitige Kapazitäten im Bereich kohlenstoffarmer Technologien",
+    "fr": "Actuelle capacité en technologies à faible émission de carbone",
+    "es": "Capacidad actual en tecnologías de baja emisión de carbono"
+  },
+  {
+    "id": "company_bubble",
+    "label": "xsubtitle",
+    "en": "(as % of sector production capacity)",
+    "de": "(in % der Produktionskapazität des Sektors)",
+    "fr": "(en % de la capacité de production du secteur)",
+    "es": "(como % de la capacidad de producción del sector)"
+  },
+  {
+    "id": "company_bubble",
+    "label": "ytitle",
+    "en": "Planned new capacity in low carbon technologies",
+    "de": "Geplante neue Kapazitäten für kohlenstoffarme Technologien",
+    "fr": "Nouvelles capacités dans les technologies vertes",
+    "es": "Nuevas capacidades previstas en tecnologías de baja emisión de carbono"
+  },
+  {
+    "id": "company_bubble",
+    "label": "ysubtitle",
+    "en": "(as a % of the scenario* target for YEAR)",
+    "de": "(in % des Szenarioziels* für YEAR)",
+    "fr": "(en % de l'objectif du scénario* pour YEAR)",
+    "es": "(como % del objetivo del escenario* para YEAR)"
+  },
+  {
+    "id": "company_bubble",
+    "label": "ztooltip",
+    "en": "Weight in portfolio (% of AUM)",
+    "de": "Gewicht im Portfolio (% der AUM)",
+    "fr": "Poids dans le portefeuille (% des ASG)",
+    "es": "Peso en el portafolio (como % de ABG)"
+  },
+  {
+    "id": "company_bubble",
+    "label": "legend_title",
+    "en": "Portfolio weight",
+    "de": "Portfoliogewicht",
+    "fr": "Poids du portefeuille",
+    "es": "Peso en el portafolio"
+  },
+  {
+    "id": "company_bubble",
+    "label": "footnote",
+    "en": "Scenario: ",
+    "de": "Szenario: ",
+    "fr": "Scénario: ",
+    "es": "Escenario: "
+  },
+  {
+    "id": "stackedbars_key_drivers",
+    "label": "title_what",
+    "en": ": Future technology mix for the largest holdings (by portfolio weight)",
+    "de": ": Zukünftiger Technologiemix für die größten Beteiligungen (nach Portfoliogewicht)",
+    "fr": ": Mix technologique futur pour les plus grandes participations (par part du portefeuille)",
+    "es": ": Combinación tecnológica futura para las mayores empresas participaciones (por peso de la cartera)"
+  },
+  {
+    "id": "stackedbars_key_drivers",
+    "label": "title_how",
+    "en": "as % of sector for ",
+    "de": "in % des Sektors für ",
+    "fr": "en % du secteur pour ",
+    "es": "como % del sector para "
+  },
+  {
+    "id": "stackedbars_key_drivers",
+    "label": "title_who",
+    "en": " sector.",
+    "de": " Sector.",
+    "fr": " secteur.",
+    "es": " sector."
+  },
+  {
+    "id": "stackedbars_key_drivers",
+    "label": "weights",
+    "en": "Weights",
+    "de": "Gewichte",
+    "fr": "Poids",
+    "es": "Pesos"
+  },
+  {
+    "id": "stackedbars_key_drivers",
+    "label": "hover_over_sec",
+    "en": {
+      "before_sec": " of ",
+      "after_sec": " sector"
+    },
+    "de": {
+      "before_sec": " von ",
+      "after_sec": " Sektor"
+    },
+    "fr": {
+      "before_sec": " de ",
+      "after_sec": " secteur"
+    },
+    "es": {
+      "before_sec": " del ",
+      "after_sec": " sector"
+    }
+  },
+  {
+    "id": "stackedbars_key_drivers",
+    "label": "footnote_lab",
+    "en": {
+      "before_scen": "* Aligned to scenario ",
+      "after_scen": " in year ",
+      "after_year": "."
+    },
+    "de": {
+      "before_scen": "* Ausgerichtet auf das Szenario ",
+      "after_scen": " im Jahr ",
+      "after_year": "."
+    },
+    "fr": {
+      "before_scen": "* Aligné sur le scénario ",
+      "after_scen": " de l'année ",
+      "after_year": "."
+    },
+    "es": {
+      "before_scen": "* Alineado con el escenario ",
+      "after_scen": " en el año ",
+      "after_year": "."
+    }
+  },
+  {
+    "id": "peer_bubbles",
+    "label": "xtitle",
+    "en": "Current capacity in low-carbon technologies",
+    "de": "Derzeitige Kapazitäten im Bereich kohlenstoffarmer Technologien",
+    "fr": "Actuelle capacité en technologies à faible émission de carbone",
+    "es": "Capacidad actual en tecnologías de baja emisión de carbono"
+  },
+  {
+    "id": "peer_bubbles",
+    "label": "xsubtitle",
+    "en": "(as % of sector production capacity)",
+    "de": "(in % der Produktionskapazität des Sektors)",
+    "fr": "(en % de la capacité de production du secteur)",
+    "es": "(como % de la capacidad de producción del sector)"
+  },
+  {
+    "id": "peer_bubbles",
+    "label": "ytitle",
+    "en": "Planned new capacity in low carbon technologies",
+    "de": "Geplante neue Kapazitäten für kohlenstoffarme Technologien",
+    "fr": "Nouvelles capacités dans les technologies vertes",
+    "es": "Nuevas capacidades previstas en tecnologías de baja emisión de carbono"
+  },
+  {
+    "id": "peer_bubbles",
+    "label": "ysubtitle",
+    "en": "(as a % of the scenario* target for YEAR)",
+    "de": "(in % des Szenarioziels* für YEAR)",
+    "fr": "(en % de l'objectif du scénario* pour YEAR)",
+    "es": "(como % del objetivo del escenario* para YEAR)"
+  },
+  {
+    "id": "peer_bubbles",
+    "label": "title_what",
+    "en": ": Current low carbon technology share vs. future scenario compatibility of planned production of ",
+    "de": ": Aktueller Anteil kohlenstoffarmer Technologien vs. Kompatibilität des Zukunftsszenarios der geplanten Produktion des ",
+    "fr": ": Part actuelle des technologies à faible émission de carbone par rapport à la compatibilité du scénario futur de la production prévue du portefeuille ",
+    "es": ": Cuota actual de la tecnología de baja emisión de carbono frente a la compatibilidad con el escenario futuro de la producción prevista de la cartera de "
+  },
+  {
+    "id": "peer_bubbles",
+    "label": "title_with_whom",
+    "en": " portfolio compared to: ",
+    "de": " portfolios im Vergleich zu: ",
+    "fr": " par rapport à ",
+    "es": " en comparación con: "
+  },
+  {
+    "id": "peer_bubbles",
+    "label": "port_label",
+    "en": "This portfolio",
+    "de": "Dieses Portfolio",
+    "fr": "Ce Portefeuille",
+    "es": "Este portafolio"
+  },
+  {
+    "id": "peer_bubbles",
+    "label": "comp_label",
+    "en": "Benchmark",
+    "de": "Benchmark",
+    "fr": "Référence",
+    "es": "Portafolio de referencia"
+  },
+  {
+    "id": "peer_bubbles",
+    "label": "all_label",
+    "en": "All participants",
+    "de": "alle Teilnehmer",
+    "fr": "Tous les participants",
+    "es": "Todos los participantes"
+  },
+  {
+    "id": "peer_bubbles",
+    "label": "footnote",
+    "en": "Scenario: ",
+    "de": "Szenario: ",
+    "fr": "Scénario: ",
+    "es": "Escenario: "
+  }
+]

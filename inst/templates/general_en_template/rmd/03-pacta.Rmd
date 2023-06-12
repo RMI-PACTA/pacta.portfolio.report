@@ -1,0 +1,224 @@
+# Climate Scenario Analysis
+
+This chapter presents the results of the PACTA climate scenario analysis of the holdings in equity and bond portfolios.
+
+The first three sections show the exposure of the portfolio to climate relevant sectors as well as the alignment of production plans of companies in this portfolio with different climate scenarios. To understand these results better, the next section highlights how the company level production plans are driving these results. The performance of this portfolio is then compared to the benchmark. 
+
+To better understand the methodology underlying these charts, please refer to the [Knowledge Hub](https://rmi.gitbook.io/pacta-knowledge-hub/methodology-and-data/methodology){target="_blank"}.
+
+
+
+
+## Exposure to climate relevant sectors
+
+In this section, the exposure of the portfolio to different sectors, technologies and geographies is shown. This analysis is based on an aggregation of the weight of the companies mapped to the climate relevant sectors in the portfolio. This section addresses the following questions:
+
+1. What is the current exposure of the portfolio to climate relevant technologies?  
+
+2. How much of the portfolio is invested in low- and high- carbon technologies?  
+
+3. How is the exposure of the portfolio regionally distributed?  
+
+
+### Current exposure
+
+Within the climate relevant sectors, each technology differs in its role in the low-carbon transition of this sector. Understanding the exposure of the portfolio on a technology level provides the basis to understand transition risks as well as potential climate investment strategies applicable to this sector. The following chart shows the exposure of the analysed portfolio data to the different technologies within each sector.
+
+<div id="techexposure_equity" class="has_optbar donotremove">
+</div>
+<br>
+<div id="techexposure_bonds" class="has_optbar donotremove">
+
+</div>
+<br>
+
+<details>
+<summary> Understanding the Graph </summary>
+<div class="method">
+<p>For each sector, there are two views that can be seen in this chart. The first show the technology mix as a % of assets under management. This represents the percentage of the portfolio in these sectors and technologies. The second option shows the technology breakdown of the sector. The green line underneath the bars represents the portfolio of the sector in low carbon technologies. The second bar shows the benchmark which can be changed by clicking on the benchmark text. An option also exists to subset the results by an alternative equity market for the equity portfolio.  </p>
+</div>
+</details>
+
+
+
+
+### Geographic exposure
+
+The map below provides information on the regional exposure of this portfolio. It includes two basic insights: it gives a geographical dimension to the exposure per sector or technology as well as a sectoral view with regards to individual countries. This is of importance for understanding regional diversification and potential exposure to risks specific to specific countries.
+
+<div id="map_equity" class="has_optbar donotremove">
+</div>
+<br>
+<div id="map_bonds" class="has_optbar donotremove">
+</div>
+
+<details>
+<summary> Understanding the Graph </summary>
+<div class="method">
+<p>The colour shading shows the production of a specific technology in the respective country. This is possible as the asset-level data for all companies in the portfolio includes information about the geographical location of each asset. The production capacities in each country are aggregated by weighting the contributions of each company by their weight in the portfolio.</p>
+</div>
+</details>
+
+
+
+
+## Alignment with climate scenarios
+
+This section assesses the forward-looking alignment of the companies in this portfolio with different climate scenarios. The results presented in this chapter provide answers to the following questions:
+
+1. Which climate scenarios are the production trajectories of this portfolio aligned with?  
+
+2. What is the current exposure of this portfolio to technologies and how does this change over the course of five years?  
+
+3. What is the relative exposure between technologies in each sector in five years?
+
+4. How do emission intensity reductions in relevant sectors in this portfolio compare to climate scenarios?  
+
+
+
+### Alignment of production trajectories
+
+This section assesses the alignment of a portfolio to a range of climate transition scenarios based on the production plans of the companies in the portfolio. This analysis is only possible for sectors with sufficiently granular technology decarbonisation road maps, namely the power, coal and oil and gas, automotive (light duty vehicle and heavy-duty vehicles) sectors. From this, the future alignment (at 5 years) can be inferred, and this is also benchmarked against indices. This can be used to inform risk management, target setting and climate strategies. A section on interpreting the results in provided at the bottom.  
+
+
+_Remember you can investigate different options here by clicking on the boldened text and changing the parameters behind these results. You can add additional charts by clicking on the Plus button that appears when you hover over the upper right of the chart._
+
+<div id="trajectory_alignment_equity" class="has_optbar donotremove">
+</div>
+<br>
+<div id="trajectory_alignment_bonds" class="has_optbar donotremove">
+</div>
+
+<details>
+<summary> Understanding the Graph </summary>
+<div class="method">
+<p>The solid line indicates the development of the production in the selected technology for the next 5 years. The coloured areas indicate the required chance of production according to different climate scenarios. The dashed area represents the chosen benchmark scaled to the starting point of the portfolio.
+The benchmark, allocation method and equity market can be changed by clicking on the boldened values. 
+</p>
+</div>
+</details>
+
+
+
+### Future technology breakdown
+
+For sectors with low carbon alternatives such as the power and automotive sectors, it can be useful to compare how the split between technologies looks in five years in comparison to what is expected under scenarios and with what the benchmark is doing in this regard.
+
+This chart shows the split of each sector within the portfolio by technology, both what is currently planned and what is expected under the specified scenario. This chart does not include assumptions around changes in portfolio composition rather how the company changes in production impact the overall portfolio composition. 
+
+
+<div id="techexposure_future_equity" class="has_optbar donotremove">
+</div>
+
+<br>
+
+<div id="techexposure_future_bonds" class="has_optbar donotremove">
+</div>
+
+
+<details>
+<summary> Understanding the Graph </summary>
+<div class="method">
+<p>This chart shows the split between technologies in each sector expected within the portfolio in five years. It also shows what this split if the companies in the portfolio were to align with the scenario. Additionally, it shows this information for the benchmark and for the benchmark if the benchmark portfolio were also to align with the scenario.  
+
+This chart assumes no changes in portfolio allocation over time.
+
+For the sectors with low carbon alternatives, one can see how the exposure to low and high carbon technologies compares. For the fossil fuel sector, production has been converted to GJ to allow comparison between the three fuel types. The comparison between the fuels is provided for reference. 
+</p>
+</div>
+</details>
+
+
+## Alignment of emission intensities
+
+For sectors in which there is no low carbon alternative, or even where there is, decarbonisation efforts via increasing efficiency in production and use, as well as investment in research and development in the short term, is necessary in order to bring CO2-neutral alternatives to market maturity. This analysis presents the changes in CO2 intensity in comparison with the scenario. 
+
+<div id="emissions_time_line_equity" class="has_optbar donotremove">
+</div>
+
+<br>
+
+<div id="emissions_time_line_bonds" class="has_optbar donotremove">
+</div>
+
+<details>
+<summary> Understanding the Graph </summary>
+<div class="method">
+<p>The chart uses the current emissions intensity of companies within the portfolio as a starting point and shows how this expected to develop over the next five years based on the plans of the company and what would be expected under the scenario. </p>
+</div>
+</details>
+
+
+
+## Company-level results
+
+The following section is dedicated to the identification of the companies in the portfolio that have the strongest impact on the results in this report. The analysis in this section can serve as the basis for climate strategies such as engagement, best-in class investment, exclusion or use exercising voting rights, among others. The analysis of this section allows to answer the following question:
+
+1.	Which companies are driving the portfolio’s alignment with climate scenarios?
+
+2.	Which companies are the leaders and laggards with regards to shifting towards low carbon alternatives?
+
+
+### Company Low- and High- carbon split
+
+
+The first chart visualizes the technology exposure and the alignment of companies in the power and automotive sector. Within these sectors, low-carbon technologies compete with high-carbon technologies in the current market, which allows to assess how companies are split. 
+
+Companies that are positioned rather left on this graph, own more high-carbon technology, while company on the right side, own more low-carbon technologies. Furthermore, the announced build-out of low-carbon-technologies for each company is compared to the required build-out based on the selected scenario. Companies that are positioned in the lower part build-out less than companies in the upper part. The importance of each company can be measured by the size of the data point. The radius is determined by the weight of the company in the portfolio. Thus, larger dots represent companies that drive the portfolio results.
+
+
+<div id="company_bubble_equity" class="has_optbar donotremove">
+</div>
+
+<br>
+
+<div id="company_bubble_bonds" class="has_optbar donotremove">
+</div>
+
+
+<details>
+<summary> Understanding the Graph </summary>
+<div class="method">
+<p>The visualization combines current technology mix (x-axis) and alignment information (y-axis) for all invested companies in the chosen sector. Dots positioned further to the right represent companies that have a larger share of low carbon technologies. Dots positioned further up indicate that companies have more ambitious build-out plans in low carbon technologies. The size of the dots represents the weight of the company in the portfolio. 
+
+Please note, for the corporate bond portfolio, the results are provided at debt ticker level. This is because a single debt ticker could be associated with multiple companies.
+</p>
+</div>
+</details>
+
+
+### Company Technology Exposure
+
+The most important power and automotive companies in the portfolio according to their weight in the portfolio are shown with their technology mix in the production. The companies’ technology mix is then compared to the portfolio’s future exposure and its aligned exposure. 
+
+
+
+<div id="stackedbars_key_drivers_equity" class="has_optbar donotremove">
+</div>
+
+<br>
+
+<div id="stackedbars_key_drivers_bonds" class="has_optbar donotremove">
+</div>
+
+<details>
+<summary> Understanding the Graph </summary>
+<div class="method">
+<p>This chart shows the breakdown of each company’s production capacity in each sector by technology. This is compared to the portfolio, benchmarks and this portfolio if it were to be aligned with the selected scenario. Companies that have higher exposure to a technology than the portfolio drive the exposure of the portfolio to this technology up. 
+
+Please note, for the corporate bond portfolio, the results are provided at debt ticker level. This is because a single debt ticker could be associated with multiple companies.
+</p>
+</div>
+</details>
+
+
+## Interpreting the results
+
+**Exposure versus Alignment? How to read these results?** 
+
+The charts shown in this chapter reflect one of two concepts – exposure and alignment. It is important to consider both when assessing the scenario analysis of the portfolio. The first shows the relative importance of the sector and technology in the portfolio. Where a sector has a relatively low presence in the portfolio, the question of alignment of this sector is relatively less important than in sectors that are more heavily weighted. Similarly, the alignment metrics and graphics do not make comment to how relevant the sector is in the portfolio. Depending on the intentions behind conducting scenario analysis of this financial portfolio, influences which metric is more relevant. If you are looking to make an impact in terms of a reduction of real-world emissions, it could be relevant to focus on the companies that are most misaligned and engage them based on these results. If, however you are looking to minimise exposure to potential transition risks, then focussing on the exposure of your portfolio to different technologies or geographies may have more relevance. 
+
+**Does this analysis indicate a temperature alignment of my portfolio?** 
+
+This analysis shows whether the technology specific build out plans of companies in my portfolio are in line with technology roadmaps outlined in energy transition scenarios. This analysis however does not provide a single temperature warming indicator for the entire portfolio. If a portfolio is aligned with the Paris Agreement in the Power sector, but not in the automotive sector, how should one sum these up to an overall portfolio level result? While there is obviously a myriad of ways to “score” climate alignment, there are major challenges related to the interconnectedness and 'offsetting' across sectors, uncertainties surrounding data and assumptions, as well as the fact that some technologies and sectors necessary to reach certain temperature targets are not represented in this analysis. Therefore, our research concludes that currently the temperature alignment of a portfolio cannot be represented as a single indicator in a scientifically appropriate way. 
+

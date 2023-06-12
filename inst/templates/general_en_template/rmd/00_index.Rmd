@@ -1,0 +1,32 @@
+<font size="6"> PACTA Climate Alignment Report </font> 
+
+<font size="3"> `r portfolio_parameters$InvestorName` </font> 
+
+<font size="3"> `r portfolio_parameters$PortfolioName` </font> 
+
+
+
+```{r echo=FALSE, out.width='100%', fig.align="center"}
+# knitr::include_graphics('/img/matterhorn-3019429_1920.jpg')
+```
+
+<details>
+<summary class="no-outline">
+**Important Information & Legal Disclaimer**
+</summary>
+
+*IMPORTANT INFORMATION* The 2Dii PACTA Model generates a limited ‘point in time’ estimate of the relative alignment of the Revealed Plans of Securities in the Scope versus the economic trends embodied in the Scenario(s), as identified by external data and scenario providers.
+
+*EXCLUSION OF LIABILITY* TO THE EXTENT PERMITTED BY LAW WE WILL NOT BE LIABLE TO ANY USER FOR ANY LOSS OR DAMAGE, WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE), BREACH OF STATUTORY DUTY OR OTHERWISE, EVEN IF FORESEEABLE, ARISING UNDER OR IN CONNECTION WITH USE OF OR RELIANCE ON ANY INFORMATION, DATA OR CONTENT OBTAINED VIA OUR SERVICES, INCLUDING (WITHOUT LIMITATION) THE MODELLING OUTPUTS STATED IN THIS REPORT.
+
+*No forecast or prediction* The PACTA Model does not purport to generate, nor does this Report contain or comprise, statements of fact, forecasts or predictions. The PACTA Model provides a ‘point in time’ analysis of economic and commercial variables that are inherently dynamic and variable over time. 2Dii neither makes nor implies any representation regarding the likelihood, risk or expectation of any future matter. To the extent that any statements made or information contained in this Report might be considered forward-looking in nature, they are subject to risks, variables and uncertainties that could cause actual results to differ materially. You are cautioned not to place undue reliance on any such forward-looking statements, which reflect our assumptions only and those of our data and scenario providers as of the date of modelling.
+
+*No financial advice* The information contained in this Report does not comprise, constitute or provide, nor should it be relied upon as, investment or financial advice, credit ratings, an advertisement, an invitation, a confirmation, an offer or a solicitation, or recommendation, to buy or sell any security or other financial, credit or lending product or to engage in any investment activity, or an offer of any financial service. This Report does not purport to quantify risk to the portfolio (or any part thereof), nor make any representation in regards to the performance, strategy, prospects, creditworthiness or risk associated with any investment, nor their suitability for purchase, holding or sale in the context of any particular portfolio. The Modelling Outputs reflected in this Report are provided with the understanding and expectation that each investor will, with due care, conduct its own investigation and evaluation of each security or other instrument that is under consideration for purchase, holding or sale.
+
+*Scope Securities* The PACTA Model is limited in its scope and application. It does not consider all securities across all sectors, nor all securities within those sectors. The PACTA Model applies only to the Scope Securities set out in the Methodology Statement, as updated from time to time.
+
+*Scenario(s)* The PACTA Model will apply one or more Scenarios, as set out in the Methodology Statement. The choice of any Scenario should not be taken as any endorsement of those scenarios, nor any statement as to the accuracy or completeness of those scenarios’ methodologies or assumptions, nor as a general preference of those scenarios over any other economic scenarios. The analysis provided by the PACTA Model may be carried out using other economic scenarios, and users must form their own view as to the decarbonisation scenarios, trajectories and models that are most appropriate to their portfolio. No explicit or implicit assumption is made in relation to the current or future alignment of the Scenarios with climate-related policies of any government at international, national or sub-national level.
+
+*TCFD* Use of the PACTA may support you in initiatives undertaken with regard to the Recommendations of G20 Financial Stability Board’s Taskforce on Climate-related Financial Disclosures (TCFD). However, its use in isolation does not purport to provide ‘TCFD compliance’.
+
+</details>

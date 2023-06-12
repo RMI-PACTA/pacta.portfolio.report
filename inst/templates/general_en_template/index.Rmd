@@ -1,0 +1,50 @@
+--- 
+pagetitle: "PACTA Climate Alignment Report"
+params:
+  portfolio_results_flag: TRUE
+  real_estate_flag: FALSE
+  survey_flag: FALSE
+  survey_data: NULL
+  re_config_data: NULL
+  re_data_input: NULL
+  portfolio_parameters: NULL
+  rtyp: tn
+  language: en
+  tdm_results_flag: TRUE
+output: 
+  bookdown::gitbook:
+    mathjax: null
+    css: "2dii_gitbook_style.css"
+    toc_depth: 2
+    split_by: "none"
+    number_sections: TRUE
+    config:
+      fontsettings: false
+      info: false
+      sharing: false
+
+        
+
+---
+
+
+```{r conditional_print, child='rmd/00_index.Rmd', eval = TRUE}
+```
+
+```{r conditional_print, child='rmd/01_introduction.Rmd', eval = TRUE}
+```
+
+```{r conditional_print, child='rmd/02-scope.Rmd', eval = portfolio_results_flag}
+```
+
+```{r conditional_print, child='rmd/03-pacta.Rmd', eval = portfolio_results_flag}
+```
+
+```{r conditional_print, child='rmd/07-IPR.Rmd', eval = tdm_results_flag}
+```
+
+```{r conditional_print, child='rmd/08-next_steps.Rmd', eval = portfolio_results_flag}
+```
+
+```{r conditional_print, child='rmd/09-methodology.Rmd', eval = portfolio_results_flag}
+```

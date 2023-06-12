@@ -1,0 +1,43 @@
+ald_sector,technology
+Power,RenewablesCap
+Power,HydroCap
+Power,NuclearCap
+Power,GasCap
+Power,OilCap
+Power,CoalCap
+Automotive,Electric
+Automotive,Electric_HDV
+Automotive,FuelCell
+Automotive,FuelCell_HDV
+Automotive,Hybrid
+Automotive,Hybrid_HDV
+Automotive,ICE
+Automotive,ICE_HDV
+Oil&Gas,Oil
+Oil&Gas,Gas
+Coal,Coal
+Fossil Fuels,Oil
+Fossil Fuels,Gas
+Fossil Fuels,Coal
+Cement,Integrated facility
+Cement,Grinding
+Steel,Ac-Electric Arc Furnace
+Steel,Basic Oxygen Furnace
+Steel,Dc-Electric Arc Furnace
+Steel,Electric Arc Furnace
+Steel,Bof Shop
+Steel,Open Hearth Furnace
+Steel,Open Hearth Meltshop
+Aviation,Freight
+Aviation,Passenger
+Aviation,Mix
+Aviation,Other
+Shipping,A Grade
+Shipping,B Grade
+Shipping,C Grade
+Shipping,D Grade
+Shipping,E Grade
+Shipping,F Grade
+Shipping,G Grade
+Shipping,U Grade
+Shipping,No Grade

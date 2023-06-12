@@ -1,0 +1,112 @@
+# Methodology
+
+This section provides details about the PACTA methodology. 
+
+## PACTA Methodology
+
+This chapter covers the core concepts of the methodology allowing a reader to understand the results being presented here whilst interpreting them correctly. Key assumptions and limitation are pointed out. This is not a detailed description of the methodology. The finer details of the methodology can be found in the knowledge hub on the transition monitor website along with answers to frequently asked questions. 
+
+### Scenarios and Data
+
+#### Asset-Based Company Level Data
+
+The PACTA methodology measures the alignment of a financial portfolio to decarbonisation pathways set out in climate change scenarios. It does this by attributing physical assets in the real economy to the financial asset that finance them. The physical asset-based company level data used in this report is provided by Asset Resolution. 
+
+The production values of the physical assets of each company in the dataset provided by Asset Resolution, measured as an economic unit of output, is known. For example, the number of cars produced or barrels of oil for automotive and oil assets respectively. The asset's production values are allocated to the companies owning them based on the "equity share approach". Whereby, if company A owns x% of Asset 1, company A is attributed x% of Asset 1's production. When ownership data is missing, the remaining shares are distributed equally to the companies to which no data is known (for example, if company A owns 50%, company B owns an unknown %, and company C owns an unknown %, then company B and company C both get 25%). In the case where ownership data only exists for one company then 100% ownership is assumed.
+
+The production values are then aggregated up the corporate structure chain following the "equity ownership approach". (e.g. subsidiary > parent company > group). The equity ownership approach allocates production as follows: Assuming Group α is the parent of Company A. Group α is attributed Company A's production multiplied by the ratio of Group α's owned shares in Company A to Company A's total outstanding shares (or 1, if Company A has no shares). If Company A is a joint venture then the same principle is applied to each parent entity. This modelling choice was chosen to reflect methodologies commonly used in the financial industry. The PACTA methodology is open to other modelling choices. 
+
+#### Scenarios
+
+The PACTA Methodology is agnostic to any climate scenario that lays out targets in production capacity at the technology level or, for the relevant sectors, emission-intensity units. Scenarios typically differ as follows:
+
+- They lay out decarbonization paths that occur at different speeds (rapid ramp-up or long-term adjustment) 
+- They make different assumptions around innovation and thus around technologies’ availability, scalability, and cost 
+- As a result, they favor or rule out different technologies (e.g. phase-out of nuclear in the Energy Revolution scenario (GPER) (Greenpeace), prominent use of carbon capture and storage (CCS) in the IEA’s Beyond 2 degrees scenario (B2DS) scenario) 
+- They implement decarbonization paths of different levels of ambition 
+- They offer varying levels of granularity, e.g. they are expressed at different times and geographic scales 
+
+Given that the targets laid out in climate scenarios can vary by region depending the sector’s value-chain and geographic constraints (e.g., power distribution), alignment is measured at the geographical level in which the sector tends to operate. For example, for the power sector, markets tend to be regional or national, and as such alignment should be measured at that level. However, the oil, gas, coal and automotive sectors operate in a global market and in such a case a global scenario target is used.
+
+
+A few different sets of scenarios are used in this report, responding to requests for a more ambitious 1.5°C scenario. 
+
+The World Energy Outlook scenarios from 2019 and 2020 are included which include a Current Policy Scenario (2019 only), Stated Policy Scenario, and Sustainable Development Scenario. Scenarios developed in the Prospective Outlook on Long-term Energy System (POLES) model by the Joint Research Centre (JRC) have been included in the analysis. Three scenarios have been selected from this model and include a 1.5°, 2° and a reference scenario. 
+
+```{r echo = F}
+
+titles <- c("Current Policies Scenario", "Stated Policies Scenario","Sustainable Development Scenario",
+            "Reference Scenario", "1.5°C Scenario","2°C Scenario")
+weo_text <- c("Government policies that had been enacted or adopted by mid-2019 continue unchanged.",
+               "Considers the policies and implementing measures affecting energy markets that had been adopted as of mid-2019, together with relevant policy proposals, even though specific measures needed to put them into effect have yet to be fully developed. It assumes only cautious implementation of current commitments and plans by reviewing the many institutional, political and economic obstacles which exist, as well as, in some cases, the lack of detail in announced intentions and about how they will be implemented.",
+              "An integrated scenario specifying a pathway aiming at: ensuring universal access to affordable, reliable, sustainable and modern energy services by 2030 (SDG 7); substantially reducing air pollution (SDG 3.9); and taking effective action to combat climate change (SDG 13).",
+              "Corresponds to a world where currently existing policies for GHG emissions, renewables deployment and energy efficiency are carried out and where no additional policies are implemented compared to what had been legislated as of June 2019. It covers worldwide policies.
+",
+"Assumes a global GHG trajectory consistent with a likely chance of meeting the long-term goal of a temperature rise over pre-industrial times below 1.5°C for 2100. It was designed with a probability not to exceed their temperature change at the end of the century of 66%.
+",
+"Assumes a global GHG trajectory consistent with a likely chance of meeting the long-term goal of a temperature rise over pre-industrial times below 2°C for 2100. It was designed with a probability not to exceed their temperature change at the end of the century of 75%.
+")
+sources = c("","WEO", "", "", "POLES", "")
+
+scenario_table <- data.frame("Source" = sources,"Scenario"  = titles, "Description" =  weo_text)
+  
+knitr::kable(scenario_table, )
+```
+
+
+
+#### Time horizons
+
+Results given in this report are shown for the present and up to 5 years in the future. This is based on the capital expenditure (CAPEX) plans reported by the company's present in the asset-based company data. No reliable estimate beyond 5 years can be made due to a lack of adequate CAPEX forecasts beyond 5 years.
+
+
+### Accounting Principles
+
+#### Distributing macro carbon budgets to micro-economic actors
+
+Various approaches could be considered when it comes to allocating macro decarbonization effots to micro-economic actors.
+
+
+A market share approach has been adopted in PACTA. This approach uses a ‘market share’ allocation rule, wherein all sector-level production and capacity trends are proportionally distributed across companies such that by contracting/expanding their production in each technology at the same rate, they retain their initial market share. Put differently, each actor in the sector need to decarbonize as what their current market share would dictate. 
+
+
+Other options include:
+- A least-cost approach, which considers the economic efficiency of an asset. Here the actor that is most economically efficient in decarbonizing is expected to do the bulk of the decarbonization needed. 
+- A historic responsibility approach, which weights the decarbonisation efforts towards those that have previously contributed the most to climate change. 
+- A bottom-up approach, which would include economic efficiency considerations, political factors (e.g. regulatory frameworks), adaptive capacity and corporate agility
+(none of which are considered here)
+
+
+
+#### Allocating economic assets to financial activity
+
+Another important element is how to allocate the economic assets to the financial asset and then the overall portfolio. Here too there are various approaches that could be considered. This analysis reflects two of these. 
+
+
+1.	“Ownership approach” (or balance sheet approach). This approach allocates the economic assets to financial assets as a function of the ownership share that the financial asset represents. Thus, if one owns 1 share of a coal-mining company and there are 100 free-floating shares on the market, one would get 1% of the production of the mining company allocated to the portfolio. This ownership approach can only be applied for equity stakes – it is not transposable to debt. 
+
+
+2.	“Portfolio-weight approach”. This approach allocates economic assets based on the weight of the financial asset in a specific sector in the portfolio. Thus, if a bond of Power Company A represents 10% of your total Power-bond portfolio, you are allocated 10% of Company A’s production. In debt values, it represents a proxy for capital allocation decisions. For equity, this logic does not apply. 
+
+
+### Limitations
+
+Some of the limitations to the model are outlined. 
+
+
+As is a central caveat of modern portfolio theory, in PACTA’s attempt at adapting the modelling of financial markets to include feedback loops with climate risks, a truly diversified market portfolio cannot be accurately observed nor replicated. Not all relevant assets can be satisfactorily mapped and their main variables measured. While a limitation, the modelling work provided here still arguably goes some way in offering a clearer view of climate-related risk as channelled from economic assets to financial institutions, its first purpose and what drove its design is climate alignment rather than risk mitigation.
+
+
+Companies’ relative extents of climate alignment are approximated using production capacity-based figures, and do not encapsulate R&D investment, historical record, lobbying expenditures, etc. Particularly R&D investments would be an important element to look at. Perhaps a company does not yet have very green capital expenditure plans, but it may invest heavily in R&D. 
+
+
+Another limitation in the approach resides in the necessary choice of climate scenarios: while there exists an endless number of combinations of technology-specific pathways, the model relies on a small number of scenarios and accepts their uncertainty and margins of error.
+
+
+Beyond the model’s reliance on the quality of climate-scenario data, it also relies on that of the asset-based company level data, financial data and on that of the financial data fed into it. While efforts are made to check the quality of the company level and financial data, these subsets aim to reflect the real economy which are difficult to capture correctly.   
+
+
+Last, while PACTA alignment outputs can be used as input into existing risk models to calculate sectoral or company-specific financial risks, their aim is not to comprehensively map all sources of financial risk (e.g. pipelines, distribution networks, upstream supply chain, etc. are not covered),  the PACTA alignment approach does not itself model potential financial losses. However, section 4 shows an add-on module that is complementary to the PACTA methodology approach. Whereas PACTA aims to measure portfolio alignment with climate scenarios, the climate transition risk stress test developed by 2DII provides potential financial losses to the portfolio based on sudden policy action that forces companies to adjust their production plans (thereby impacting their future profits) so that they comply with a target scenario further in the future.. Those results can be augmented with inputs given by PACTA for increased granularity. As mentioned before, this is not part of the PACTA approach, but has to be viewed as a separate add on. 
+
+
+

@@ -1,0 +1,9 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+
+^\.github$
+^data$
+^_pkgdown\.yml$
+
+^npm$
+^LICENSE\.md$

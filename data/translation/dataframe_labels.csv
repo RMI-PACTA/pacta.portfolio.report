@@ -1,0 +1,475 @@
+id_data,id_column,key,en,de,fr,es
+data_included_table,asset_type_analysis,Bonds,Corporate Bonds,Unternehmensanleihen,Obligations d'entreprises,Bonos corporativos
+data_included_table,asset_type_analysis,Equity,Listed Equity,Aktien,Actions,Acciones
+data_included_table,asset_type_analysis,Funds,Funds,Fonds,Fonds,Fondos
+data_included_table,asset_type_analysis,Other,Other Asset Classes,Andere Asset-Klassen,Autres classes d'actifs,Otra clase de activos
+data_included_table,asset_type_analysis,Unclassified,Unclassified,Nicht klassifiziert,Non classifié,No clasificado
+data_included_table,asset_type_analysis,Total,Total,Gesamt,Total,Total
+data_included_table,included,Yes,Yes,Ja,Oui,Si
+data_included_table,included,No,No,Nein,Non,No
+data_included_table,investment_means,Direct,Direct,Direkt,Direct,Directo
+data_included_table,investment_means,Via a Fund,Via a Fund,Über einen Fonds,Par le biais d'un fonds,A través de un fondo
+data_included_table,investment_means,Unidentified Funds,Unidentified Funds,Nicht identifizierte Fonds,Fonds non identifiés,Fondos no identificados
+data_value_pie_equity,key,Automotive,Automotive,Automobilindustrie,Industrie automobile,Automotriz
+data_value_pie_equity,key,Aviation,Aviation,Luftfahrt,Aviation,Aviación
+data_value_pie_equity,key,Cement,Cement,Zement,Ciment,Cement
+data_value_pie_equity,key,Coal,Coal,Kohle,Charbon,Carbón
+data_value_pie_equity,key,Oil&Gas,Oil & Gas,Öl & Gas,Pétrole et gaz,Petróleo y gas
+data_value_pie_equity,key,Power,Power,Energie,Power,Energía
+data_value_pie_equity,key,Shipping,Shipping,Schifffahrt,Transport maritime,Transporte marítimo
+data_value_pie_equity,key,Steel,Steel,Stahl,Acier,Acero
+data_value_pie_equity,key,Consumer Staples,Consumer Staples,Basiskonsumgüter,Consommation de base,Productos básicos de consumo
+data_value_pie_equity,key,Energy,Energy,Energie,Énergie,Energia
+data_value_pie_equity,key,Unclassifiable,Unclassifiable,Nicht klassifizierbar,Inclassable,No clasificable
+data_value_pie_equity,key,Communications,Communications,Mitteilungen,Communications,Comunicaciones
+data_value_pie_equity,key,Consumer Disrectionary,Consumer Disrectionary,Konsumentenverweigerer,Biens non essentiels,Bienes no esenciales
+data_value_pie_equity,key,Industrials,Industrials,Industrielle,Industrie,Industriales
+data_value_pie_equity,key,Financials,Financials,Finanzen,Finances,Financieros
+data_value_pie_equity,key,Utilities,Utilities,Versorgungsunternehmen,Services publics,Servicios públicos
+data_value_pie_equity,key,Materials,Materials,Materialien,Matériel,Materiales
+data_value_pie_equity,key,Technology,Technology,Technologie,Technologie,Tecnología
+data_value_pie_equity,key,Health Care,Health Care,Gesundheitspflege,Soins de santé,Servicios de salud
+data_value_pie_bonds,key,Automotive,Automotive,Automobilindustrie,Industrie automobile,Automotriz
+data_value_pie_bonds,key,Aviation,Aviation,Luftfahrt,Aviation,Aviación
+data_value_pie_bonds,key,Cement,Cement,Zement,Ciment,Cement
+data_value_pie_bonds,key,Coal,Coal,Kohle,Charbon,Carbón
+data_value_pie_bonds,key,Oil&Gas,Oil & Gas,Öl & Gas,Pétrole et gaz,Petróleo y gas
+data_value_pie_bonds,key,Power,Power,Energie,Energie,Energía
+data_value_pie_bonds,key,Shipping,Shipping,Schifffahrt,Transport maritime,Transporte marítimo
+data_value_pie_bonds,key,Steel,Steel,Stahl,Acier,Acero
+data_value_pie_bonds,key,Consumer Staples,Consumer Staples,Basiskonsumgüter,Consommation de base,Productos básicos de consumo
+data_value_pie_bonds,key,Energy,Energy,Energie,Énergie,Energia
+data_value_pie_bonds,key,Unclassifiable,Unclassifiable,Nicht klassifizierbar,Inclassable,No clasificable
+data_value_pie_bonds,key,Communications,Communications,Mitteilungen,Communications,Comunicaciones
+data_value_pie_bonds,key,Consumer Disrectionary,Consumer Disrectionary,Konsumentenverweigerer,Biens non essentiels,Bienes no esenciales
+data_value_pie_bonds,key,Industrials,Industrials,Industrielle,Industrie,Industriales
+data_value_pie_bonds,key,Financials,Financials,Finanzen,Finances,Financieros
+data_value_pie_bonds,key,Utilities,Utilities,Versorgungsunternehmen,Services publiques,Servicios públicos
+data_value_pie_bonds,key,Materials,Materials,Materialien,Matériel,Materiales
+data_value_pie_bonds,key,Technology,Technology,Technologie,Technologie,Tecnología
+data_value_pie_bonds,key,Health Care,Health Care,Gesundheitspflege,Soins de santé,Servicios de salud
+data_emissions_pie_equity,key,Automotive,Automotive,Automobilindustrie,Industrie automobile,Automotriz
+data_emissions_pie_equity,key,Aviation,Aviation,Luftfahrt,Aviation,Aviación
+data_emissions_pie_equity,key,Cement,Cement,Zement,Ciment,Cement
+data_emissions_pie_equity,key,Coal,Coal,Kohle,Charbon,Carbón
+data_emissions_pie_equity,key,Oil&Gas,Oil&Gas,Öl&Gas,Pétrole et gaz,Petróleo y gas
+data_emissions_pie_equity,key,Power,Power,Energie,Energie,Energía
+data_emissions_pie_equity,key,Shipping,Shipping,Schifffahrt,Transport maritime,Transporte marítimo
+data_emissions_pie_equity,key,Steel,Steel,Stahl,Acier,Acero
+data_emissions_pie_equity,key,Consumer Staples,Consumer Staples,Basiskonsumgüter,Consommation de base,Productos básicos de consumo
+data_emissions_pie_equity,key,Cement&Steel,Cement&Steel,Zement&Stahl,Ciment et acier,Cemento y Acero
+data_emissions_pie_equity,key,Communications,Communications,Mitteilungen,Communications,Comunicaciones
+data_emissions_pie_equity,key,Consumer Discretionary,Consumer Discretionary,Diskretionäre Verbraucher,Biens non essentiels,Bienes no esenciales
+data_emissions_pie_equity,key,Financials,Financials,Finanzen,Finances,Financieros
+data_emissions_pie_equity,key,Health Care,Health Care,Gesundheitspflege,Soins de santé,Servicios de salud
+data_emissions_pie_equity,key,Other Energy,Other Energy,Andere Energie,Autres énergies,Otros Energía
+data_emissions_pie_equity,key,Other Industrials,Other Industrials,Andere Industrielle,Autres secteurs industriels,Otros Industriales
+data_emissions_pie_equity,key,Other Materials,Other Materials,Andere Materialien,Autres matériels,Otros Materiales
+data_emissions_pie_equity,key,Other Utilities,Other Utilities,Andere Versorgungsunternehmen,Autres services publics,Otros Servicios públicos
+data_emissions_pie_equity,key,Technology,Technology,Technologie,Technologie,Tecnología
+data_emissions_pie_equity,key,Unclassifiable,Unclassifiable,Nicht klassifizierbar,Inclassable,No clasificable
+data_emissions_pie_bonds,key,Automotive,Automotive,Automobilindustrie,Industrie automobile,Automotriz
+data_emissions_pie_bonds,key,Aviation,Aviation,Luftfahrt,Aviation,Aviación
+data_emissions_pie_bonds,key,Cement,Cement,Zement,Ciment,Cement
+data_emissions_pie_bonds,key,Coal,Coal,Kohle,Charbon,Carbón
+data_emissions_pie_bonds,key,Oil&Gas,Oil & Gas,Öl & Gas,Pétrole et gaz,Petróleo y gas
+data_emissions_pie_bonds,key,Power,Power,Energie,Energie,Energía
+data_emissions_pie_bonds,key,Shipping,Shipping,Schifffahrt,Transport maritime,Transporte marítimo
+data_emissions_pie_bonds,key,Steel,Steel,Stahl,Acier,Acero
+data_emissions_pie_bonds,key,Consumer Staples,Consumer Staples,Basiskonsumgüter,Consommation de base,Productos básicos de consumo
+data_emissions_pie_bonds,key,Cement&Steel,Cement & Steel,Zement & Stahl,Ciment et acier,Cemento y Acero
+data_emissions_pie_bonds,key,Communications,Communications,Mitteilungen,Communications,Comunicaciones
+data_emissions_pie_bonds,key,Consumer Discretionary,Consumer Discretionary,Diskretionäre Verbraucher,Biens non essentiels,Bienes no esenciales
+data_emissions_pie_bonds,key,Financials,Financials,Finanzen,Finances,Financieros
+data_emissions_pie_bonds,key,Health Care,Health Care,Gesundheitspflege,Soins de santé,Servicios de salud
+data_emissions_pie_bonds,key,Other Energy,Other Energy,Andere Energie,Autres énergies,Otros Energía
+data_emissions_pie_bonds,key,Other Industrials,Other Industrials,Andere Industrielle,Autres secteurs industriels,Otros Industriales
+data_emissions_pie_bonds,key,Other Materials,Other Materials,Andere Materialien,Autres matériels,Otros Materiales
+data_emissions_pie_bonds,key,Other Utilities,Other Utilities,Andere Versorgungsunternehmen,Autres services publics,Otros Servicios públicos
+data_emissions_pie_bonds,key,Technology,Technology,Technologie,Technologie,Tecnología
+data_emissions_pie_bonds,key,Unclassifiable,Unclassifiable,Nicht klassifizierbar,Inclassable,No clasificable
+techexposure_data,asset_class,Corporate Bonds,Corporate Bonds,Unternehmensanleihen,Obligations d'entreprises,Bonos corporativos
+techexposure_data,asset_class,Listed Equity,Listed Equity,Aktien,Actions,Acciones
+techexposure_data,equity_market,Global Market,Global Market,Globaler Markt,Marché mondial,Mercado Global
+techexposure_data,equity_market,Developed Market,Developed Market,Entwickelter Markt,Marché développé,Mercado Desarrollado
+techexposure_data,equity_market,Emerging Market,Emerging Market,Aufstrebender Markt,Marché émergent,Mercado Emergente
+techexposure_data,ald_sector,Automotive,Automotive,Automobilindustrie,Industrie automobile,Automotriz
+techexposure_data,ald_sector,Coal,Coal,Kohle,Charbon,Carbón
+techexposure_data,ald_sector,Oil&Gas,Oil & Gas,Öl & Gas,Pétrole et gaz,Petróleo y gas
+techexposure_data,ald_sector,Power,Power,Energie,Energie,Energía
+techexposure_data,ald_sector,Steel,Steel,Stahl,Acier,Acero
+techexposure_data,ald_sector,Cement,Cement,Zement,Ciment,Cement
+techexposure_data,ald_sector,Aviation,Aviation,Luftfahrt,Aviation,Aviación
+techexposure_data,ald_sector,Shipping,Shipping,Schifffahrt,Transport maritime,Transporte marítimo
+techexposure_data,technology,RenewablesCap,Renewables,Erneuerbare Energien,Energie renouvelable,Energías Renovables
+techexposure_data,technology,HydroCap,Hydropower,Wasserkraft,Energie hydraulique,Energía hidroeléctrica
+techexposure_data,technology,NuclearCap,Nuclear Power,Kernenergie,Energie nucléaire,Energía nuclear
+techexposure_data,technology,GasCap,Gas Power,Gaskraft,Energie à base de gaz,Energía a base de gas
+techexposure_data,technology,OilCap,Oil Power,Öl-Power,Energie à base de pétrole,Energía a base de petróleo
+techexposure_data,technology,CoalCap,Coal Power,Kohlekraft,Energie à base de charbon,Energía a base de carbón
+techexposure_data,technology,Electric,LDV: Electric,LDV: Elektrische,LDV: Électrique,VL: Vehículos eléctricos
+techexposure_data,technology,Hybrid,LDV: Hybrid,LDV: Hybrid,LDV: Hybride,VL: Vehículos híbridos
+techexposure_data,technology,ICE,LDV: ICE,LDV: Verbrennungsmotor,LDV: Moteur à combustion,VL: Vehículos de combustión interna
+techexposure_data,technology,Oil,Oil,Öl,Extraction de pétrole,Petróleo
+techexposure_data,technology,Gas,Gas,Gas,Extraction de gaz,Gas
+techexposure_data,technology,FuelCell,LDV: Fuel Cell,LDV: Brennstoffzellen,LDV: Pile à combustible,VL: Vehículos de pilas de combustibles
+techexposure_data,technology,Electric_HDV,HDV: Electric,HDV: Elektrisches,HDV: Électrique,VP: Vehículos eléctricos
+techexposure_data,technology,FuelCell_HDV,HDV: Fuel Cell,HDV: Brennstoffzellen,HDV: Pile à combustible,VP: Vehículos de pilas de combustibles
+techexposure_data,technology,Hybrid_HDV,HDV: Hybrid,HDV: Hybridantrieb,HDV: Hybride,VP: Vehículos híbridos
+techexposure_data,technology,ICE_HDV,HDV: ICE,HDV: Verbrennungsmotor,HDV: Moteur à combustion,VP: Vehículos de combustión interna
+techexposure_data,technology,Coal,Coal,Kohle,Charbon,Carbón
+techexposure_data,technology,Freight,Freight,Fracht,Fret,Carga
+techexposure_data,technology,Passenger,Passenger,Passagier,Passager,Pasajero
+techexposure_data,technology,Mix,Mix,Mischen,Mix,Mixto
+techexposure_data,technology,Other,Other,Andere,Autres,Otro
+techexposure_data,technology,Integrated Facility,Integrated Facility,Integrierte Anlage,Facilité intégrée,Sistema integrado
+techexposure_data,technology,Grinding,Grinding,Schleifen,Broyage,Triturado
+techexposure_data,technology,Ac-Electric Arc Furnace,Ac-Electric Arc Furnace,AC-Elektrolichtbogenofen,AC - Four électrique à arc,Horno de arco eléctrico de CA
+techexposure_data,technology,Dc-Electric Arc Furnace,Dc-Electric Arc Furnace,DC-Elektrolichtbogenofen,DC - Four électrique à arc,Horno de arco eléctrico de CC
+techexposure_data,technology,Bof Shop,Basic Oxygen Furnace,LD-Verfahren,Procédé LD,Horno de oxígeno básico
+techexposure_data,technology,Open Hearth Meltshop,Open hearth furnace,Schmelzbetrieb mit offenem Herd,Procédé Martin-Siemens,Horno a cielo abierto
+techexposure_data,portfolio_name,pensionfund,Pension Fund Peer Group,Pensionsfonds Peergroup,Fonds de pensiongrupo de pares,Fondos de pensiones groupe de pairs
+techexposure_data,portfolio_name,assetmanager,Asset Manager Peer Group,Vermögensverwalter Peergroup,Gestionnaire d'actifs grupo de pares,Administrador de activos groupe de pairs
+techexposure_data,portfolio_name,bank,Banking Peer Group,Bankwesen Peergroup,Banque grupo de pares,Banca groupe de pairs
+techexposure_data,portfolio_name,insurance,Insurance Peer Group,Versicherung Peergroup,Assurance grupo de pares,Aseguradoras groupe de pairs
+techexposure_data,portfolio_name,Meta Investor,Meta Investor Peer Group,Meta-Investor Peergroup,Méta-investisseur grupo de pares,Meta Inversionista groupe de pairs
+techexposure_data,portfolio_name,Others,Others Peer Group,Anderen Peergroup,Autres grupo de pares,Otros groupe de pairs
+techexposure_data,portfolio_name,Pension Funds and Insurances,Pension Funds and Insurances Peer Group,Pensionsfonds und Versicherung Peergroup,Fonds de pension et assurances grupo de pares,Fondos de pensiones groupe de pairs
+techexposure_data,portfolio_name,Banks and Asset Managers,Banks and Asset Managers Peer Group,Banken und Vermögensverwalter Peergroup,Banques et gestionnaires d'actifs grupo de pares,Bancos y administradores de activos groupe de pairs
+techexposure_data,portfolio_name,multimercado_alocacao,Multimercado Alocacao,Multimercado Alocacao,Multimercado Alocacao,Multimercado Alocacao
+techexposure_data,portfolio_name,multimercado_estrategia,Multimercado Estrategia,Multimercado Estrategia,Multimercado Estrategia,Multimercado Estrategia
+techexposure_data,portfolio_name,outros,Outros,Outros,Outros,Outros
+techexposure_data,portfolio_name,renda_fixa_credito_privado,Renda Fixa Credito Privado,Renda Fixa Credito Privado,Renda Fixa Credito Privado,Renda Fixa Credito Privado
+techexposure_data,portfolio_name,acoes_indexados,Acoes Indexados,Acoes Indexados,Acoes Indexados,Acoes Indexados
+techexposure_data,portfolio_name,acoes_esg,Acoes ESG,Acoes ESG,Acoes ESG,Acoes ESG
+techexposure_data,portfolio_name,acoes_ativos,Acoes Ativos,Acoes Ativos,Acoes Ativos,Acoes Ativos
+techexposure_future_data,asset_class,Corporate Bonds,Corporate Bonds,Unternehmensanleihen,Obligations d'entreprises,Bonos corporativos
+techexposure_future_data,asset_class,Listed Equity,Listed Equity,Aktien,Actions,Acciones
+techexposure_future_data,equity_market,Global Market,Global Market,Globaler Markt,Marché mondial,Mercado Global
+techexposure_future_data,equity_market,Developed Market,Developed Market,Entwickelter Markt,Marché développé,Mercado Desarrollado
+techexposure_future_data,equity_market,Emerging Market,Emerging Market,Aufstrebender Markt,Marché émergent,Mercado Emergente
+techexposure_future_data,ald_sector,Automotive,Automotive,Automobilindustrie,Industrie automobile,Automotriz
+techexposure_future_data,ald_sector,Fossil Fuels,Fossil Fuels,Fossile Brennstoffe,Combustibles fossiles,Combustibles fósiles
+techexposure_future_data,ald_sector,Power,Power,Energie,Energie,Energía
+techexposure_future_data,technology,RenewablesCap,Renewables,Erneuerbare Energien,Energie renouvelable,Energías Renovables
+techexposure_future_data,technology,HydroCap,Hydropower,Wasserkraft,Energie hydraulique,Energía hidroeléctrica
+techexposure_future_data,technology,NuclearCap,Nuclear Power,Kernenergie,Energie nucléaire,Energía nuclear
+techexposure_future_data,technology,GasCap,Gas Power,Gaskraft,Energie à base de gaz,Energía a base de gas
+techexposure_future_data,technology,OilCap,Oil Power,Öl-Power,Energie à base de pétrole,Energía a base de petróleo
+techexposure_future_data,technology,CoalCap,Coal Power,Kohlekraft,Energie à base de charbon,Energía a base de carbón
+techexposure_future_data,technology,Electric,LDV: Electric,LDV: Elektrische,LDV: Électrique,VL: Vehículos eléctricos
+techexposure_future_data,technology,Hybrid,LDV: Hybrid,LDV: Hybrid,LDV: Hybride,VL: Vehículos híbridos
+techexposure_future_data,technology,FuelCell,LDV: Fuel Cell,LDV: Brennstoffzellen,LDV: Pile à combustible,VL: Vehículos de pilas de combustibles
+techexposure_future_data,technology,ICE,LDV: ICE,LDV: Verbrennungsmotor,LDV: Moteur à combustion,VL: Vehículos de combustión interna
+techexposure_future_data,technology,Oil,Oil,Öl,Pétrole,Petróleo
+techexposure_future_data,technology,Gas,Gas,Gas,Gaz,Gas
+techexposure_future_data,technology,Electric_HDV,HDV: Electric,HDV: Elektrisches,HDV: électrique,VP: Vehículos eléctricos
+techexposure_future_data,technology,FuelCell_HDV,HDV: Fuel Cell,HDV: Brennstoffzellen,HDV: Pile à combustible,VP: Vehículos de pilas de combustibles
+techexposure_future_data,technology,Hybrid_HDV,HDV: Hybrid,HDV: Hybridantrieb,HDV: Hybride,VP: Vehículos híbridos
+techexposure_future_data,technology,ICE_HDV,HDV: ICE,HDV: Verbrennungsmotor,HDV: Moteur à combustion,VP: Vehículos de combustión interna
+techexposure_future_data,technology,Coal,Coal,Kohle,Charbon,Carbón
+techexposure_future_data,technology,Freight,Freight,Fracht,Fret,Carga
+techexposure_future_data,technology,Passenger,Passenger,Passagier,Passager,Pasajero
+techexposure_future_data,technology,Mix,Mix,Mischen,Mix,Mixto
+techexposure_future_data,val_type,Portfolio,Portfolio,Portfolio,Portefeuille,Portafolio
+techexposure_future_data,val_type,Aligned Portfolio,Aligned Portfolio,Ausgerichtetes Portfolio,Portefeuille aligné,Portafolio alineado
+techexposure_future_data,val_type,Aligned Benchmark,Aligned Benchmark,Ausgerichteter Benchmark,Référence aligné,Portafolio de referencia alineado
+techexposure_future_data,val_type,Benchmark,Benchmark,Benchmark,Référence,Portafolio de referencia
+techexposure_future_data,portfolio_name,pensionfund,Pension Fund Peer Group,Pensionsfonds Peergroup,Fonds de pensiongrupo de pares,Fondos de pensiones groupe de pairs
+techexposure_future_data,portfolio_name,assetmanager,Asset Manager Peer Group,Vermögensverwalter Peergroup,Gestionnaire d'actifs grupo de pares,Administrador de activos groupe de pairs
+techexposure_future_data,portfolio_name,bank,Banking Peer Group,Bankwesen Peergroup,Banque grupo de pares,Banca groupe de pairs
+techexposure_future_data,portfolio_name,insurance,Insurance Peer Group,Versicherung Peergroup,Assurance grupo de pares,Aseguradoras groupe de pairs
+techexposure_future_data,portfolio_name,Meta Investor,Meta Investor Peer Group,Meta-Investor Peergroup,Méta-investisseur grupo de pares,Meta Inversionista groupe de pairs
+techexposure_future_data,portfolio_name,Others,Others Peer Group,Anderen Peergroup,Autres grupo de pares,Otros groupe de pairs
+techexposure_future_data,portfolio_name,Pension Funds and Insurances,Pension Funds and Insurances Peer Group,Pensionsfonds und Versicherung Peergroup,Fonds de pension et assurances grupo de pares,Fondos de pensiones groupe de pairs
+techexposure_future_data,portfolio_name,Banks and Asset Managers,Banks and Asset Managers Peer Group,Banken und Vermögensverwalter Peergroup,Banques et gestionnaires d'actifs grupo de pares,Bancos y administradores de activos groupe de pairs
+techexposure_future_data,portfolio_name,multimercado_alocacao,Multimercado Alocacao,Multimercado Alocacao,Multimercado Alocacao,Multimercado Alocacao
+techexposure_future_data,portfolio_name,multimercado_estrategia,Multimercado Estrategia,Multimercado Estrategia,Multimercado Estrategia,Multimercado Estrategia
+techexposure_future_data,portfolio_name,outros,Outros,Outros,Outros,Outros
+techexposure_future_data,portfolio_name,renda_fixa_credito_privado,Renda Fixa Credito Privado,Renda Fixa Credito Privado,Renda Fixa Credito Privado,Renda Fixa Credito Privado
+techexposure_future_data,portfolio_name,acoes_indexados,Acoes Indexados,Acoes Indexados,Acoes Indexados,Acoes Indexados
+techexposure_future_data,portfolio_name,acoes_esg,Acoes ESG,Acoes ESG,Acoes ESG,Acoes ESG
+techexposure_future_data,portfolio_name,acoes_ativos,Acoes Ativos,Acoes Ativos,Acoes Ativos,Acoes Ativos
+data_map,asset_class,Corporate Bonds,Corporate Bonds,Unternehmensanleihen,Obligations d'entreprises,Bonos corporativos
+data_map,asset_class,Listed Equity,Listed Equity,Aktien,Actions,Acciones
+data_map,option,Gas,Gas,Gas,Gaz,Gas
+data_map,option,Oil,Oil,Öl,Pétrole,Petróleo
+data_map,option,All Power,All Power,Alle Energie,Tout Energie,Toda la generación de energía
+data_map,option,HydroCap,Hydropower,Wasserkraft,Energie hydraulique,Energía hidroeléctrica
+data_map,option,GasCap,Gas Power,Gaskraft,Energie à base de gaz,Energía a base de gas
+data_map,option,RenewablesCap,Renewables,Erneuerbare Energien,Energie renouvelable,Energías Renovables
+data_map,option,All Automotive,All Automotive,Alle Automobilindustrie,Tous les secteurs de l'automobile,Todo el sector automotriz
+data_map,option,ICE,LDV: ICE,LDV: Verbrennungsmotor,LDV: Moteur à combustion,VL: Vehículos de combustión interna
+data_map,option,Hybrid,LDV: Hybrid,LDV: Hybrid,LDV: Hybride,VL: Vehículos híbridos
+data_map,option,CoalCap,Coal Power,Kohlekraft,Energie à base de charbon,Energía a base de carbón
+data_map,option,OilCap,Oil Power,Öl-Power,Energie à base de pétrole,Energía a base de petróleo
+data_map,option,Electric,LDV: Electric,LDV: Elektrische,LDV: Électrique,VL: Vehículos eléctricos
+data_map,option,FuelCell_HDV,HDV: Fuel Cell,HDV: Brennstoffzellen,HDV: Pile à combustible,VP: Vehículos de pilas de combustibles
+data_map,option,ICE_HDV,HDV: ICE,HDV: Verbrennungsmotor Fahrzeuge,HDV: Moteur à combustion,VP: Vehículos de combustión interna
+data_map,option,FuelCell,LDV: Fuel Cell,LDV: Brennstoffzellen,LDV: Pile à combustible,VL: Vehículos de pilas de combustibles
+data_map,option,Electric_HDV,HDV: Electric,HDV: Elektrische Fahrzeuge,HDV: Électrique,VP: Vehículos eléctricos
+data_map,option,Hybrid_HDV,HDV: Hybrid,HDV: Hybrid Fahrzeuge,HDV: Hybride,VP: Vehículos híbridos
+data_map,option,Coal,Coal,Kohle,Charbon,Carbón
+data_map,option,NuclearCap,Nuclear Power,Kernenergie,Energie nucléaire,Energía nuclear
+data_map,option,Oil and Condensate,Oil and Condensate,Öl und Kondensat,Pétrole et condensats,Petróleo y condensados
+data_map,option,All Coal,All Coal,Alle Kohle,Tout le charbon,Todo el carbón
+data_map,option,Metallurgical,Metallurgical,Metallurgische Kohle,Métallurgie,Metalúrgico
+data_map,option,Thermal,Thermal,Thermische Kohle,Thermique,Termal
+data_map,option,Thermal & Metallurgical,Thermal & Metallurgical,Thermische und Metallurgische Kohle,Thermique et métallurgique,Termal y metalúrgico
+data_map,option,Aviation,Aviation,Luftfahrt,Aviation,Aviación
+data_map,option,All Aviation,All Aviation,Alle Luftfahrt,Aviation,Todo el sector de aviación
+data_map,option,Freight,Freight,Freight,Fret,Carga
+data_map,option,Passenger,Passenger,Passenger,Passager,Pasajero
+data_map,option,Cement,Cement,Zement,Ciment,Cement
+data_map,option,All Cement,All Cement,Alle Zement,Ciment,Todo el sector de cemento
+data_map,option,Grinding,Grinding,Schleifen,Broyage,Triturado
+data_map,option,Integrated Facility,Integrated Facility,Integrierte Anlage,Cimenterie intégrée,Sistema integrado
+data_map,option,Steel,Steel,Stahl,Acier,Acero
+data_map,option,All Steel,All Steel,Alle Stahl,Acier,Todo el sector de acero
+data_map,option,Ac-Electric Arc Furnace,Ac-Electric Arc Furnace,AC-Elektrolichtbogenofen,AC - Four électrique à arc,Horno de arco eléctrico de CA
+data_map,option,Dc-Electric Arc Furnace,Dc-Electric Arc Furnace,DC-Elektrolichtbogenofen,DC - Four électrique à arc,Horno de arco eléctrico de CC
+data_map,option,Bof Shop,Basic Oxygen Furnace,LD-Verfahren,Procédé LD,Horno de oxígeno básico
+data_map,option,Open Hearth Meltshop,Open hearth furnace,Schmelzbetrieb mit offenem Herd,Procédé Martin-Siemens,Horno a cielo abierto
+data_map,unit,m3 per day,m3 per day,Kubikmeter pro Tag,m3 par jour,m3 por día
+data_map,unit,boe per day,boe per day,Barrel Öläquivalent pro Tag,boe par jour,boe por día
+data_map,unit,MW,MW,MW,MW,MW
+data_map,unit,cars produced,cars produced,produzierte Autos,voitures produites,vehículos producidos
+data_map,unit,vehicles produced,cars produced,produzierte Autos,voitures produites,vehículos producidos
+data_map,unit,GJ,GJ,GJ,GJ,GJ
+data_map,unit,tons of coal,tons of coal,Tonnen Kohle,tonnes de charbon,toneladas de cobre
+data_map,unit,tons of steel,tons of steel,Tonnen Stahl,tonnes de Acier,toneladas de acero
+data_map,unit,tons of cement,tons of cement,Tonnen Zement,tonnes de Ciment,toneladas de cemento
+data_map,unit,active planes,active planes,aktive Flugzeuge,avions actifs,planes activos
+data_map,group,Automotive,Automotive,Automobilindustrie,Industrie automobile,Automotriz
+data_map,group,Coal,Coal,Kohle,Charbon,Carbón
+data_map,group,Oil&Gas,Oil & Gas,Öl & Gas,Pétrole et gaz,Petróleo y gas
+data_map,group,Power,Power,Energie,Energie,Energía
+data_map,group,Aviation,Aviation,Luftfahrt,Aviation,Aviación
+data_map,group,Cement,Cement,Zement,Ciment,Cement
+data_map,group,Steel,Steel,Stahl,Acier,Acero
+data_trajectory_alignment,asset_class,Corporate Bonds,Corporate Bonds,Unternehmensanleihen,Obligations d'entreprises,Bonos corporativos
+data_trajectory_alignment,asset_class,Listed Equity,Listed Equity,Aktien,Actions,Acciones
+data_trajectory_alignment,equity_market,Global Market,Global Market,Globaler Markt,Marché mondial,Mercado Global
+data_trajectory_alignment,equity_market,Developed Market,Developed Market,Entwickelter Markt,Marché développé,Mercado Desarrollado
+data_trajectory_alignment,equity_market,Emerging Market,Emerging Market,Aufstrebender Markt,Marché émergent,Mercado Emergente
+data_trajectory_alignment,scenario_geography,Global,Global,Global,Global,Global
+data_trajectory_alignment,scenario_geography,Global Aggregate,Global Aggregate,Globales Aggregat,Agrégat mondial,Agregado Global
+data_trajectory_alignment,allocation,Portfolio Weight,Portfolio Weight,Portfolio-Gewichtung,Poids du portefeuille,Peso en la cartera
+data_trajectory_alignment,allocation,Ownership Weight,Ownership Weight,Gewicht des Eigentums,Poids de la propriété,"Peso, según enfoque de propiedad"
+data_trajectory_alignment,ald_sector,Automotive,Automotive,Automobilindustrie,Industrie automobile,Automotriz
+data_trajectory_alignment,ald_sector,Coal,Coal,Kohle,Charbon,Carbón
+data_trajectory_alignment,ald_sector,Oil&Gas,Oil&Gas,Öl&Gas,Pétrole et gaz,Petróleo y gas
+data_trajectory_alignment,ald_sector,Power,Power,Energie,Energie,Energía
+data_trajectory_alignment,technology,RenewablesCap,Renewables,Erneuerbare Energien,Energie renouvelable,Energías Renovables
+data_trajectory_alignment,technology,HydroCap,Hydropower,Wasserkraft,Energie hydraulique,Energía hidroeléctrica
+data_trajectory_alignment,technology,NuclearCap,Nuclear Power,Kernenergie,Energie nucléaire,Energía nuclear
+data_trajectory_alignment,technology,GasCap,Gas Power,Gaskraft,Energie à base de gaz,Energía a base de gas
+data_trajectory_alignment,technology,OilCap,Oil Power,Öl-Power,Energie à base de pétrole,Energía a base de petróleo
+data_trajectory_alignment,technology,CoalCap,Coal Power,Kohlekraft,Energie à base de charbon,Energía a base de carbón
+data_trajectory_alignment,technology,Electric,LDV: Electric,LDV: Elektrische,LDV: Électrique,VL: Vehículos eléctricos
+data_trajectory_alignment,technology,Hybrid,LDV: Hybrid,LDV: Hybrid,LDV: Hybride,VL: Vehículos híbridos
+data_trajectory_alignment,technology,ICE,LDV: ICE,LDV: Verbrennungsmotor,LDV: Moteur à combustion,VL: Vehículos de combustión interna
+data_trajectory_alignment,technology,Oil,Oil,Öl,Pétrole,Petróleo
+data_trajectory_alignment,technology,Gas,Gas,Gas,Gaz,Gas
+data_trajectory_alignment,technology,FuelCell,LDV: Fuel Cell,LDV: Brennstoffzellen,LDV: Pile à combustible,VL: Vehículos de pilas de combustibles
+data_trajectory_alignment,technology,Electric_HDV,HDV: Electric,HDV: Elektrisches,HDV: Electrique,VP: Vehículos eléctricos
+data_trajectory_alignment,technology,FuelCell_HDV,HDV: Fuel Cell,HDV: Brennstoffzellen,HDV: Pile à combustible,VP: Vehículos de pilas de combustibles
+data_trajectory_alignment,technology,Hybrid_HDV,HDV: Hybrid,HDV: Hybridantrieb,HDV: Hybride,VP: Vehículos híbridos
+data_trajectory_alignment,technology,ICE_HDV,HDV: ICE,HDV: Verbrennungsmotor,HDV: Moteur à combustion,VP: Vehículos de combustión interna
+data_trajectory_alignment,technology,Coal,Coal,Kohle,Charbon,Carbón
+data_trajectory_alignment,unit,number of cars,number of cars,Anzahl der Autos,nombre de voitures,número de vehículos
+data_trajectory_alignment,unit,GJ/a,GJ/a,GJ pro Jahr,GJ/a,GJ/a
+data_trajectory_alignment,unit,MW,MW,MW,MW,MW
+data_trajectory_alignment,unit,t/a,t/a,Tonnen pro Jahr,t/a,t/a
+data_trajectory_alignment,scenario,production,production,Produktion,production,producción
+data_trajectory_alignment,portfolio_name,pensionfund,Pension Fund Peer Group,Pensionsfonds Peergroup,Fonds de pensiongrupo de pares,Fondos de pensiones groupe de pairs
+data_trajectory_alignment,portfolio_name,asset,Asset Manager Peer Group,Vermögensverwalter Peergroup,Gestionnaire d'actifs grupo de pares,Administrador de activos groupe de pairs
+data_trajectory_alignment,portfolio_name,bank,Banking Peer Group,Bankwesen Peergroup,Banque grupo de pares,Banca groupe de pairs
+data_trajectory_alignment,portfolio_name,insurance,Insurance Peer Group,Versicherung Peergroup,Assurance grupo de pares,Aseguradoras groupe de pairs
+data_trajectory_alignment,portfolio_name,Meta Investor,Meta Investor Peer Group,Meta-Investor Peergroup,Méta-investisseur grupo de pares,Meta Inversionista groupe de pairs
+data_trajectory_alignment,portfolio_name,Others,Others Peer Group,Anderen Peergroup,Autres grupo de pares,Otros groupe de pairs
+data_trajectory_alignment,portfolio_name,Pension Funds and Insurances,Pension Funds and Insurances Peer Group,Pensionsfonds und Versicherung Peergroup,Fonds de pension et assurances grupo de pares,Fondos de pensiones groupe de pairs
+data_trajectory_alignment,portfolio_name,Banks and Asset Managers,Banks and Asset Managers Peer Group,Banken und Vermögensverwalter Peergroup,Banques et gestionnaires d'actifs grupo de pares,Bancos y administradores de activos groupe de pairs
+data_trajectory_alignment,portfolio_name,multimercado_alocacao,Multimercado Alocacao,Multimercado Alocacao,Multimercado Alocacao,Multimercado Alocacao
+data_trajectory_alignment,portfolio_name,multimercado_estrategia,Multimercado Estrategia,Multimercado Estrategia,Multimercado Estrategia,Multimercado Estrategia
+data_trajectory_alignment,portfolio_name,outros,Outros,Outros,Outros,Outros
+data_trajectory_alignment,portfolio_name,renda_fixa_credito_privado,Renda Fixa Credito Privado,Renda Fixa Credito Privado,Renda Fixa Credito Privado,Renda Fixa Credito Privado
+data_trajectory_alignment,portfolio_name,acoes_indexados,Acoes Indexados,Acoes Indexados,Acoes Indexados,Acoes Indexados
+data_trajectory_alignment,portfolio_name,acoes_esg,Acoes ESG,Acoes ESG,Acoes ESG,Acoes ESG
+data_trajectory_alignment,portfolio_name,acoes_ativos,Acoes Ativos,Acoes Ativos,Acoes Ativos,Acoes Ativos
+data_emissions,allocation,portfolio_weight,Portfolio Weight,Portfolio-Gewichtung,Poids du portefeuille,Peso en la cartera
+data_emissions,allocation,ownership_weight,Ownership Weight,Gewicht des Eigentums,Poids de la propriété,"Peso, según enfoque de propiedad"
+data_emissions,asset_class,Corporate Bonds,Corporate Bonds,Unternehmensanleihen,Obligations d'entreprises,Bonos corporativos
+data_emissions,asset_class,Listed Equity,Listed Equity,Aktien,Actions,Acciones
+data_emissions,equity_market,Global Market,Global Market,Globaler Markt,Marché mondial,Mercado Global
+data_emissions,equity_market,Developed Market,Developed Market,Entwickelter Markt,Marché développé,Mercado Desarrollado
+data_emissions,equity_market,Emerging Market,Emerging Market,Aufstrebender Markt,Marché émergent,Mercado Emergente
+data_emissions,sector,Automotive,Automotive,Automobilindustrie,Industrie automobile,Automotriz
+data_emissions,sector,Coal,Coal,Kohle,Charbon,Carbón
+data_emissions,sector,Oil&Gas,Oil & Gas,Öl & Gas,Pétrole et gaz,Petróleo y gas
+data_emissions,sector,Power,Power,Energie,Energie,Energía
+data_emissions,sector,Cement,Cement,Zement,Ciment,Cement
+data_emissions,sector,Steel,Steel,Stahl,Acier,Acero
+data_emissions,sector,Aviation,Aviation,Luftfahrt,Aviation,Aviación
+data_emissions,sector,Shipping,Shipping,Schifffahrt,Transport maritime,Transporte marítimo
+data_emissions,unit,tons of CO2 per km per cars produced,tons of CO2 per km per cars produced,Tonnen CO2 pro km pro produziertem Auto,tonnes de CO2 par km et par voiture produite,toneladas de CO2 por km por vehículos producidos
+data_emissions,unit,tons of CO2 per tones of cement,tons of CO2 per tones of cement,Tonnen CO2 pro Tonne Zement,tonnes de CO2 par tonne de ciment,toneladas de CO2 por toneladas de cemento
+data_emissions,unit,tons of CO2 per GJ,tons of CO2 per GJ,Tonnen CO2 pro GJ,tonnes de CO2 par GJ,toneladas de CO2 por GJ
+data_emissions,unit,tons of CO2 per MWh,tons of CO2 per MWh,Tonnen CO2 pro MWh,tonnes de CO2 par MWh,toneladas de CO2 por MWh
+data_emissions,unit,tons of CO2 per tons of steel,tons of CO2 per tons of steel,tons of CO2 prp Tonne Stahl,tonnes de CO2 par tonne d'acier,toneladas de CO2 por toneladas de acero
+data_emissions,unit,tons of CO2 per passenger km per active planes,tons of CO2 per passenger km per active planes,Tonnen CO2 pro Passagierkilometer pro aktivem Flugzeug,tonnes de CO2 par passager/km par avion en activité,toneladas de CO2 por pasajero km por aviones activos
+data_emissions,unit,tons of CO2 per tons of coal,tons of CO2 per tons of coal,Tonnen CO2 pro Tonnen Kohle,tonnes de CO2 par tonne de charbon,toneladas de CO2 por toneladas de carbón
+data_company_bubble,ald_sector,Automotive,Automotive,Automobilindustrie,Industrie automobile,Automotriz
+data_company_bubble,ald_sector,Coal,Coal,Kohle,Charbon,Carbón
+data_company_bubble,ald_sector,Oil&Gas,Oil&Gas,Öl&Gas,Pétrole et gaz,Petróleo y gas
+data_company_bubble,ald_sector,Power,Power,Energie,Energie,Energía
+data_company_bubble,asset_class,Corporate Bonds,Corporate Bonds,Unternehmensanleihen,Obligations d'entreprises,Bonos corporativos
+data_company_bubble,asset_class,Listed Equity,Listed Equity,Aktien,Actions,Acciones
+data_key_bars_company,ald_sector,Automotive,Automotive,Automobilindustrie,Industrie automobile,Automotriz
+data_key_bars_company,ald_sector,Coal,Coal,Kohle,Charbon,Carbón
+data_key_bars_company,ald_sector,Oil&Gas,Oil&Gas,Öl&Gas,Pétrole et gaz,Petróleo y gas
+data_key_bars_company,ald_sector,Power,Power,Energie,Energie,Energía
+data_key_bars_company,ald_sector,Aviation,Aviation,Luftfahrt,Aviation,Aviación
+data_key_bars_company,ald_sector,Cement,Cement,Zement,Ciment,Cement
+data_key_bars_company,ald_sector,Shipping,Shipping,Schifffahrt,Transport maritime,Transporte marítimo
+data_key_bars_company,ald_sector,Steel,Steel,Stahl,Acier,Acero
+data_key_bars_company,asset_class,Corporate Bonds,Corporate Bonds,Unternehmensanleihen,Obligations d'entreprises,Bonos corporativos
+data_key_bars_company,asset_class,Listed Equity,Listed Equity,Aktien,Actions,Acciones
+data_key_bars_company,technology,Electric,LDV: Electric,LDV: Elektrische,LDV: Électrique,VL: Vehículos eléctricos
+data_key_bars_company,technology,Hybrid,LDV: Hybrid,LDV: Hybrid,LDV: Hybride,VL: Vehículos híbridos
+data_key_bars_company,technology,ICE,LDV: ICE,LDV: Verbrennungsmotor,LDV: Moteur à combustion,VL: Vehículos de combustión interna
+data_key_bars_company,technology,FuelCell,LDV: Fuel Cell,LDV: Brennstoffzellen,LDV: Pile à combustible,VL: Vehículos de pilas de combustibles
+data_key_bars_company,technology,Coal,Coal,Kohle,Charbon,Carbón
+data_key_bars_company,technology,Gas,Gas,Gas,Gaz,Gas
+data_key_bars_company,technology,Oil,Oil,Öl,Pétrole,Petróleo
+data_key_bars_company,technology,CoalCap,Coal Power,Kohlekraft,Energie à base de charbon,Energía a base de carbón
+data_key_bars_company,technology,GasCap,Gas Power,Gaskraft,Energie à base de gaz,Energía a base de gas
+data_key_bars_company,technology,HydroCap,Hydropower,Wasserkraft,Energie hydraulique,Energía hidroeléctrica
+data_key_bars_company,technology,NuclearCap,Nuclear Power,Kernenergie,Energie nucléaire,Energía nuclear
+data_key_bars_company,technology,OilCap,Oil Power,Öl-Power,Energie à base de pétrole,Energía a base de petróleo
+data_key_bars_company,technology,RenewablesCap,Renewables,Erneuerbare Energien,Energie renouvelable,Energías Renovables
+data_key_bars_company,technology,Electric_HDV,HDV: Electric,HDV: Elektrisches,HDV: Electrique,VP: Vehículos eléctricos
+data_key_bars_company,technology,FuelCell_HDV,HDV: Fuel Cell,HDV: Brennstoffzellen,HDV: Pile à combustible,VP: Vehículos de pilas de combustibles
+data_key_bars_company,technology,Hybrid_HDV,HDV: Hybrid,HDV: Hybridantrieb,HDV: Hybride,VP: Vehículos híbridos
+data_key_bars_company,technology,ICE_HDV,HDV: ICE,HDV: Verbrennungsmotor,HDV: Moteur à combustion,VP: Vehículos de combustión interna
+data_key_bars_company,technology,Freight,Freight,Fracht,Fret,Carga
+data_key_bars_company,technology,Mix,Mix,Mischen,Mix,Mixto
+data_key_bars_company,technology,Other,Other,Andere,Autres,Otros
+data_key_bars_company,technology,Passenger,Passenger,Passagier,Passager,Pasajero
+data_key_bars_portfolio,ald_sector,Automotive,Automotive,Automobilindustrie,Industrie automobile,Automotriz
+data_key_bars_portfolio,ald_sector,Coal,Coal,Kohle,Charbon,Carbón
+data_key_bars_portfolio,ald_sector,Oil&Gas,Oil & Gas,Öl & Gas,Pétrole et gaz,Petróleo y gas
+data_key_bars_portfolio,ald_sector,Power,Power,Energie,Energie,Energía
+data_key_bars_portfolio,ald_sector,Aviation,Aviation,Luftfahrt,Aviation,Aviación
+data_key_bars_portfolio,ald_sector,Cement,Cement,Zement,Ciment,Cement
+data_key_bars_portfolio,ald_sector,Shipping,Shipping,Schifffahrt,Transport maritime,Transporte marítimo
+data_key_bars_portfolio,ald_sector,Steel,Steel,Stahl,Acier,Acero
+data_key_bars_portfolio,asset_class,Corporate Bonds,Corporate Bonds,Unternehmensanleihen,Obligations d'entreprises,Bonos corporativos
+data_key_bars_portfolio,asset_class,Listed Equity,Listed Equity,Aktien,Actions,Acciones
+data_key_bars_portfolio,technology,Electric,LDV: Electric,LDV: Elektrische,LDV: Électrique,VL: Vehículos eléctricos
+data_key_bars_portfolio,technology,Hybrid,LDV: Hybrid,LDV: Hybrid,LDV: Hybride,VL: Vehículos híbridos
+data_key_bars_portfolio,technology,ICE,LDV: ICE,LDV: Verbrennungsmotor,LDV: Moteur à combustion,VL: Vehículos de combustión interna
+data_key_bars_portfolio,technology,FuelCell,LDV: Fuel Cell,LDV: Brennstoffzellen,LDV: Pile à combustible,VL: Vehículos de pilas de combustibles
+data_key_bars_portfolio,technology,Coal,Coal,Kohle,Charbon,Carbón
+data_key_bars_portfolio,technology,Gas,Gas,Gas,Gaz,Gas
+data_key_bars_portfolio,technology,Oil,Oil,Öl,Pétrole,Petróleo
+data_key_bars_portfolio,technology,CoalCap,Coal Power,Kohlekraft,Energie à base de charbon,Energía a base de carbón
+data_key_bars_portfolio,technology,GasCap,Gas Power,Gaskraft,Energie à base de gaz,Energía a base de gas
+data_key_bars_portfolio,technology,HydroCap,Hydropower,Wasserkraft,Energie hydraulique,Energía hidroeléctrica
+data_key_bars_portfolio,technology,NuclearCap,Nuclear Power,Kernenergie,Energie nucléaire,Energía nuclear
+data_key_bars_portfolio,technology,OilCap,Oil Power,Öl-Power,Energie à base de pétrole,Energía a base de petróleo
+data_key_bars_portfolio,technology,RenewablesCap,Renewables,Erneuerbare Energien,Energie renouvelable,Energías Renovables
+data_key_bars_portfolio,technology,Electric_HDV,HDV: Electric,HDV: Elektrisches,HDV: Électrique,VP: Vehículos eléctricos
+data_key_bars_portfolio,technology,FuelCell_HDV,HDV: Fuel Cell,HDV: Brennstoffzellen,HDV: Pile à combustible,VP: Vehículos de pilas de combustibles
+data_key_bars_portfolio,technology,Hybrid_HDV,HDV: Hybrid,HDV: Hybridantrieb,HDV: Hybride,VP: Vehículos híbridos
+data_key_bars_portfolio,technology,ICE_HDV,HDV: ICE,HDV: Verbrennungsmotor,HDV: Moteur à combustion,VP: Vehículos de combustión interna
+data_key_bars_portfolio,technology,Freight,Freight,Fracht,Fret,Carga
+data_key_bars_portfolio,technology,Mix,Mix,Mischen,Mix,Mixto
+data_key_bars_portfolio,technology,Other,Other,Andere,Autres,Otros
+data_key_bars_portfolio,technology,Passenger,Passenger,Passagier,Passager,Pasajero
+data_key_bars_portfolio,id,Portfolio,Portfolio,Portfolio,Portefeuille,Portafolio
+data_key_bars_portfolio,id,Aligned* Portfolio,Aligned* Portfolio,Ausgerichtetes* Portfolio,Portefeuille aligné*,Portafolio alineado*
+data_peercomparison,asset_class,Corporate Bonds,Corporate Bonds,Unternehmensanleihen,Obligations d'entreprises,Bonos corporativos
+data_peercomparison,asset_class,Listed Equity,Listed Equity,Aktien,Actions,Acciones
+data_peer_bubbles,ald_sector,Automotive,Automotive,Automobilindustrie,Industrie automobile,Automotriz
+data_peer_bubbles,ald_sector,Coal,Coal,Kohle,Charbon,Carbón
+data_peer_bubbles,ald_sector,Oil&Gas,Oil & Gas,Öl & Gas,Pétrole et gaz,Petróleo y gas
+data_peer_bubbles,ald_sector,Power,Power,Energie,Energie,Energía
+data_peer_bubbles,asset_class,Corporate Bonds,Corporate Bonds,Unternehmensanleihen,Obligations d'entreprises,Bonos corporativos
+data_peer_bubbles,asset_class,Listed Equity,Listed Equity,Aktien,Actions,Acciones
+data_peer_bubbles,peer_group,pensionfund,Pension Fund Peer Group,Pensionsfonds Peergroup,Fonds de pensiongrupo de pares,Fondos de pensiones groupe de pairs
+data_peer_bubbles,peer_group,assetmanager,Asset Manager Peer Group,Vermögensverwalter Peergroup,Gestionnaire d'actifs grupo de pares,Administrador de activos groupe de pairs
+data_peer_bubbles,peer_group,bank,Banking Peer Group,Bankwesen Peergroup,Banque grupo de pares,Banca groupe de pairs
+data_peer_bubbles,peer_group,insurance,Insurance Peer Group,Versicherung Peergroup,Assurance grupo de pares,Aseguradoras groupe de pairs
+data_peer_bubbles,peer_group,Meta Investor,Meta Investor Peer Group,Meta-Investor Peergroup,Méta-investisseur grupo de pares,Meta Inversionista groupe de pairs
+data_peer_bubbles,peer_group,Others,Others Peer Group,Anderen Peergroup,Autres grupo de pares,Otros groupe de pairs
+data_peer_bubbles,peer_group,Pension Funds and Insurances,Pension Funds and Insurances Peer Group,Pensionsfonds und Versicherung Peergroup,Fonds de pension et assurances grupo de pares,Fondos de pensiones groupe de pairs
+data_peer_bubbles,peer_group,Banks and Asset Managers,Banks and Asset Managers Peer Group,Banken und Vermögensverwalter Peergroup,Banques et gestionnaires d'actifs grupo de pares,Bancos y administradores de activos groupe de pairs
+data_peer_bubbles,peer_group,multimercado_alocacao,Multimercado Alocacao,Multimercado Alocacao,Multimercado Alocacao,Multimercado Alocacao
+data_peer_bubbles,peer_group,multimercado_estrategia,Multimercado Estrategia,Multimercado Estrategia,Multimercado Estrategia,Multimercado Estrategia
+data_peer_bubbles,peer_group,outros,Outros,Outros,Outros,Outros
+data_peer_bubbles,peer_group,renda_fixa_credito_privado,Renda Fixa Credito Privado,Renda Fixa Credito Privado,Renda Fixa Credito Privado,Renda Fixa Credito Privado
+data_peer_bubbles,peer_group,acoes_indexados,Acoes Indexados,Acoes Indexados,Acoes Indexados,Acoes Indexados
+data_peer_bubbles,peer_group,acoes_esg,Acoes ESG,Acoes ESG,Acoes ESG,Acoes ESG
+data_peer_bubbles,peer_group,acoes_ativos,Acoes Ativos,Acoes Ativos,Acoes Ativos,Acoes Ativos
+data_peer_table,Asset Class,Corporate Bonds,Corporate Bonds,Unternehmensanleihen,Obligations d'entreprises,Bonos corporativos
+data_peer_table,Asset Class,Listed Equity,Listed Equity,Aktien,Actions,Acciones
+data_peer_table,Sector,Automotive,Automotive,Automobilindustrie,Industrie automobile,Automotriz
+data_peer_table,Sector,Coal,Coal,Kohle,Charbon,Carbón
+data_peer_table,Sector,Oil&Gas,Oil & Gas,Öl & Gas,Pétrole et gaz,Petróleo y gas
+data_peer_table,Sector,Power,Power,Energie,Energie,Energía
+data_peer_table,Technology,Electric,LDV: Electric,LDV: Elektrische,LDV: Électrique,VL: Vehículos eléctricos
+data_peer_table,Technology,Hybrid,LDV: Hybrid,LDV: Hybrid,LDV: Hybride,VL: Vehículos híbridos
+data_peer_table,Technology,ICE,LDV: ICE,LDV: Verbrennungsmotor,LDV: Moteur à combustion,VL: Vehículos de combustión interna
+data_peer_table,Technology,Coal,Coal,Kohle,Charbon,Carbón
+data_peer_table,Technology,Gas,Gas,Gas,Gaz,Gas
+data_peer_table,Technology,Oil,Oil,Öl,Pétrole,Petróleo
+data_peer_table,Technology,CoalCap,Coal Power,Kohlekraft,Energie à base de charbon,Energía a base de carbón
+data_peer_table,Technology,GasCap,Gas Power,Gaskraft,Energie à base de gaz,Energía a base de gas
+data_peer_table,Technology,HydroCap,Hydropower,Wasserkraft,Energie hydraulique,Energía hidroeléctrica
+data_peer_table,Technology,NuclearCap,Nuclear Power,Kernenergie,Energie nucléaire,Energía nuclear
+data_peer_table,Technology,OilCap,Oil Power,Öl-Power,Energie à base de pétrole,Energía a base de petróleo
+data_peer_table,Technology,RenewablesCap,Renewables,Erneuerbare Energien,Energie renouvelable,Energías Renovables
+data_peer_table,Technology,Coal Power,Coal Power,Kohlekraft,Energie à base de charbon,Energía a base de carbón
+data_peer_table,Technology,Gas Power,Gas Power,Gaskraft,Energie à base de gaz,Energía a base de gas
+data_peer_table,Technology,Hydro Power,Hydropower,Wasserkraft,Energie hydraulique,Energía hidroeléctrica
+data_peer_table,Technology,Nuclear Power,Nuclear Power,Kernenergie,Energie nucléaire,Energía nuclear
+data_peer_table,Technology,Oil Power,Oil Power,Öl-Power,Energie à base de pétrole,Energía a base de petróleo
+data_peer_table,Technology,Renewables Power,Renewables,Erneuerbare Energien,Energie renouvelable,Energías Renovables
+data_speedometer_dashboard,asset_class,Corporate Bonds,Corporate Bonds,Unternehmensanleihen,Obligations d'entreprises,Bonos corporativos
+data_speedometer_dashboard,asset_class,Listed Equity,Listed Equity,Aktien,Actions,Acciones
+data_speedometer_dashboard,ald_sector,Automotive,Automotive,Automobilindustrie,Industrie automobile,Automotriz
+data_speedometer_dashboard,ald_sector,Coal,Coal,Kohle,Charbon,Carbón
+data_speedometer_dashboard,ald_sector,Oil&Gas,Oil & Gas,Öl & Gas,Pétrole et gaz,Petróleo y gas
+data_speedometer_dashboard,ald_sector,Power,Power,Energie,Energie,Energía
+data_speedometer_dashboard,ald_sector,Steel,Steel,Stahl,Acier,Acero
+data_speedometer_dashboard,ald_sector,Cement,Cement,Zement,Ciment,Cement
+data_speedometer_dashboard,ald_sector,Aviation,Aviation,Luftfahrt,Aviation,Aviación
+data_speedometer_dashboard,ald_sector,Shipping,Shipping,Schifffahrt,Transport maritime,Transporte marítimo
+data_speedometer_dashboard,technology,RenewablesCap,Renewables,Erneuerbare Energien,Energie renouvelable,Energías Renovables
+data_speedometer_dashboard,technology,HydroCap,Hydropower,Wasserkraft,Energie hydraulique,Energía hidroeléctrica
+data_speedometer_dashboard,technology,NuclearCap,Nuclear Power,Kernenergie,Energie nucléaire,Energía nuclear
+data_speedometer_dashboard,technology,GasCap,Gas Power,Gaskraft,Energie à base de gaz,Energía a base de gas
+data_speedometer_dashboard,technology,OilCap,Oil Power,Öl-Power,Energie à base de pétrole,Energía a base de petróleo
+data_speedometer_dashboard,technology,CoalCap,Coal Power,Kohlekraft,Energie à base de charbon,Energía a base de carbón
+data_speedometer_dashboard,technology,Electric,LDV: Electric,LDV: Elektrische,LDV: Électrique,VL: Vehículos eléctricos
+data_speedometer_dashboard,technology,Hybrid,LDV: Hybrid,LDV: Hybrid,LDV: Hybride,VL: Vehículos híbridos
+data_speedometer_dashboard,technology,ICE,LDV: ICE,LDV: Verbrennungsmotor,LDV: Moteur à combustion,VL: Vehículos de combustión interna
+data_speedometer_dashboard,technology,FuelCell,LDV: Fuel Cell,LDV: Brennstoffzellen,LDV: Pile à combustible,VL: Vehículos de pilas de combustibles
+data_speedometer_dashboard,technology,Oil,Oil,Öl,Extraction de pétrole,Petróleo
+data_speedometer_dashboard,technology,Gas,Gas,Gas,Extraction de gaz,Gas
+data_speedometer_dashboard,technology,Electric_HDV,HDV: Electric,HDV: Elektrisches,HDV: Électrique,VP: Vehículos eléctricos
+data_speedometer_dashboard,technology,FuelCell_HDV,HDV: Fuel Cell,HDV: Brennstoffzellen,HDV: Pile à combustible,VP: Vehículos de pilas de combustibles
+data_speedometer_dashboard,technology,Hybrid_HDV,HDV: Hybrid,HDV: Hybridantrieb,HDV: Hybride,VP: Vehículos híbridos
+data_speedometer_dashboard,technology,ICE_HDV,HDV: ICE,HDV: Verbrennungsmotor,HDV: Moteur à combustion,VP: Vehículos de combustión interna
+data_speedometer_dashboard,technology,Coal,Coal,Kohle,Charbon,Carbón
+data_speedometer_dashboard,technology,Freight,Freight,Fracht,Fret,Carga
+data_speedometer_dashboard,technology,Passenger,Passenger,Passagier,Passager,Pasajero
+data_speedometer_dashboard,technology,Mix,Mix,Mischen,Mix,Mixto
+data_speedometer_dashboard,technology,Other,Other,Andere,Autres,Otro
+data_speedometer_dashboard,technology,Integrated Facility,Integrated Facility,Integrierte Anlage,Facilité intégrée,Sistema integrado
+data_speedometer_dashboard,technology,Grinding,Grinding,Schleifen,Broyage,Triturado
+data_speedometer_dashboard,technology,Ac-Electric Arc Furnace,Ac-Electric Arc Furnace,AC-Elektrolichtbogenofen,AC - Four électrique à arc,Horno de arco eléctrico de CA
+data_speedometer_dashboard,technology,Dc-Electric Arc Furnace,Dc-Electric Arc Furnace,DC-Elektrolichtbogenofen,DC - Four électrique à arc,Horno de arco eléctrico de CC
+data_speedometer_dashboard,technology,Bof Shop,Basic Oxygen Furnace,LD-Verfahren,Procédé LD,Horno de oxígeno básico
+data_speedometer_dashboard,technology,Open Hearth Meltshop,Open hearth furnace,Schmelzbetrieb mit offenem Herd,Procédé Martin-Siemens,Horno a cielo abierto

@@ -1,0 +1,382 @@
+<!----------------------------------------------------------------------------->
+<!-- BEGIN Feedback form - HTML elemnets -------------------------------------->
+
+<iframe id="hidden_iframe" style="display:none"></iframe>
+<input type="hidden" id="book_class" value="portfolio_beta">
+
+<!----------------------------------------------------------------------------->
+<!-- END Feedback form - HTML elemnets ---------------------------------------->
+
+
+
+<!-- Chart options bar -->
+<script>
+for (let el of document.querySelectorAll(".options_btn")) {
+  el.parentNode.addEventListener("mouseover", function() {
+    this.querySelector(".options_btn").style.display = "block";
+    this.querySelector(".info_btn").style.display = "block";
+  });
+  el.parentNode.addEventListener("mouseout", function() {
+    this.querySelector(".options_btn").style.display = "none";
+    this.querySelector(".info_btn").style.display = "none";
+  });
+  el.parentNode.getElementsByClassName("nav-item dropdown chart_options " + el.parentNode.id)[0].hidden = false;
+}
+</script>
+
+<style>
+.options_btn {
+	display: none;
+	opacity: 1;
+	filter: opacity(30%);
+	position: absolute;
+	right: -30px;
+	top: -20px;
+	padding-left: 35px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	color: grey;
+	z-index: 100;
+}
+.options_btn:hover {
+  color: black;
+}
+.info_btn {
+	display: none;
+	opacity: 1;
+	filter: opacity(30%);
+	position: absolute;
+	right: -30px;
+	top: 20px;
+	padding-left: 35px;
+	padding-bottom: 100px;
+	padding-right: 20px;
+	color: grey;
+	z-index: 100;
+}
+.info_btn:hover {
+  color: black;
+}
+</style>
+
+
+
+<!----------------------------------------------------------------------------->
+<!-- BEGIN code to add option bar to any element with class "has_optbar" ------>
+
+<template id="optbar_template">
+
+  <div class="optbar">
+    <i class="fas fa-cog optbar_btn bounce_pause" data-toggle="collapse" data-tippy-content="Play with the data"></i>
+    <i class="fas fa-comments optbar_btn feedback_btn" data-tippy-content="Give feedback"></i>
+    <i class="fas fa-plus-square optbar_btn addchart_btn" data-tippy-content="Add another chart"></i>
+    <i class="fas fa-minus-square optbar_btn removechart_btn" data-tippy-content="Remove this chart"></i>
+  </div>
+
+</template>
+
+<template id="optionsbar_template">
+  <div class="optionsbar" style="margin-bottom: 10px;">
+
+    <div class="dropdown" style="float: right;">
+      <a class="btn btn-light btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Export/Share
+      </a>
+
+      <div id="exportmenu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <h6 class="dropdown-header"><i class="fas fa-download"></i> Export</h6>
+        <a class="dropdown-item" onclick="exportXLSX(this)">Download data as XLSX</a>
+        <a class="dropdown-item" onclick="saveAsSVG(this.parentElement.parentElement.parentElement.parentElement)">Download as SVG</a>
+        <a class="dropdown-item" onclick="saveAsPNG(this.parentElement.parentElement.parentElement.parentElement)">Download as PNG</a>
+      </div>
+    </div>
+
+  </div>
+</template>
+
+<template id="feedback_template">
+  <form class="feedback_form">
+    <input type="hidden" id="id_frm_elem" value="">
+    <div style="display: grid; min-width:400px">
+      <div style="grid-row: 1; grid-column: 1/3;">
+        <h3>Feedback for this chart</h3>
+        <p>The PACTA team appreciates your feedback on the clarity and quality of this chart. Please note that we are not able to get back to you through this channel. If you have any inquiries regarding platform functionalities or methodology, please send an e-mail to <a href="mailto:transitionmonitor@rmi.org">transitionmonitor@rmi.org</a> (for general users) or to <a href="mailto:pactacop@rmi.org">pactacop@rmi.org</a> (for coordinated-projects users). Thank you!</p>
+        <textarea id="text_frm_elem" style="width: 100%; height:100px"></textarea>
+        <br><br>
+      </div>
+      <div style="grid-row: 2; grid-column: 1;">
+        General satisfaction with this content:<br>
+        <input type="radio" name="satisfaction" value="1">1
+        <input type="radio" name="satisfaction" value="2">2
+        <input type="radio" name="satisfaction" value="3">3
+        <input type="radio" name="satisfaction" value="4">4
+        <input type="radio" name="satisfaction" value="5">5
+        <input type="radio" name="satisfaction" value="6">6
+        <input type="radio" name="satisfaction" value="7">7
+        <input type="radio" name="satisfaction" value="8">8
+        <input type="radio" name="satisfaction" value="9">9
+        <input type="radio" name="satisfaction" value="10">10
+      </div>
+      <div style="grid-row: 2; grid-column: 2;">
+        <img class="submit_btn" src="img/submit.png" onclick="submit_chart_feedback(this)">
+      </div>
+    </div>
+  </form>
+</template>
+
+<style>
+@keyframes bounce_pause {
+  from, 2.22%, 5.89%, 8.89% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  4.44%, 4.78% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+  7.78% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+  10% { transform: translate3d(0, -4px, 0); }
+  11.11%, to { transform: translate3d(0, 0, 0); }
+}
+.bounce_pause {
+  animation: bounce_pause 9s infinite 8s;
+}
+
+.has_optbar {
+  position: relative;
+}
+.has_optbar div.optbar {
+  width: 60px;
+  opacity: 0;
+  transition: opacity 1s 2s;
+  position: absolute;
+  left: 100%;
+  top: 0px;
+  z-index: 2;
+}
+.has_optbar:hover div.optbar {
+  opacity: 1;
+  transition: none;
+}
+
+.has_optbar div.optionsbar {
+  overflow: hidden;
+  box-sizing: content-box;
+  box-shadow: 0 4px 2px -2px grey;
+  height: 0px;
+  transition: height 0.6s;
+}
+.has_optbar div.optionsbar.show {
+  height: 45px;
+  line-height: 30px;
+}
+div.optionsbar div.dropdown {
+  display: inline-block;
+}
+div.optionsbar a.btn {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.has_optbar .feedback_form {
+  overflow: hidden;
+  box-sizing: content-box;
+  box-shadow: 0 4px 2px -2px grey;
+  height: 0px;
+  transition: height 0.6s;
+}
+.has_optbar .feedback_form.show {
+  height: 360px;
+}
+
+div.optbar .optbar_btn {
+  box-sizing: initial;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+  outline: none;
+  position: relative;
+  z-index: 2;
+}
+div.optbar .optbar_btn:hover {
+  filter: brightness(0%);
+}
+div.optbar .optbar_btn:active {
+  animation: initial;
+  transform: scale(0.85);
+  transition: none;
+}
+.tippy-tooltip.optbar_btn-theme {
+  font-size: 1.2rem !important;
+}
+/* fontawesome based optbar icons */
+i.optbar_btn {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 32px;
+  cursor: pointer;
+  text-align: center;
+  color: darkgrey;
+  filter: brightness(70%);
+}
+/* image based optbar icons */
+img.optbar_btn {
+  width: 35px;
+  height: auto;
+  margin: 0 auto;
+  filter: brightness(50%);
+}
+/* svg based optbar icons */
+svg.optbar_btn {
+  width: 35px;
+  margin: 0 auto;
+/*   fill: darkgrey; */
+  filter: brightness(100%);
+}
+svg.optbar_btn:hover {
+filter: brightness(50%);
+}
+
+svg use.icon.red {
+  fill: #FF5555;
+}
+svg use.icon.green {
+  fill: #55FF55;
+}
+
+/* feedback form */
+.submit_btn {
+  width: 60px;
+  float: right;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  outline: none;
+}
+
+.submit_btn:active {
+  transform: scale(0.85);
+}
+
+.submit_btn:hover {
+  filter: brightness(70%);
+}
+
+/* circle nav */
+.cn-wrapper {
+  font-size: initial;
+	width: 22em;
+	height: 22em;
+	transition: all .3s ease 0.3s;
+	opacity: 0;
+	transform-origin: 75% 45%;
+	transform: scale(0.1);
+	pointer-events: none;
+	position: absolute;
+	top: -55px;
+	right: -100px;
+  z-index: 1;
+}
+
+.cn-wrapper li {
+	position: absolute;
+	overflow: hidden;
+	width: 10em;
+	height: 10em;
+	border: 2px solid transparent;
+	transform-origin: 100% 100%;
+  transform: rotate(calc(45deg / -2)) skew(calc(90deg - 45deg));
+	transition: all .3s ease;
+}
+
+.cn-wrapper li a {
+	position: absolute;
+	right: -7.25em;
+	bottom: -7.25em;
+	display: block;
+	text-decoration: none;
+	width: 14.5em;
+	height: 14.5em;
+	border-radius: 50%;
+	text-align: center;
+	transform: skew(calc(90deg - 45deg * -1)) rotate(calc(-90deg + (45deg / 2))) scale(1);
+}
+
+.cn-wrapper li:nth-child(1) a { background: rgb(45, 52, 61, 1) !important; }
+.cn-wrapper li:nth-child(2) a { background: rgb(83, 92, 104, 1) !important; }
+.cn-wrapper li:nth-child(3) a { background: rgb(125, 133, 143, 1) !important; }
+.cn-wrapper li:nth-child(4) a { background: rgb(207, 210, 214, 1) !important; }
+
+.cn-wrapper li a img {
+  width: 20%;
+  height: auto;
+  margin: 3% auto;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  outline: none;
+}
+.cn-wrapper li:nth-child(1) a img { filter: brightness(100%); }
+.cn-wrapper li:nth-child(2) a img { filter: brightness(90%); }
+.cn-wrapper li:nth-child(3) a img { filter: brightness(90%); }
+.cn-wrapper li:nth-child(4) a img { filter: brightness(60%); }
+
+.cn-wrapper li:nth-child(1) a img:hover { filter: brightness(60%); }
+.cn-wrapper li:nth-child(2) a img:hover { filter: brightness(20%); }
+.cn-wrapper li:nth-child(3) a img:hover { filter: brightness(10%); }
+.cn-wrapper li:nth-child(4) a img:hover { filter: brightness(0%); }
+
+.cn-wrapper li a img:active {
+  transform: scale(0.85);
+}
+
+.opened-nav {
+  opacity: 1;
+	transition: all .3s ease;
+	transform: scale(1);
+	pointer-events: auto;
+}
+
+.opened-nav li {
+	transition: all .3s ease .3s;
+}
+
+.opened-nav li:nth-child(1) {
+	transform: rotate(calc(45deg / -2 + 45deg + 22.5deg)) skew(calc(90deg - 45deg));
+	transform: rotate(45deg) skew(45deg);
+}
+
+.opened-nav li:nth-child(2) {
+	transform: rotate(calc(45deg / -2 + 22.5deg)) skew(calc(90deg - 45deg));
+}
+
+.opened-nav li:nth-child(3) {
+	transform: rotate(calc(45deg / -2 - 22.5deg)) skew(calc(90deg - 45deg));
+}
+
+.opened-nav li:nth-child(4) {
+	transform: rotate(calc(45deg / -2 - 45deg - 22.5deg)) skew(calc(90deg - 45deg));
+}
+</style>
+<!-- END code to add option bar to any element with class "has_optbar" -------->
+<!----------------------------------------------------------------------------->
+
+
+
+
+<!-- tippy style CSS -->
+<style>
+.tippy-tooltip {
+  font-size: 1.3rem !important;
+  padding: 0.3rem 0.6rem !important;
+}
+</style>

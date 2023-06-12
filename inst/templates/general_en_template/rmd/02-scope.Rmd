@@ -1,0 +1,80 @@
+# Scope and Parameters of the Analysis 
+
+This chapter outlines the scope and coverage of this PACTA analysis by answering the following four questions:
+
+1. What are the holdings analysed in this assessment?
+
+2. Which asset classes are covered in the analysis?  
+
+3. Which sectors are covered in the analysis?  
+
+4. How much of the portfolio’s emissions are covered?  
+
+
+
+## Asset classes
+
+This analysis focuses on asset classes with the most direct and traceable impact on the real economy, and for which public data is available. These are direct investment in economic activities by investments through listed equity and corporate bonds on the secondary market. From the total market value of this portfolio, which corresponds to `r paste(portfolio_parameters$total_portfolio_value_curr, display_currency)`, `r portfolio_parameters$total_portfolio_percentage_equity` %, and `r portfolio_parameters$total_portfolio_percentage_bonds` % correspond to equity and corporate bonds, respectively. 
+
+The table below summarizes which financial instruments are included in the analysis. 
+
+
+<div class="d3chart" style="display: grid; grid-template-columns: 1fr; grid-template-rows: auto auto;" class="has_optbar donotduplicate donotremove">
+<div id="included_table" class="d3chart data_table" style="width: 600px"></div>
+</div>
+
+## Sector Coverage
+
+This analysis can be applied to listed equity and corporate bonds in climate-relevant sectors (automotive production including light and heavy duty vehicles, aviation, coal mining, cement production, steel production, oil and gas production, power generation and shipping).
+
+Sectors included in the analysis fulfill the following three criteria:
+
+1. The sectors are relevant from a climate perspective and contribute significantly to the global greenhouse gas (GHG) emissions;   
+
+2. There are scenario benchmarks available for each sector and;  
+
+3. There is sufficient data and business intelligence available.
+
+While other sectors like agriculture, forestry, aluminium, paper and glass are also climate relevant, there is a lack of asset or scenario level data and they are therefore not included in the analysis. 
+
+
+<div id="value_pie_equity" class="has_optbar donotduplicate donotremove">
+</div>
+
+<br>
+
+<div id="value_pie_bonds" class="has_optbar donotduplicate donotremove">
+</div>
+
+<details>
+<summary> Understanding the Graph </summary>
+<div class="method">
+<p>
+The pie chart shows the financial sector split of the total investment in the selected asset-class. The share that is invested in companies with assets in climate-relevant sectors is represented by the coloured slices.
+</p>
+</div>
+</details>
+
+For more information on asset class and sector coverage of PACTA analysis, please visit the [Knowledge Hub](https://rmi.gitbook.io/pacta-knowledge-hub/methodology-and-data/methodology/scope){target="_blank"}.
+
+## CO2 emissions 
+
+As PACTA is a granular and forward looking climate alignment tool, it does not work based on "financed emissions" due to the lack of meaningful scenarios as well as data limitations in measuring these emissions. Nevertheless, estimating current CO2 emissions associated with a portfolio can be useful to inform about the relevance of each sector in the decarbonisation of the portfolio. 
+
+The following charts indicate the contribution of each of the sectors to the total emissions assigned to the equity and bond portfolio. Comparing these graphs to the graphs from the previous section emphasizes the importance of the analysed sectors in terms of climate relevance. While making up `r portfolio_parameters$total_portfolio_percentage_coverage`% of the portfolio value, by emissions the climate relevant sectors are responsible for the following share of the portfolios estimated CO2 emissions.
+
+
+<div id="emissions_pie_equity" class="has_optbar donotduplicate donotremove">
+</div>
+<br>
+<div id="emissions_pie_bonds" class="has_optbar donotduplicate donotremove">
+</div>
+
+<details>
+<summary> Understanding the Graph </summary>
+<div class="method">
+<p>
+The pie chart shows sector split of the total emissions attributed to the investments in the selected asset-class. The emissions from companies with assets in climate-relevant sectors is represented by the coloured sections. 
+</p>
+</div>
+</details>

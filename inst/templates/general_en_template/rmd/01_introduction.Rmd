@@ -1,0 +1,95 @@
+# Introduction
+
+## Background
+In September 2018, the 2° Investing Initiative (2DII) introduced the Paris Agreement Capital Transition Assessment (PACTA) tool: a free software that calculates the extent to which corporate capital expenditures and industrial assets behind a given equity, bond, or lending portfolio are aligned with various climate scenarios. The first-of-its-kind software taps into a vast climate-related financial database, which covers more than 30,000 securities, 40,000 companies, and 230,000 energy-related physical assets.
+
+Since the tool was launched on TransitionMonitor.org, more than 3,000 individuals from more than 1,800 institutions have used it to conduct over 12,000 tests, with an average of 600+ tests per month. Overall, the total assets under management of financial institutions using the tools amounts to more than USD 106 trillion. 
+
+The tool allows users to get a granular view of the alignment of their portfolios by sector and related technologies. This information can be used to help steer investment decisions in line with climate scenarios; to inform decisions around climate target-setting; and to gain insights into engagement with clients on their respective climate actions. The tool helps users identify their exposure to transition risks associated with a disruptive shift to a low-carbon economy.
+The tool also helps users implement the recommendations of the Task Force on Climate-Related Financial Disclosures (TCFD), as well as comply with related regulations (Article 173 of France’s Law on Energy Transition for Green Growth, upcoming EU disclosure requirements, and more).
+
+
+## About this report
+
+This report aims to answer the questions identified 
+
+**Climate scenario analysis for equities and corporate bonds**, based on the PACTA method developed by 2DII. 
+
+The following questions are answered:
+
+- What proportion of the portfolio is invested in climate-related sectors?
+
+- Do the production plans of the companies in the portfolio tally with climate scenarios which comply with the Paris Agreement?
+
+- Which companies in this portfolio significantly influence the results? 
+
+- How does my portfolio perform compared to market benchmarks?
+
+**Results of the climate stress test which is based on the PACTA method**
+
+- To what level of risk is the asset value of the portfolio exposed in various transition scenarios? 
+
+Important information about the methodology is summarised in the final chapter. The report refers to the PACTA Knowledge Hub where you can find a detailed explanation of the PACTA method and of the underlying sources of data, as well as videos which can help you to interpret the results.
+
+## Methodology in Brief
+The portfolio alignment analysis is based on forward-looking asset-based company level data in the following nine key climate relevant sectors: power, oil & gas, coal mining, automotive, shipping, aviation, cement, steel, and heavy-duty vehicles. Together, these sectors account for around 75% of global CO2-emissions. This data is mapped to financial and ownership data and compared to climate scenarios that provide low-carbon energy transition roadmaps at technology-level. 
+The core climate scenario analysis provides answers to the following questions:
+
+1.	What share of the portfolio is currently exposed to activities in sectors affected by the transition to a low carbon economy?
+
+2.	How aligned are the investment and production plans of companies in the portfolio with different climate scenarios and the Paris Agreement?
+
+3.	What is the portfolio’s technology mix in climate-relevant sectors expected to look like in five years based on current investment plans of the companies underlying the portfolio, and how does it compare to peers, the market, and a technology mix aligned with the Paris Agreement?
+
+4.	Which companies are driving the results of the portfolio’s exposure and alignment?
+
+The following table provides an overview of key components and principles underlying the PACTA methodology.
+ 
+```{r echo = FALSE}
+
+methodology_labels = c(
+  "**Physical asset-based company level data**", 
+  "**Forward-Looking**", 
+  "**Sector-specific approach**", 
+  "**Allocating macroeconomic goals to microeconomic actors**",
+  "**Mapping company-level activities to financial instruments and portfolios**"
+)
+
+methodology_text = c(
+  "The analysis is currently based on data covering 40,000+ companies and 230,000+ energy-related physical assets from third-party data providers. This alleviates the necessity to rely on companies’ self-reported data that is published in a non-standardized manner and often does not account for scope 2 and 3 emissions.",
+  "PACTA provides a forward-looking analysis of the production plans financed by a portfolio that are compared to climate scenarios.",
+  "The outputs of the analysis are metrics and indicators at sector and technology-level that allow for a detailed evaluation of a portfolio’s alignment, rather than one aggregated indicator at portfolio level. For sectors in which no low-carbon technologies exist, the sectoral decarbonization approach is used to benchmark the portfolio production against climate scenarios. The SDA was developed by the Science-based Targets Initiative.",
+  "The PACTA analysis uses a market-share approach to allocate macroeconomic climate goals to companies: all market level trends and goals are allocated to companies based on their current market-share in the sector or technology, for low- and high-carbon technologies respectively.",
+  "A key question addressed in this methodology is how to allocate company-level activities to financial instruments. A number of different approaches exist, two of which are used in this analysis:
+
+**Portfolio Weight approach:** This approach calculates the portfolios’ technology exposures based on the weighting of each position within the portfolio. This approach is used for the analysis of corporate bonds.
+
+**Ownership Weight approach:** This approach assigns a share of the companies’ activities to the portfolio based on the percent of outstanding shares owned by the investor. This approach comes closer to allocating “responsibility” for the companies’ activities to the financial institution. This approach is used for listed equity portfolios."
+  
+)
+
+methodology_table = data.frame(methodology_labels, methodology_text)
+
+suppressWarnings(
+knitr::kable(methodology_table, col.names = NULL)
+)
+```
+
+
+
+## Practical tips
+
+**Interactive graphics.** Most of the charts in this report are interactive. They allow you to select specific benchmark scenarios, geographical areas, sectors and methods which you can compare. In the case you would like to review multiple charts, by hovering your pointer over the chart and clicking on the plus button that appears, you can add additional charts to the report and change these parameters as you wish. 
+
+**Feedback.** You can if you like provide your feedback on each chart by clicking on the text bubble which appears when hovering your point over the chart. We appreciate receiving your feedback as it will form the basis for improving this report and the PACTA method. 
+
+**Method and data set.** Each section of the report contains basic information about the methodology and the underlying data. You can find more detailed information at the [Knowledge Hub](https://rmi.gitbook.io/pacta-knowledge-hub/){target="_blank"}.
+
+**Downloading Graphics and Data.** By hovering over the right hand corner of each chart you are able to download the underlying data and a png version of the charts. We welcome you to use this for further analysis or rebranding of the graphics and request only that you refer to 2° Investing Initiative as the source of the data. 
+
+**Sharing the report and the results.** This report can be shared by clicking on the button in the bar above this report. This creates a link that allows anyone with that link to access the results and contents of this report. Please note this link can be accessed online by anyone without a log in. No underlying portfolio data is made available through this process, however the aggregated results for the portfolio are still able to be downloaded. 
+
+**Grouping these Results.** If you have uploaded several portfolios, you can group them together to create aggregated results. This can be done on the Results page of the platform.  
+
+
+
