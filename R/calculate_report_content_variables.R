@@ -1,4 +1,4 @@
-export_report_content_variables_json <-
+calculate_report_content_variables <-
   function(audit_file,
            investor_name = "Meta Investor",
            portfolio_name = "Meta Portfolio",
