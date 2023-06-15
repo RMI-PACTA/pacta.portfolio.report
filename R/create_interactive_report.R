@@ -150,16 +150,8 @@ create_interactive_report <-
     # parameters json ----------------------------------------------------------
     portfolio_parameters <- export_report_content_variables_json(
       audit_file = audit_file,
-      results_port_eq = equity_results_portfolio,
-      results_port_cb = bonds_results_portfolio,
-      results_company_eq = equity_results_company,
-      results_company_cb = bonds_results_company,
       investor_name = investor_name,
       portfolio_name = portfolio_name,
-      scenario = select_scenario,
-      scenario_geography = scenario_geography,
-      allocation = portfolio_allocation_method,
-      start_year = start_year,
       currency_exchange_value = currency_exchange_value
     )
 
