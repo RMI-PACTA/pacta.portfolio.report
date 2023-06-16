@@ -622,24 +622,6 @@ create_interactive_report <-
   }
 
 
-
-green_brown <-
-  function(Tech,
-           GreenTechs = c("RenewablesCap", "HydroCap", "NuclearCap", "Hybrid", "Electric", "FuelCell", "Hybrid_HDV", "Electric_HDV", "FuelCell_HDV", "Ac-Electric Arc Furnace", "Dc-Electric Arc Furnace")
-  ) {
-    if (length(Tech) == 0) { return(character(0)) }
-    stopifnot(length(Tech) == 1L)
-
-    if (Tech %in% GreenTechs) {
-      TechIs <- "green"
-    } else {
-      TechIs <- "brown"
-    }
-
-    return(TechIs)
-  }
-
-
 select_exec_summary_template <-
   function(
     project_report_name = NULL,
