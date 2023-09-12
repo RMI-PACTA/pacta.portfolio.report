@@ -30,7 +30,7 @@ prep_company_bubble <-
       mutate(green = .data$technology %in% .env$green_techs) %>%
       group_by(.data$company_name, .data$scenario, .data$ald_sector,
                .data$green, .data$year) %>%
-      summarise(plan_tech_share = sum(.data$plan_tech_share, na.rm = TRUE),
+      reframe(plan_tech_share = sum(.data$plan_tech_share, na.rm = TRUE),
                 plan_buildout = sum(.data$plan_buildout, na.rm = TRUE),
                 scen_buildout = sum(.data$scen_buildout, na.rm = TRUE),
                 plan_carsten = sum(.data$plan_carsten, na.rm = TRUE),
@@ -69,7 +69,7 @@ prep_company_bubble <-
       mutate(green = .data$technology %in% .env$green_techs) %>%
       group_by(.data$company_name, .data$scenario,  .data$ald_sector,
                .data$green, .data$year) %>%
-      summarise(plan_tech_share = sum(.data$plan_tech_share, na.rm = TRUE),
+      reframe(plan_tech_share = sum(.data$plan_tech_share, na.rm = TRUE),
                 plan_buildout = sum(.data$plan_buildout, na.rm = TRUE),
                 scen_buildout = sum(.data$scen_buildout, na.rm = TRUE),
                 plan_carsten = sum(.data$plan_carsten, na.rm = TRUE),
