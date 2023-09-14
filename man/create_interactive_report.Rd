@@ -10,7 +10,6 @@ create_interactive_report(
   survey_dir = "",
   real_estate_dir = "",
   language_select = "EN",
-  project_name = "working_dir",
   investor_name = NULL,
   portfolio_name = NULL,
   peer_group = NULL,
@@ -61,8 +60,6 @@ create_interactive_report(
 \item{real_estate_dir}{a parameter}
 
 \item{language_select}{a parameter}
-
-\item{project_name}{a parameter}
 
 \item{investor_name}{a parameter}
 

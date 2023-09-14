@@ -7,7 +7,6 @@
 #' @param survey_dir a parameter
 #' @param real_estate_dir a parameter
 #' @param language_select a parameter
-#' @param project_name a parameter
 #' @param investor_name a parameter
 #' @param portfolio_name a parameter
 #' @param peer_group a parameter
@@ -55,7 +54,6 @@ create_interactive_report <-
            survey_dir = "",
            real_estate_dir = "",
            language_select = "EN",
-           project_name = "working_dir",
            investor_name = NULL,
            portfolio_name = NULL,
            peer_group = NULL,
