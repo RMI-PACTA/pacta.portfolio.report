@@ -30,12 +30,13 @@ prep_company_bubble <-
       mutate(green = .data$technology %in% .env$green_techs) %>%
       group_by(.data$company_name, .data$scenario, .data$ald_sector,
                .data$green, .data$year) %>%
-      reframe(plan_tech_share = sum(.data$plan_tech_share, na.rm = TRUE),
-                plan_buildout = sum(.data$plan_buildout, na.rm = TRUE),
-                scen_buildout = sum(.data$scen_buildout, na.rm = TRUE),
-                plan_carsten = sum(.data$plan_carsten, na.rm = TRUE),
-                port_weight = unique(.data$port_weight),
-                .groups = "drop") %>%
+      reframe(
+        plan_tech_share = sum(.data$plan_tech_share, na.rm = TRUE),
+        plan_buildout = sum(.data$plan_buildout, na.rm = TRUE),
+        scen_buildout = sum(.data$scen_buildout, na.rm = TRUE),
+        plan_carsten = sum(.data$plan_carsten, na.rm = TRUE),
+        port_weight = unique(.data$port_weight)
+      ) %>%
       ungroup() %>%
       mutate(y = .data$plan_buildout / .data$scen_buildout) %>%
       filter(.data$green) %>%
@@ -69,12 +70,13 @@ prep_company_bubble <-
       mutate(green = .data$technology %in% .env$green_techs) %>%
       group_by(.data$company_name, .data$scenario,  .data$ald_sector,
                .data$green, .data$year) %>%
-      reframe(plan_tech_share = sum(.data$plan_tech_share, na.rm = TRUE),
-                plan_buildout = sum(.data$plan_buildout, na.rm = TRUE),
-                scen_buildout = sum(.data$scen_buildout, na.rm = TRUE),
-                plan_carsten = sum(.data$plan_carsten, na.rm = TRUE),
-                port_weight = unique(.data$port_weight),
-                .groups = "drop") %>%
+      reframe(
+        plan_tech_share = sum(.data$plan_tech_share, na.rm = TRUE),
+        plan_buildout = sum(.data$plan_buildout, na.rm = TRUE),
+        scen_buildout = sum(.data$scen_buildout, na.rm = TRUE),
+        plan_carsten = sum(.data$plan_carsten, na.rm = TRUE),
+        port_weight = unique(.data$port_weight)
+      ) %>%
       ungroup() %>%
       mutate(y = .data$plan_buildout / .data$scen_buildout) %>%
       filter(.data$green) %>%
