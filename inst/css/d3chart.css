@@ -162,7 +162,7 @@ div.d3chart svg .Automotive.Hybrid_HDV {
 
 div.d3chart svg .Automotive.ICE {
   fill: #aedbe6
- } 
+ }
 
 div.d3chart svg .Automotive.ICE_HDV {
   fill: #c9e7ee
@@ -220,21 +220,26 @@ div.d3chart svg .Cement[class*='Integrated facility'] {
   fill: #f2e06e
 }
 
-div.d3chart svg .Steel[class*='Ac-Electric Arc Furnace'] {
-  fill: #a63d57
+div.d3chart svg .Steel[class*='Ac-Electric Arc Furnace'],
+div.d3chart svg .Steel[class*='Electric Arc Furnace'] {
+  fill: #dbb1bb
 }
 
-div.d3chart svg .Steel[class*='Bof Shop'] {
-  fill: #b76378
+div.d3chart svg .Steel[class*='Bof Shop'],
+div.d3chart svg .Steel[class*='Basic Oxygen Furnace']
+{
+  fill: #c98a9a
 }
 
 div.d3chart svg .Steel[class*='Dc-Electric Arc Furnace'] {
-  fill: #c98a9a
+  fill: #b76378
 
 }
 
-div.d3chart svg .Steel[class*='Open Hearth Meltshop'] {
-  fill: #dbb1bb
+div.d3chart svg .Steel[class*='Open Hearth Meltshop'],
+div.d3chart svg .Steel[class*='Open Hearth Furnace']
+{
+  fill: #a63d57
 }
 
 
