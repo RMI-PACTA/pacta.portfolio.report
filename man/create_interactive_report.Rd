@@ -45,8 +45,7 @@ create_interactive_report(
   js_translations = NULL,
   header_dictionary = NULL,
   sector_order = NULL,
-  configs = NULL,
-  ...
+  configs = NULL
 )
 }
 \arguments{
@@ -127,8 +126,6 @@ create_interactive_report(
 \item{sector_order}{a parameter}
 
 \item{configs}{a parameter}
-
-\item{...}{a catch-all to prevent error from deprecated parameters}
 }
 \value{
 only used for side-effect
