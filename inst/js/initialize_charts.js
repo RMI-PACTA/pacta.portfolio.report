@@ -392,15 +392,6 @@ window.addEventListener('load', (event) => {
   }
   // Exhibit 14c - end
 
-// Exhibit 13 - TDM dashboard -------------------------------
-
-let opts_speedometer_equity = {default_class: labels["default_opts"]["listed_equity"]};
-let opts_speedometer_bond = {default_class: labels["default_opts"]["corporate_bonds"]};
-
-plotGraphsForBondsAndEquity("data_speedometer_dashboard",speedometer_dashboard,"speedometer_dashboard",labels,opts_speedometer_equity,opts_speedometer_bond,on_error_message,nodata_text_dict);
-
-// Exhibit 13 - end
-
   if (typeof tippy != "undefined") {
     tippy('[data-tippy-content]');
   }

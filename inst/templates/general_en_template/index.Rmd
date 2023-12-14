@@ -10,7 +10,6 @@ params:
   portfolio_parameters: NULL
   rtyp: tn
   language: en
-  tdm_results_flag: FALSE
 output: 
   bookdown::gitbook:
     mathjax: null
@@ -38,9 +37,6 @@ output:
 ```
 
 ```{r conditional_print, child='rmd/03-pacta.Rmd', eval = portfolio_results_flag}
-```
-
-```{r conditional_print, child='rmd/08-next_steps.Rmd', eval = portfolio_results_flag}
 ```
 
 ```{r conditional_print, child='rmd/09-methodology.Rmd', eval = portfolio_results_flag}

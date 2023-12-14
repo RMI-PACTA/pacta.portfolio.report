@@ -40,9 +40,8 @@
 #' @param js_translations a parameter
 #' @param header_dictionary a parameter
 #' @param sector_order a parameter
-#' @param equity_tdm a parameter
-#' @param bonds_tdm a parameter
 #' @param configs a parameter
+#' @param ... a catch-all to prevent error from deprecated parameters
 #'
 #' @return only used for side-effect
 #'
@@ -87,9 +86,8 @@ create_interactive_report <-
            js_translations = NULL,
            header_dictionary = NULL,
            sector_order = NULL,
-           equity_tdm = NULL,
-           bonds_tdm = NULL,
-           configs = NULL
+           configs = NULL,
+           ...
   ) {
 
     # create directory structure -----------------------------------------------
@@ -511,39 +509,6 @@ create_interactive_report <-
       writeLines(path(output_dir, "data", paste0("sector_order", '.js')))
 
 
-    # export TDM data ----------------------------------------------------------
-
-    if ((!is.null(equity_tdm) && nrow(equity_tdm) > 0) ||
-        (!is.null(bonds_tdm) && nrow(bonds_tdm) > 0)) {
-
-      tdm_results_flag <- TRUE
-
-      data_speedometer_dashboard <- prep_speedometer(equity_tdm, bonds_tdm)
-
-      port_val_cnt <-
-        bind_rows(
-          "Listed Equity" = equity_tdm,
-          "Corporate Bonds" = bonds_tdm,
-          .id = "asset_class"
-          ) %>%
-        filter(.data$technology != "Aggregate") %>%
-        group_by(.data$asset_class, .data$tdm_metric) %>%
-        summarise(n = length(unique(.data$tdm_portfolio_value)), .groups = "drop")
-
-      if (!is.null(data_speedometer_dashboard) && all(port_val_cnt$n <= 1)) {
-        data_speedometer_dashboard %>%
-          translate_df_contents(
-            "data_speedometer_dashboard",
-            dictionary,
-            inplace = TRUE
-          ) %>%
-          export_data_utf8("data_speedometer_dashboard", output_dir = output_dir)
-      }
-    } else {
-      tdm_results_flag <- FALSE
-    }
-
-
     # build page --------------------------------------------------------------
 
     default_wd <- getwd()
@@ -579,8 +544,7 @@ create_interactive_report <-
                             re_config_data = re_config_data,
                             re_data_input = re_data_input,
                             portfolio_parameters = portfolio_parameters,
-                            language = re_language,
-                            tdm_results_flag = tdm_results_flag
+                            language = re_language
                           ))
 
     setwd(default_wd)
