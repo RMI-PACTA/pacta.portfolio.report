@@ -1,4 +1,4 @@
-# pacta.portfolio.allocate (development version)
+# pacta.portfolio.report (development version)
 
 * removes all TDM specific related stuff, including the speedometer JS and related infrastructure
 
