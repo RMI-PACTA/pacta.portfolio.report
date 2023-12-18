@@ -424,30 +424,6 @@ div.d3chart svg .green {
   fill: green;
 }
 
-/* speedometer */
-div.d3chart svg g.pointer_portfolio {
-  fill:  #7D4E24;
-}
-
-div.d3chart svg g.pointer_benchmark {
-  fill:  #B17F4A;
-}
-
-div.main_dial svg {
-  display: block;
-  margin:  auto;
-}
-
-div.d3chart svg g.scenario_line line {
-  stroke: #000000;
-  stroke-width: 1%;
-}
-
-div.main_dial svg g.scenario_line line {
-  stroke: #000000;
-  stroke-width: 0.5%;
-}
-
 
 /* beta label */
 .beta_label {

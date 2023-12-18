@@ -45,7 +45,6 @@ imported = document.createElement("script"); imported.src = "js/techexposure_fut
 imported = document.createElement("script"); imported.src = "js/get_graph_labels.js"; document.head.appendChild(imported);
 imported = document.createElement("script"); imported.src = "js/saveCharts.js"; document.head.appendChild(imported);
 imported = document.createElement("script"); imported.src = "js/included_table.js"; document.head.appendChild(imported);
-imported = document.createElement("script"); imported.src = "js/speedometer_dashboard.js"; document.head.appendChild(imported);
 
 let this_portfolio_color = '#1b324f';
 let peers_color = '#8597a6';
