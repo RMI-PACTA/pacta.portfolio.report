@@ -45,8 +45,6 @@ create_interactive_report(
   js_translations = NULL,
   header_dictionary = NULL,
   sector_order = NULL,
-  equity_tdm = NULL,
-  bonds_tdm = NULL,
   configs = NULL
 )
 }
@@ -126,10 +124,6 @@ create_interactive_report(
 \item{header_dictionary}{a parameter}
 
 \item{sector_order}{a parameter}
-
-\item{equity_tdm}{a parameter}
-
-\item{bonds_tdm}{a parameter}
 
 \item{configs}{a parameter}
 }

@@ -45,7 +45,6 @@ imported = document.createElement("script"); imported.src = "js/techexposure_fut
 imported = document.createElement("script"); imported.src = "js/get_graph_labels.js"; document.head.appendChild(imported);
 imported = document.createElement("script"); imported.src = "js/saveCharts.js"; document.head.appendChild(imported);
 imported = document.createElement("script"); imported.src = "js/included_table.js"; document.head.appendChild(imported);
-imported = document.createElement("script"); imported.src = "js/speedometer_dashboard.js"; document.head.appendChild(imported);
 
 let this_portfolio_color = '#1b324f';
 let peers_color = '#8597a6';
@@ -391,15 +390,6 @@ window.addEventListener('load', (event) => {
     handleError(err,'peer_table',on_error_message)
   }
   // Exhibit 14c - end
-
-// Exhibit 13 - TDM dashboard -------------------------------
-
-let opts_speedometer_equity = {default_class: labels["default_opts"]["listed_equity"]};
-let opts_speedometer_bond = {default_class: labels["default_opts"]["corporate_bonds"]};
-
-plotGraphsForBondsAndEquity("data_speedometer_dashboard",speedometer_dashboard,"speedometer_dashboard",labels,opts_speedometer_equity,opts_speedometer_bond,on_error_message,nodata_text_dict);
-
-// Exhibit 13 - end
 
   if (typeof tippy != "undefined") {
     tippy('[data-tippy-content]');

@@ -1,3 +1,7 @@
+# pacta.portfolio.report (development version)
+
+* removes all TDM specific related stuff, including the speedometer JS and related infrastructure
+
 # pacta.portfolio.report 0.4.1
 
 Maintenance release. 
