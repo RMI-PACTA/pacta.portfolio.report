@@ -4,7 +4,7 @@ export_environment_info <- function(dir = output_dir, sub_dir = "export", filena
       local_git_tag = get_local_git_tag(),
       local_git_hash = get_local_git_hash(),
       docker_build_version = Sys.getenv("build_version"),
-      repo_head_hashes = get_and_parse_head_hashes(),
+      pacta_pkgs_versions = get_pacta_pkgs_versions_and_shas(),
       system_mem_available = get_system_memory_available(),
       docker_container_max_mem = get_docker_container_memory_limit(),
       global_analysis_inputs_path = get_global_analysis_inputs_path(),
@@ -21,12 +21,18 @@ export_environment_info <- function(dir = output_dir, sub_dir = "export", filena
 }
 
 
-get_and_parse_head_hashes <- function(env_var = "head_hashes", delim = ",", sep = ":") {
-  value <- Sys.getenv(env_var)
-  split_values <- unlist(strsplit(value, ","))
-  val_names <- sub(paste0(sep, ".*$"), "", split_values)
-  val_values <- sub(paste0("^.*", sep), "", split_values)
-  setNames(as.list(val_values), val_names)
+get_pacta_pkgs_versions_and_shas <- function() {
+  session_info <- sessioninfo::session_info(pkgs = "installed")
+  pacta_pkgs <- grep("^pacta[.]", session_info$packages$package, value = TRUE)
+  lapply(pacta_pkgs, function(pacta_pkg) {
+    pkg_desc <- packageDescription(pacta_pkg)
+    list(
+      Package = pkg_desc$Package,
+      Version = pkg_desc$Version,
+      RemoteSha = pkg_desc$RemoteSha,
+      GithubSHA1 = pkg_desc$GithubSHA1
+    )
+  })
 }
 
 
