@@ -573,9 +573,9 @@ create_interactive_report <-
 
     # add zip archive of all required output files
     suppressMessages({
-      zipfilename <- fs::path(output_dir, paste0(portfolio_name, "_interactive_report.zip"))
       orig_wd <- setwd(output_dir)
       on.exit(setwd(orig_wd), add = TRUE)
+      zipfilename <- paste0(portfolio_name, "_interactive_report.zip")
       utils::zip(zipfile = zipfilename, files = ".", extras = "-q")
       setwd(orig_wd)
     })
