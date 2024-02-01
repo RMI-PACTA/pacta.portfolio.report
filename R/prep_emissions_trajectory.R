@@ -6,7 +6,9 @@ prep_emissions_trajectory <-
            select_scenario_other,
            select_scenario,
            twodi_sectors,
-           year_span) {
+           year_span,
+           start_year
+         ) {
     emissions_units <-
       c(
         Automotive = "tons of CO2 per km per cars produced",
