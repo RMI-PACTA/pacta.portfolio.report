@@ -343,7 +343,8 @@ create_interactive_report <-
           select_scenario_other,
           select_scenario,
           twodi_sectors,
-          year_span
+          year_span,
+          start_year
         )
 
       if (nrow(data_emissions) > 1) {
