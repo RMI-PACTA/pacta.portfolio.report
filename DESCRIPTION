@@ -61,7 +61,7 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Config/testthat/edition: 3
-Config/Needs/website: rmi-pacta/pacta.pkgdown.template
+Config/Needs/website: rmi-pacta/pacta.pkgdown.rmitemplate
 VignetteBuilder: knitr
 URL: https://github.com/RMI-PACTA/pacta.portfolio.report
 BugReports: https://github.com/RMI-PACTA/pacta.portfolio.report/issues
