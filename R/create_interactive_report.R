@@ -510,43 +510,37 @@ create_interactive_report <-
 
     # build page --------------------------------------------------------------
 
-    default_wd <- getwd()
-
-    temporary_dir <- tempdir()
+    temporary_dir <- tempdir(check = TRUE)
+    unlink(file.path(temporary_dir, basename(template_dir)), recursive = TRUE)
     fs::dir_copy(template_dir, temporary_dir)
 
     working_template_dir <- fs::path(temporary_dir, basename(template_dir))
-    setwd(working_template_dir)
-    on.exit(setwd(default_wd), add = TRUE)
 
     # This selects the language for the real estate chapter which is only available in DE and FR
     if (language_select %in% c("EN", "DE")) {
       re_language <- "de"
     } else {
-        re_language <- "fr"
-        }
-
-    # FIXME: this errors out on our Docker image for some reason even though it works in
-    # multiple linux and macos contexts, so commneting out for now, though ideally
-    # we figure out how to make it work in our Docker and re-enable it
-    # abort_if_bookdown_and_knitr_are_incompatible()
-
-    bookdown::render_book("index.Rmd",
-                          encoding = 'UTF-8',
-                          clean = FALSE,
-                          quiet = TRUE,
-                          params = list(
-                            portfolio_results_flag = portfolio_results_flag,
-                            real_estate_flag = real_estate_flag,
-                            survey_flag = survey_flag,
-                            survey_data = survey_data,
-                            re_config_data = re_config_data,
-                            re_data_input = re_data_input,
-                            portfolio_parameters = portfolio_parameters,
-                            language = re_language
-                          ))
-
-    setwd(default_wd)
+      re_language <- "fr"
+    }
+    
+    suppressMessages(
+      bookdown::render_book(
+        input = working_template_dir,
+        encoding = 'UTF-8',
+        clean = TRUE,
+        quiet = TRUE,
+        params = list(
+          portfolio_results_flag = portfolio_results_flag,
+          real_estate_flag = real_estate_flag,
+          survey_flag = survey_flag,
+          survey_data = survey_data,
+          re_config_data = re_config_data,
+          re_data_input = re_data_input,
+          portfolio_parameters = portfolio_parameters,
+          language = re_language
+        )
+      )
+    )
 
     template_html <- readLines(fs::path(working_template_dir, "_book", "_main.html"))
     optbar_html <- readLines(inst_path("optbar.html"))
@@ -596,21 +590,6 @@ select_exec_summary_template <-
 replace_contents <- function(data, display_currency) {
   mutate(data, across(.cols = everything(), .fns = ~ gsub("_CUR_", display_currency, .x)))
 }
-
-abort_if_bookdown_and_knitr_are_incompatible <- function() {
-  if (packageVersion("bookdown") <= "0.21" && packageVersion("knitr") > "1.33") {
-    stop(
-      "Must install knitr 1.33 or older.\n",
-      "* bookdown <= 0.21 needs `knitr:::is_abs_path()` from knitr <= 1.33.\n",
-      paste0("* Using bookdown version: ", packageVersion("bookdown"), ".\n"),
-      paste0("* Using knitr version: ", packageVersion("knitr"), "."),
-      call. = FALSE
-    )
-  }
-
-  invisible()
-}
-
 
 filter_scenarios_per_sector <-
   function(data, select_scenario_other, select_scenario) {
