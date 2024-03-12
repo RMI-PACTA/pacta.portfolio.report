@@ -586,21 +586,6 @@ replace_contents <- function(data, display_currency) {
   mutate(data, across(.cols = everything(), .fns = ~ gsub("_CUR_", display_currency, .x)))
 }
 
-abort_if_bookdown_and_knitr_are_incompatible <- function() {
-  if (packageVersion("bookdown") <= "0.21" && packageVersion("knitr") > "1.33") {
-    stop(
-      "Must install knitr 1.33 or older.\n",
-      "* bookdown <= 0.21 needs `knitr:::is_abs_path()` from knitr <= 1.33.\n",
-      paste0("* Using bookdown version: ", packageVersion("bookdown"), ".\n"),
-      paste0("* Using knitr version: ", packageVersion("knitr"), "."),
-      call. = FALSE
-    )
-  }
-
-  invisible()
-}
-
-
 filter_scenarios_per_sector <-
   function(data, select_scenario_other, select_scenario) {
     special_sectors <- c("Aviation")
