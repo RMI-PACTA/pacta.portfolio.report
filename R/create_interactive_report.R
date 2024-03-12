@@ -510,28 +510,19 @@ create_interactive_report <-
 
     # build page --------------------------------------------------------------
 
-    default_wd <- getwd()
-
     temporary_dir <- tempdir()
     fs::dir_copy(template_dir, temporary_dir)
 
     working_template_dir <- fs::path(temporary_dir, basename(template_dir))
-    setwd(working_template_dir)
-    on.exit(setwd(default_wd), add = TRUE)
 
     # This selects the language for the real estate chapter which is only available in DE and FR
     if (language_select %in% c("EN", "DE")) {
       re_language <- "de"
     } else {
-        re_language <- "fr"
-        }
+      re_language <- "fr"
+    }
 
-    # FIXME: this errors out on our Docker image for some reason even though it works in
-    # multiple linux and macos contexts, so commneting out for now, though ideally
-    # we figure out how to make it work in our Docker and re-enable it
-    # abort_if_bookdown_and_knitr_are_incompatible()
-
-    bookdown::render_book("index.Rmd",
+    bookdown::render_book(working_template_dir,
                           encoding = 'UTF-8',
                           clean = FALSE,
                           quiet = TRUE,
@@ -545,8 +536,6 @@ create_interactive_report <-
                             portfolio_parameters = portfolio_parameters,
                             language = re_language
                           ))
-
-    setwd(default_wd)
 
     template_html <- readLines(fs::path(working_template_dir, "_book", "_main.html"))
     optbar_html <- readLines(inst_path("optbar.html"))
