@@ -522,13 +522,10 @@ create_interactive_report <-
     } else {
       re_language <- "fr"
     }
-
-    writeLines("delete_merged_file: true", file.path(working_template_dir, "_bookdown.yml"))
     
     suppressMessages(
       bookdown::render_book(
         input = working_template_dir,
-        output_format = "html_document",
         encoding = 'UTF-8',
         clean = TRUE,
         quiet = TRUE,
