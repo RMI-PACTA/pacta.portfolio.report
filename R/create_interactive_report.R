@@ -510,7 +510,8 @@ create_interactive_report <-
 
     # build page --------------------------------------------------------------
 
-    temporary_dir <- tempdir()
+    temporary_dir <- tempdir(check = TRUE)
+    unlink(file.path(temporary_dir, basename(template_dir)), recursive = TRUE)
     fs::dir_copy(template_dir, temporary_dir)
 
     working_template_dir <- fs::path(temporary_dir, basename(template_dir))
@@ -522,20 +523,27 @@ create_interactive_report <-
       re_language <- "fr"
     }
 
-    bookdown::render_book(working_template_dir,
-                          encoding = 'UTF-8',
-                          clean = FALSE,
-                          quiet = TRUE,
-                          params = list(
-                            portfolio_results_flag = portfolio_results_flag,
-                            real_estate_flag = real_estate_flag,
-                            survey_flag = survey_flag,
-                            survey_data = survey_data,
-                            re_config_data = re_config_data,
-                            re_data_input = re_data_input,
-                            portfolio_parameters = portfolio_parameters,
-                            language = re_language
-                          ))
+    writeLines("delete_merged_file: true", file.path(working_template_dir, "_bookdown.yml"))
+    
+    suppressMessages(
+      bookdown::render_book(
+        input = working_template_dir,
+        output_format = "html_document",
+        encoding = 'UTF-8',
+        clean = TRUE,
+        quiet = TRUE,
+        params = list(
+          portfolio_results_flag = portfolio_results_flag,
+          real_estate_flag = real_estate_flag,
+          survey_flag = survey_flag,
+          survey_data = survey_data,
+          re_config_data = re_config_data,
+          re_data_input = re_data_input,
+          portfolio_parameters = portfolio_parameters,
+          language = re_language
+        )
+      )
+    )
 
     template_html <- readLines(fs::path(working_template_dir, "_book", "_main.html"))
     optbar_html <- readLines(inst_path("optbar.html"))
