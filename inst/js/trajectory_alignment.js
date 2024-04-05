@@ -330,13 +330,13 @@ class trajectory_alignment {
         .style("left", d3.event.pageX + 10 + "px")
         .style("top", d3.event.pageY - 20 + "px")
     }
-    
+
     function mousemove() {
       tooltip
         .style("left", d3.event.pageX + 10 + "px")
         .style("top", d3.event.pageY - 20 + "px")
     }
-    
+
     function mouseout() {
       tooltip.style("display", "none")
     }
@@ -416,9 +416,9 @@ class trajectory_alignment {
         ;
       } else if (selected_source == "ISF2023") {
         color = d3.scaleOrdinal()
-          .domain(["production", "1.5\xc2\xb0C", "worse"])
+          .domain(["production", "1.5\xb0C", "worse"])
           .range(["black", "#9cab7c", "#e07b73"])
-          legend_order = ["worse", "1.5\xc2\xb0C"];
+          legend_order = ["worse", "1.5\xb0C"];
         ;
       } else if (selected_source == "WEO2023") {
         color = d3.scaleOrdinal()

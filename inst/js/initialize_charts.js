@@ -272,12 +272,16 @@ window.addEventListener('load', (event) => {
   let opts_traject_equity = {
     default_class: labels["default_opts"]["listed_equity"],
     default_tech: labels["default_opts"]["ice"],
-    scenarios_to_include: ["STEPS", "APS", "SDS", "NZE_2050", "CurPol", "NDC-LTS", "1.5C-Unif", "ETP_SDS", "NZE", "IPR FPS 2021"]
+    scenarios_to_include: ["STEPS", "APS", "SDS", "NZE_2050", "CurPol", "NDC-LTS",
+    "1.5C-Unif", "ETP_SDS", "NZE", "IPR FPS 2021", "1.5C", "NDC_LTS", "Reference",
+    "1.5\xb0C"]
   };
   let opts_traject_bonds = {
     default_class: labels["default_opts"]["corporate_bonds"],
     default_tech: labels["default_opts"]["ice"],
-    scenarios_to_include: ["STEPS", "APS", "SDS", "NZE_2050", "CurPol", "NDC-LTS", "1.5C-Unif", "ETP_SDS", "NZE", "IPR FPS 2021"]
+    scenarios_to_include: ["STEPS", "APS", "SDS", "NZE_2050", "CurPol", "NDC-LTS",
+    "1.5C-Unif", "ETP_SDS", "NZE", "IPR FPS 2021", "1.5C", "NDC_LTS", "Reference",
+    "1.5\xb0C"]
   };
 
   plotGraphsForBondsAndEquity("data_trajectory_alignment",trajectory_alignment,"trajectory_alignment",labels,opts_traject_equity,opts_traject_bonds,on_error_message,nodata_text_dict);
