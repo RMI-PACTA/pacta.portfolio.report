@@ -330,13 +330,13 @@ class trajectory_alignment {
         .style("left", d3.event.pageX + 10 + "px")
         .style("top", d3.event.pageY - 20 + "px")
     }
-    
+
     function mousemove() {
       tooltip
         .style("left", d3.event.pageX + 10 + "px")
         .style("top", d3.event.pageY - 20 + "px")
     }
-    
+
     function mouseout() {
       tooltip.style("display", "none")
     }
@@ -389,6 +389,42 @@ class trajectory_alignment {
           .domain(["production", "NZE_2050", "SDS", "APS", "STEPS", "worse"])
           .range(["black", "#9cab7c", "#c3d69b", "#FFFFCC", "#fde291", "#e07b73"])
           legend_order = ["worse", "STEPS", "APS", "SDS", "NZE_2050"];
+        ;
+      } else if (selected_source == "GECO2022") {
+        color = d3.scaleOrdinal()
+          .domain(["production", "1.5C", "NDC_LTS", "Reference", "worse"])
+          .range(["black", "#9cab7c", "#c3d69b", "#FFFFCC", "#e07b73"])
+          legend_order = ["worse", "Reference", "NDC_LTS", "1.5C"];
+        ;
+      } else if (selected_source == "ISF2021") {
+        color = d3.scaleOrdinal()
+          .domain(["production", "NZE", "worse"])
+          .range(["black", "#9cab7c", "#e07b73"])
+          legend_order = ["worse", "NZE"];
+        ;
+      } else if (selected_source == "WEO2022") {
+        color = d3.scaleOrdinal()
+          .domain(["production", "NZE_2050", "APS", "STEPS", "worse"])
+          .range(["black", "#9cab7c", "#FFFFCC", "#fde291", "#e07b73"])
+          legend_order = ["worse", "STEPS", "APS", "NZE_2050"];
+        ;
+      } else if (selected_source == "GECO2023") {
+        color = d3.scaleOrdinal()
+          .domain(["production", "1.5C", "NDC-LTS", "Reference", "worse"])
+          .range(["black", "#9cab7c", "#c3d69b", "#FFFFCC", "#e07b73"])
+          legend_order = ["worse", "Reference", "NDC-LTS", "1.5C"];
+        ;
+      } else if (selected_source == "ISF2023") {
+        color = d3.scaleOrdinal()
+          .domain(["production", "1.5\xb0C", "worse"])
+          .range(["black", "#9cab7c", "#e07b73"])
+          legend_order = ["worse", "1.5\xb0C"];
+        ;
+      } else if (selected_source == "WEO2023") {
+        color = d3.scaleOrdinal()
+          .domain(["production", "NZE_2050", "APS", "STEPS", "worse"])
+          .range(["black", "#9cab7c", "#FFFFCC", "#fde291", "#e07b73"])
+          legend_order = ["worse", "STEPS", "APS", "NZE_2050"];
         ;
       } else {
         color = d3.scaleOrdinal()
