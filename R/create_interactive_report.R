@@ -15,7 +15,7 @@
 #' @param select_scenario_other a parameter
 #' @param portfolio_allocation_method a parameter
 #' @param scenario_geography a parameter
-#' @param twodi_sectors a parameter
+#' @param pacta_sectors a parameter
 #' @param green_techs a parameter
 #' @param tech_roadmap_sectors a parameter
 #' @param pacta_sectors_not_analysed a parameter
@@ -60,7 +60,7 @@ create_interactive_report <-
            select_scenario_other,
            portfolio_allocation_method = NULL,
            scenario_geography = NULL,
-           twodi_sectors = c("Power", "Automotive", "Oil&Gas", "Coal", "Steel", "Cement", "Aviation"),
+           pacta_sectors = c("Power", "Automotive", "Oil&Gas", "Coal", "Steel", "Cement", "Aviation"),
            green_techs = c("RenewablesCap", "HydroCap", "NuclearCap", "Hybrid", "Electric", "FuelCell", "Hybrid_HDV", "Electric_HDV", "FuelCell_HDV","Electric Arc Furnace"),
            tech_roadmap_sectors = c("Automotive", "Power", "Oil&Gas", "Coal"),
            pacta_sectors_not_analysed = c("Aviation","Cement", "Steel"),
@@ -188,7 +188,7 @@ create_interactive_report <-
         "Equity",
         investor_name,
         portfolio_name,
-        twodi_sectors,
+        pacta_sectors,
         currency_exchange_value
       ) %>%
         translate_df_contents("data_value_pie_equity", dictionary) %>%
@@ -199,7 +199,7 @@ create_interactive_report <-
         "Bonds",
         investor_name,
         portfolio_name,
-        twodi_sectors,
+        pacta_sectors,
         currency_exchange_value
       ) %>%
         translate_df_contents("data_value_pie_bonds", dictionary) %>%
@@ -214,7 +214,7 @@ create_interactive_report <-
       "Equity",
       investor_name,
       portfolio_name,
-      twodi_sectors
+      pacta_sectors
     ) %>%
       translate_df_contents("data_emissions_pie_equity", dictionary) %>%
       export_data_utf8("data_emissions_pie_equity", output_dir = output_dir)
@@ -224,7 +224,7 @@ create_interactive_report <-
       "Bonds",
       investor_name,
       portfolio_name,
-      twodi_sectors
+      pacta_sectors
     ) %>%
       translate_df_contents("data_emissions_pie_bonds", dictionary) %>%
       export_data_utf8("data_emissions_pie_bonds", output_dir = output_dir)
@@ -342,7 +342,7 @@ create_interactive_report <-
           portfolio_name,
           select_scenario_other,
           select_scenario,
-          twodi_sectors,
+          pacta_sectors,
           year_span,
           start_year
         )
@@ -522,7 +522,7 @@ create_interactive_report <-
     } else {
       re_language <- "fr"
     }
-    
+
     suppressMessages(
       bookdown::render_book(
         input = working_template_dir,

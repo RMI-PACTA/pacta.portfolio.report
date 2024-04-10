@@ -3,7 +3,7 @@ prep_exposure_pie <-
            asset_type,
            investor_name,
            portfolio_name,
-           twodi_sectors,
+           pacta_sectors,
            currency_exchange_value) {
     data %>%
       filter(.data$investor_name == .env$investor_name &
@@ -13,7 +13,7 @@ prep_exposure_pie <-
       mutate(across(c("bics_sector", "financial_sector"), as.character)) %>%
       mutate(
         sector =
-          if_else(!.data$financial_sector %in% .env$twodi_sectors,
+          if_else(!.data$financial_sector %in% .env$pacta_sectors,
             "Other",
             .data$financial_sector
           )
@@ -23,7 +23,7 @@ prep_exposure_pie <-
         value = sum(.data$value_usd, na.rm = TRUE) / .env$currency_exchange_value,
         .groups = "drop"
       ) %>%
-      mutate(exploded = .data$sector %in% .env$twodi_sectors) %>%
+      mutate(exploded = .data$sector %in% .env$pacta_sectors) %>%
       arrange(.data$asset_type, desc(.data$exploded), .data$sector) %>%
       rename(key = .data$sector) %>%
       filter(!is.na(.data$key)) %>%
