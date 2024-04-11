@@ -18,7 +18,7 @@ create_interactive_report(
   select_scenario_other,
   portfolio_allocation_method = NULL,
   scenario_geography = NULL,
-  twodi_sectors = c("Power", "Automotive", "Oil&Gas", "Coal", "Steel", "Cement",
+  pacta_sectors = c("Power", "Automotive", "Oil&Gas", "Coal", "Steel", "Cement",
     "Aviation"),
   green_techs = c("RenewablesCap", "HydroCap", "NuclearCap", "Hybrid", "Electric",
     "FuelCell", "Hybrid_HDV", "Electric_HDV", "FuelCell_HDV", "Electric Arc Furnace"),
@@ -75,7 +75,7 @@ create_interactive_report(
 
 \item{scenario_geography}{a parameter}
 
-\item{twodi_sectors}{a parameter}
+\item{pacta_sectors}{a parameter}
 
 \item{green_techs}{a parameter}
 

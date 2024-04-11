@@ -5,7 +5,7 @@ prep_emissions_trajectory <-
            portfolio_name,
            select_scenario_other,
            select_scenario,
-           twodi_sectors,
+           pacta_sectors,
            year_span,
            start_year
          ) {
@@ -36,7 +36,7 @@ prep_emissions_trajectory <-
       filter(!is.nan(.data$plan)) %>%
       pivot_longer(c("plan", "scen"), names_to = "plan") %>%
       unite("name", "sector", "plan", remove = FALSE) %>%
-      mutate(disabled = !.data$sector %in% .env$twodi_sectors) %>%
+      mutate(disabled = !.data$sector %in% .env$pacta_sectors) %>%
       mutate(unit = .env$emissions_units[.data$sector]) %>%
       group_by(.data$asset_class) %>%
       filter(!all(.data$disabled)) %>%
