@@ -34,7 +34,7 @@ License: MIT + file LICENSE
 Depends: 
     R (>= 3.5)
 Imports: 
-    bookdown (>= 0.22),
+    bookdown (>= 0.38),
     cli,
     countrycode,
     dplyr,
