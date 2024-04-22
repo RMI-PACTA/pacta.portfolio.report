@@ -297,7 +297,7 @@ class time_line {
       
       //axes
       const num_of_years = 1 + Math.abs(chart.x.domain().reduce((a,b) => a.getFullYear() - b.getFullYear()));
-      let tick_labels = d3.map(subdata, d => d.year).keys().slice(0, Math.min(num_of_years, 5) + 1)
+      let tick_labels = d3.map(subset, d => d.year).keys().slice(0, Math.min(num_of_years, 5) + 1)
       tick_labels[0] = "31-Dec-" + tick_labels[0] + "*"
 
       chart.svg.select(".xaxis").transition().call(d3.axisBottom(chart.x)
