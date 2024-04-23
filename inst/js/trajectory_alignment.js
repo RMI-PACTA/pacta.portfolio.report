@@ -218,7 +218,7 @@ class trajectory_alignment {
       tech_selector = appendOptionsToTechSelector(tech_selector, data, selected_tech);
       resize_inline_text_dropdown(null, tech_selector);
 
-      subdata = data.filter(d => d.technology_translation == tech_selector.value);
+      let subdata = data.filter(d => d.technology_translation == tech_selector.value);
 
       return subdata
     }
