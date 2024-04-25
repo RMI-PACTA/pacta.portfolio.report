@@ -81,7 +81,7 @@ prep_company_bubble <-
       mutate(y = .data$plan_buildout / .data$scen_buildout) %>%
       filter(.data$green) %>%
       select(-"plan_buildout", -"scen_buildout", -"green") %>%
-      filter(!is.na(.data$plan_tech_share) %>%
+      filter(!is.na(.data$plan_tech_share)) %>%
       rowwise() %>%
       mutate(y = max(.data$y, 0, na.rm = TRUE)) %>%
       ungroup() %>%
