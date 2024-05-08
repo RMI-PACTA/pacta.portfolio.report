@@ -4,6 +4,7 @@
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check](https://github.com/RMI-PACTA/pacta.portfolio.report/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RMI-PACTA/pacta.portfolio.report/actions/workflows/R-CMD-check.yaml)
+[![codecov](https://codecov.io/gh/RMI-PACTA/pacta.portfolio.report/graph/badge.svg)](https://codecov.io/gh/RMI-PACTA/pacta.portfolio.report)
 <!-- badges: end -->
 
 The goal of pacta.portfolio.report is to provide the tools and functionality 
