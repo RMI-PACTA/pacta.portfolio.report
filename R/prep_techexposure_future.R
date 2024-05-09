@@ -78,6 +78,7 @@ prep_techexposure_future <-
                scen_alloc_wt_sec_prod = sum(.data$scen_alloc_wt_tech_prod)) %>%
         mutate(plan = if_else(.data$plan_alloc_wt_tech_prod > 0, .data$plan_alloc_wt_tech_prod / .data$plan_alloc_wt_sec_prod, 0),
                scen = if_else(.data$scen_alloc_wt_tech_prod > 0, .data$scen_alloc_wt_tech_prod / .data$scen_alloc_wt_sec_prod, 0)) %>%
+        mutate(scenario = paste0(.data$scenario_source, ": ", .data$scenario)) %>%
         select("asset_class", "investor_name", "portfolio_name", "scenario",
                "allocation", "equity_market", "scenario_geography", "year",
                "ald_sector", "technology", "plan", "scen") %>%
