@@ -479,7 +479,8 @@ create_interactive_report <-
     if ( length(list.files(survey_dir)) > 0) {
       survey_flag <- TRUE
       survey_data <- list(
-        summary_table = readr::read_csv(path(output_dir, "survey","summary_table.csv"), col_types = cols_only(row_tag = "c", row_label = "c", value = "d"))
+        summary_table = readr::read_csv(path(output_dir, "survey","summary_table.csv"), col_types = cols_only(row_tag = "c", row_label = "c", value = "d")),
+        climate_goals = readr::read_csv(path(output_dir, "survey","climate_goals.csv"), col_types = cols_only(climate_goal_user = "l", perc_climate_goal_peers = "d"))
       )
     }
 
