@@ -151,7 +151,7 @@ create_interactive_report <-
 
     portfolio_parameters %>%
       to_jsonp("data_parameters") %>%
-      writeLines(path(output_dir, "data", paste0("data_parameters", ".js")))
+      writeLines(fs::path(output_dir, "data", paste0("data_parameters", ".js")))
 
 
     # export environment info --------------------------------------------------
