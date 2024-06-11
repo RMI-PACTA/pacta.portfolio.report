@@ -28,7 +28,7 @@ prep_key_bars_company <-
       mutate(asset_class = "Listed Equity") %>%
       mutate_at("id", as.character) %>% # convert the col type to character to prevent errors in case empty df is binded by rows
       group_by(.data$ald_sector, .data$technology) %>% # select at most 15 companies with the highest weigths per sector+technology
-      arrange(.data$port_weight, .by_group = TRUE) %>%
+      arrange(dplyr::desc(.data$port_weight), .by_group = TRUE) %>%
       slice(1:15)  %>%
       filter(!is.null(.data$port_weight)) %>%
       filter(!is.null(.data$plan_tech_share))
@@ -62,7 +62,7 @@ prep_key_bars_company <-
       slice(1:15) %>%
       group_by(.data$ald_sector) %>%
       arrange(factor(.data$technology, levels = .env$all_tech_levels)) %>%
-      arrange(.data$port_weight, .by_group = TRUE) %>%
+      arrange(dplyr::desc(.data$port_weight), .by_group = TRUE) %>%
       filter(!is.null(.data$port_weight)) %>%
       filter(!is.null(.data$plan_tech_share))
 
