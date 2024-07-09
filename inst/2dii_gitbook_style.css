@@ -7,6 +7,10 @@ table td {
   font-size: 1.6rem !important;
 }
 
+table th {
+  font-size: 1.6rem !important;
+}
+
 /* add line under the chapter numbers */
 .level1 .header-section-number {
   display: inline-block;
