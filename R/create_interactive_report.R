@@ -106,10 +106,11 @@ create_interactive_report <-
     file.copy(inst_path("font"), to = output_dir, overwrite = TRUE, recursive = TRUE)
 
     if (length(list.files(real_estate_dir)) > 0) {
-      if (dir.exists(path(real_estate_dir, "img"))) {
-        file.copy(path(real_estate_dir, "img"), to = fs::path(output_dir), overwrite = TRUE, recursive = TRUE)
-        file.copy(path(real_estate_dir, "img"), to = fs::path(template_dir, "rmd"), overwrite = TRUE, recursive = TRUE)
-      }
+      fs::dir_copy(
+        fs::path(real_estate_dir, "pdf"),
+        fs::path(output_dir, "real_estate"),
+        overwrite = TRUE
+        )
     }
 
     survey_dir <- fs::path(survey_dir, toupper(language_select))
@@ -118,6 +119,13 @@ create_interactive_report <-
       survey_files <- list.files(survey_dir,full.names = TRUE)
       file.copy(survey_files, to = fs::path(output_dir, "survey"), overwrite = TRUE, recursive = TRUE)
     }
+
+    # real estate path ---------------------------------------------------------
+
+    real_estate_file <- fs::path(output_dir, "real_estate") |>
+      fs::dir_info() |>
+      dplyr::filter(grepl("es_.*_de", path)) |>
+      dplyr::pull(path)
 
     # translations -------------------------------------------------------------
 
@@ -467,8 +475,6 @@ create_interactive_report <-
     # confirm with Wim as to whether the dir won't exist if there are no results to print
     if (length(list.files(real_estate_dir)) > 0) {
       real_estate_flag <- TRUE
-      re_data_input <- jsonlite::read_json(fs::path(real_estate_dir, "data/data.json"))
-      re_config_data <- jsonlite::read_json(fs::path(real_estate_dir, "data/config.json"))
     }
 
 
@@ -533,6 +539,7 @@ create_interactive_report <-
         params = list(
           portfolio_results_flag = portfolio_results_flag,
           real_estate_flag = real_estate_flag,
+          real_estate_file = real_estate_file,
           survey_flag = survey_flag,
           survey_data = survey_data,
           re_config_data = re_config_data,
