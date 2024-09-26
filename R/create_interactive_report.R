@@ -460,15 +460,45 @@ create_interactive_report <-
     # confirm with Wim as to whether the dir won't exist if there are no results to print
     if (length(list.files(real_estate_dir)) > 0) {
       real_estate_flag <- TRUE
-      fs::dir_copy(
-        fs::path(real_estate_dir, "pdf"),
-        fs::path(output_dir, "real_estate"),
+
+      # Note that filtering to `reports` key here.
+      real_estate_files <- jsonlite::read_json(
+        file.path(real_estate_dir, "reports.json")
+      )[["reports"]]
+
+      re_files_df <- NULL
+      for (report_type in names(real_estate_files)) {
+        xx <- real_estate_files[[report_type]]
+        for (yy in xx) {
+          portfolio_type <- yy[["portfolio_type"]]
+          portfolio_id <- dplyr::coalesce(yy[["portfolio_id"]], NA_integer_)
+          for (report_language in c("de", "fr")) {
+            this_report <- data.frame(
+              report_type = report_type,
+              portfolio_type = portfolio_type,
+              portfolio_id = portfolio_id,
+              report_language = report_language,
+              description = yy[[report_language]][["description"]],
+              source_file = fs::path(
+                real_estate_dir, yy[[report_language]][["file"]]
+              ),
+              output_file = fs::path(
+                output_dir, "real_estate",
+                basename(yy[[report_language]][["file"]])
+              ),
+              stringsAsFactors = FALSE
+            )
+            re_files_df <- dplyr::bind_rows(re_files_df, this_report)
+          }
+        }
+      }
+
+      fs::file_copy(
+        path = re_files_df[["source_file"]],
+        new_path = re_files_df[["output_file"]],
         overwrite = TRUE
       )
-      real_estate_file <- fs::path(output_dir, "real_estate") |>
-        fs::dir_info() |>
-        dplyr::filter(grepl("es_.*_de", path)) |>
-        dplyr::pull(path)
+
     }
 
 
@@ -533,7 +563,7 @@ create_interactive_report <-
         params = list(
           portfolio_results_flag = portfolio_results_flag,
           real_estate_flag = real_estate_flag,
-          real_estate_file = real_estate_file,
+          re_files_df = re_files_df,
           survey_flag = survey_flag,
           survey_data = survey_data,
           re_config_data = re_config_data,
