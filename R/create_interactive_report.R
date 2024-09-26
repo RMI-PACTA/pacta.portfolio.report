@@ -105,27 +105,12 @@ create_interactive_report <-
     file.copy(inst_path("webfonts"), to = output_dir, overwrite = TRUE, recursive = TRUE)
     file.copy(inst_path("font"), to = output_dir, overwrite = TRUE, recursive = TRUE)
 
-    if (length(list.files(real_estate_dir)) > 0) {
-      fs::dir_copy(
-        fs::path(real_estate_dir, "pdf"),
-        fs::path(output_dir, "real_estate"),
-        overwrite = TRUE
-        )
-    }
-
     survey_dir <- fs::path(survey_dir, toupper(language_select))
     if (dir.exists(survey_dir)) {
       dir.create(fs::path(output_dir, "survey"), showWarnings = FALSE)
       survey_files <- list.files(survey_dir,full.names = TRUE)
       file.copy(survey_files, to = fs::path(output_dir, "survey"), overwrite = TRUE, recursive = TRUE)
     }
-
-    # real estate path ---------------------------------------------------------
-
-    real_estate_file <- fs::path(output_dir, "real_estate") |>
-      fs::dir_info() |>
-      dplyr::filter(grepl("es_.*_de", path)) |>
-      dplyr::pull(path)
 
     # translations -------------------------------------------------------------
 
@@ -475,6 +460,15 @@ create_interactive_report <-
     # confirm with Wim as to whether the dir won't exist if there are no results to print
     if (length(list.files(real_estate_dir)) > 0) {
       real_estate_flag <- TRUE
+      fs::dir_copy(
+        fs::path(real_estate_dir, "pdf"),
+        fs::path(output_dir, "real_estate"),
+        overwrite = TRUE
+      )
+      real_estate_file <- fs::path(output_dir, "real_estate") |>
+        fs::dir_info() |>
+        dplyr::filter(grepl("es_.*_de", path)) |>
+        dplyr::pull(path)
     }
 
 
