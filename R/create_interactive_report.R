@@ -565,7 +565,7 @@ create_interactive_report <-
           re_config_data = re_config_data,
           re_data_input = re_data_input,
           portfolio_parameters = portfolio_parameters,
-          language = language_select,
+          language = language_select
         )
       )
     )
