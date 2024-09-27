@@ -457,7 +457,7 @@ create_interactive_report <-
     re_data_input <- NULL
     re_config_data <- NULL
 
-    # confirm with Wim as to whether the dir won't exist if there are no results to print
+    re_files_df <- NULL
     if (length(list.files(real_estate_dir)) > 0) {
       real_estate_flag <- TRUE
 
@@ -466,7 +466,6 @@ create_interactive_report <-
         file.path(real_estate_dir, "reports.json")
       )[["reports"]]
 
-      re_files_df <- NULL
       for (report_type in names(real_estate_files)) {
         xx <- real_estate_files[[report_type]]
         for (yy in xx) {
