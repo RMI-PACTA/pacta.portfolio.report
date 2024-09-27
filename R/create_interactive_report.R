@@ -482,8 +482,8 @@ create_interactive_report <-
               source_file = fs::path(
                 real_estate_dir, yy[[report_language]][["file"]]
               ),
-              output_file = fs::path(
-                output_dir, "real_estate",
+              link = fs::path(
+                "real_estate",
                 basename(yy[[report_language]][["file"]])
               ),
               stringsAsFactors = FALSE
@@ -495,7 +495,7 @@ create_interactive_report <-
 
       fs::file_copy(
         path = re_files_df[["source_file"]],
-        new_path = re_files_df[["output_file"]],
+        new_path = fs::path(output_dir, re_files_df[["link"]]),
         overwrite = TRUE
       )
 
