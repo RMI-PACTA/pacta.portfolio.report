@@ -492,6 +492,10 @@ create_interactive_report <-
         }
       }
 
+      fs::dir_create(
+        path = dirname(fs::path(output_dir, re_files_df[["link"]])),
+        recurse = TRUE
+      )
       fs::file_copy(
         path = re_files_df[["source_file"]],
         new_path = fs::path(output_dir, re_files_df[["link"]]),
