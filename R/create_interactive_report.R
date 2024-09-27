@@ -559,11 +559,10 @@ create_interactive_report <-
         params = list(
           portfolio_results_flag = portfolio_results_flag,
           real_estate_flag = real_estate_flag,
-          re_files_df = re_files_df,
           survey_flag = survey_flag,
           survey_data = survey_data,
           re_config_data = re_config_data,
-          re_data_input = re_data_input,
+          re_data_input = re_files_df,
           portfolio_parameters = portfolio_parameters,
           language = language_select
         )
