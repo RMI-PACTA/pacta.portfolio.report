@@ -547,13 +547,6 @@ create_interactive_report <-
 
     working_template_dir <- fs::path(temporary_dir, basename(template_dir))
 
-    # This selects the language for the real estate chapter which is only available in DE and FR
-    if (language_select %in% c("EN", "DE")) {
-      re_language <- "de"
-    } else {
-      re_language <- "fr"
-    }
-
     suppressMessages(
       bookdown::render_book(
         input = working_template_dir,
@@ -569,7 +562,7 @@ create_interactive_report <-
           re_config_data = re_config_data,
           re_data_input = re_data_input,
           portfolio_parameters = portfolio_parameters,
-          language = re_language
+          language = language_select,
         )
       )
     )
