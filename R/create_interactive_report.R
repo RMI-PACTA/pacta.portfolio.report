@@ -105,13 +105,6 @@ create_interactive_report <-
     file.copy(inst_path("webfonts"), to = output_dir, overwrite = TRUE, recursive = TRUE)
     file.copy(inst_path("font"), to = output_dir, overwrite = TRUE, recursive = TRUE)
 
-    if (length(list.files(real_estate_dir)) > 0) {
-      if (dir.exists(path(real_estate_dir, "img"))) {
-        file.copy(path(real_estate_dir, "img"), to = fs::path(output_dir), overwrite = TRUE, recursive = TRUE)
-        file.copy(path(real_estate_dir, "img"), to = fs::path(template_dir, "rmd"), overwrite = TRUE, recursive = TRUE)
-      }
-    }
-
     survey_dir <- fs::path(survey_dir, toupper(language_select))
     if (dir.exists(survey_dir)) {
       dir.create(fs::path(output_dir, "survey"), showWarnings = FALSE)
@@ -464,11 +457,51 @@ create_interactive_report <-
     re_data_input <- NULL
     re_config_data <- NULL
 
-    # confirm with Wim as to whether the dir won't exist if there are no results to print
+    re_files_df <- NULL
     if (length(list.files(real_estate_dir)) > 0) {
       real_estate_flag <- TRUE
-      re_data_input <- jsonlite::read_json(fs::path(real_estate_dir, "data/data.json"))
-      re_config_data <- jsonlite::read_json(fs::path(real_estate_dir, "data/config.json"))
+
+      # Note that filtering to `reports` key here.
+      real_estate_files <- jsonlite::read_json(
+        file.path(real_estate_dir, "reports.json")
+      )[["reports"]]
+
+      for (report_type in names(real_estate_files)) {
+        xx <- real_estate_files[[report_type]]
+        for (yy in xx) {
+          portfolio_type <- yy[["portfolio_type"]]
+          portfolio_id <- dplyr::coalesce(yy[["portfolio_id"]], NA_integer_)
+          for (report_language in c("de", "fr")) {
+            this_report <- data.frame(
+              report_type = report_type,
+              portfolio_type = portfolio_type,
+              portfolio_id = portfolio_id,
+              report_language = report_language,
+              description = yy[[report_language]][["description"]],
+              source_file = fs::path(
+                real_estate_dir, yy[[report_language]][["file"]]
+              ),
+              link = fs::path(
+                "real_estate",
+                basename(yy[[report_language]][["file"]])
+              ),
+              stringsAsFactors = FALSE
+            )
+            re_files_df <- dplyr::bind_rows(re_files_df, this_report)
+          }
+        }
+      }
+
+      fs::dir_create(
+        path = dirname(fs::path(output_dir, re_files_df[["link"]])),
+        recurse = TRUE
+      )
+      fs::file_copy(
+        path = re_files_df[["source_file"]],
+        new_path = fs::path(output_dir, re_files_df[["link"]]),
+        overwrite = TRUE
+      )
+
     }
 
 
@@ -517,13 +550,6 @@ create_interactive_report <-
 
     working_template_dir <- fs::path(temporary_dir, basename(template_dir))
 
-    # This selects the language for the real estate chapter which is only available in DE and FR
-    if (language_select %in% c("EN", "DE")) {
-      re_language <- "de"
-    } else {
-      re_language <- "fr"
-    }
-
     suppressMessages(
       bookdown::render_book(
         input = working_template_dir,
@@ -536,9 +562,9 @@ create_interactive_report <-
           survey_flag = survey_flag,
           survey_data = survey_data,
           re_config_data = re_config_data,
-          re_data_input = re_data_input,
+          re_data_input = re_files_df,
           portfolio_parameters = portfolio_parameters,
-          language = re_language
+          language = language_select
         )
       )
     )
