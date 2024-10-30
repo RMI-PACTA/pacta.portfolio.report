@@ -482,7 +482,7 @@ create_interactive_report <-
                 real_estate_dir, yy[[report_language]][["file"]]
               ),
               link = fs::path(
-                "export", "real_estate",
+                "export",
                 basename(yy[[report_language]][["file"]])
               ),
               stringsAsFactors = FALSE
