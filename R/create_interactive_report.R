@@ -469,7 +469,11 @@ create_interactive_report <-
       for (report_type in names(real_estate_files)) {
         xx <- real_estate_files[[report_type]]
         for (yy in xx) {
-          portfolio_type <- yy[["portfolio_type"]]
+          if (is.null(yy[["portfolio_type"]])) {
+            next
+          } else {
+            portfolio_type <- yy[["portfolio_type"]]
+          }
           portfolio_id <- dplyr::coalesce(yy[["portfolio_id"]], NA_integer_)
           for (report_language in c("de", "fr")) {
             this_report <- data.frame(
