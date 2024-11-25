@@ -1,10 +1,9 @@
 test_that("choose_dictionary_language emits expected translations for en", {
-  translation_data <- readr::read_csv(
-    system.file(
+  translation_data <- read.csv(
+    file = system.file(
       "extdata", "translation", "dataframe_labels.csv",
       package = "pacta.portfolio.report"
-    ),
-    col_types = readr::cols()
+    )
   )
   results <- choose_dictionary_language(translation_data, "en")
   expected <- translation_data |>
@@ -21,12 +20,11 @@ test_that("choose_dictionary_language emits expected translations for en", {
 })
 
 test_that("choose_dictionary_language is case insensitive to language", {
-  translation_data <- readr::read_csv(
-    system.file(
+  translation_data <- read.csv(
+    file = system.file(
       "extdata", "translation", "dataframe_labels.csv",
       package = "pacta.portfolio.report"
-    ),
-    col_types = readr::cols()
+    )
   )
   results <- choose_dictionary_language(translation_data, "EN")
   expected <- translation_data |>
@@ -43,12 +41,11 @@ test_that("choose_dictionary_language is case insensitive to language", {
 })
 
 test_that("choose_dictionary_language emits expected translations for fr", {
-  translation_data <- readr::read_csv(
-    system.file(
+  translation_data <- read.csv(
+    file = system.file(
       "extdata", "translation", "dataframe_labels.csv",
       package = "pacta.portfolio.report"
-    ),
-    col_types = readr::cols()
+    )
   )
   results <- choose_dictionary_language(translation_data, "fr")
   expected <- translation_data |>
@@ -65,12 +62,11 @@ test_that("choose_dictionary_language emits expected translations for fr", {
 })
 
 test_that("choose_dictionary_language emits expected translations for es", {
-  translation_data <- readr::read_csv(
-    system.file(
+  translation_data <- read.csv(
+    file = system.file(
       "extdata", "translation", "dataframe_labels.csv",
       package = "pacta.portfolio.report"
-    ),
-    col_types = readr::cols()
+    )
   )
   results <- choose_dictionary_language(translation_data, "es")
   expected <- translation_data |>
@@ -87,12 +83,11 @@ test_that("choose_dictionary_language emits expected translations for es", {
 })
 
 test_that("choose_dictionary_language emits expected translations for de", {
-  translation_data <- readr::read_csv(
-    system.file(
+  translation_data <- read.csv(
+    file = system.file(
       "extdata", "translation", "dataframe_labels.csv",
       package = "pacta.portfolio.report"
-    ),
-    col_types = readr::cols()
+    )
   )
   results <- choose_dictionary_language(translation_data, "de")
   expected <- translation_data |>
@@ -105,6 +100,16 @@ test_that("choose_dictionary_language emits expected translations for de", {
   expect_identical(
     object = results,
     expected = expected
+  )
+})
+
+test_that(
+  "choose_dictionary_language emits error without required meta columns",
+  {
+  translation_data <- mtcars
+  expect_error(
+    choose_dictionary_language(translation_data, "xx"),
+    regexp = "^Translation data must contain columns 'id_data', 'id_column', 'key'.$"
   )
 })
 
