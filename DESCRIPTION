@@ -32,7 +32,7 @@ Authors@R:
 Description: For more information visit <https://rmi.org/>.
 License: MIT + file LICENSE
 Depends: 
-    R (>= 3.5)
+    R (>= 4.1.0)
 Imports: 
     bookdown (>= 0.38),
     cli,
