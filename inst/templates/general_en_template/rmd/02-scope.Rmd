@@ -61,7 +61,7 @@ For more information on asset class and sector coverage of PACTA analysis, pleas
 
 As PACTA is a granular and forward looking climate alignment tool, it does not work based on "financed emissions" due to the lack of meaningful scenarios as well as data limitations in measuring these emissions. Nevertheless, estimating current CO2 emissions associated with a portfolio can be useful to inform about the relevance of each sector in the decarbonisation of the portfolio. 
 
-The following charts indicate the contribution of each of the sectors to the total emissions assigned to the equity and bond portfolio. Comparing these graphs to the graphs from the previous section emphasizes the importance of the analysed sectors in terms of climate relevance. While making up `r portfolio_parameters$total_portfolio_percentage_coverage`% of the portfolio value, by emissions the climate relevant sectors are responsible for the following share of the portfolios estimated CO2 emissions.
+The charts below indicate the contribution of each of the sectors to the total emissions assigned to the equity and bond portfolio. Comparing these graphs to the graphs from the previous section emphasizes the importance of the analyzed sectors in terms of climate relevance. While making up `r portfolio_parameters$pacta_sectors_percent_total_value_equity`% of the equity portfolio value, and `r portfolio_parameters$pacta_sectors_percent_total_value_bonds`% of the corporate bond portfolio value, by emissions the PACTA sectors are responsible for the following share of the portfolio’s estimated absolute CO~2~ emissions:
 
 
 <div id="emissions_pie_equity" class="has_optbar donotduplicate donotremove">
