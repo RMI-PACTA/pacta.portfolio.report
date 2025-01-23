@@ -2,7 +2,8 @@ calculate_report_content_variables <-
   function(audit_file,
            investor_name = "Meta Investor",
            portfolio_name = "Meta Portfolio",
-           currency_exchange_value) {
+           currency_exchange_value,
+           pacta_sectors) {
     if (isFALSE(investor_name %in% audit_file$investor_name)) {
       stop("`investor_name` is not found in `audit_file$investor_name`")
     }
@@ -34,6 +35,32 @@ calculate_report_content_variables <-
 
     total_portfolio_percentage_coverage <- (total_portfolio_percentage_equity + total_portfolio_percentage_bonds)
 
+    pacta_sectors_percent_total_value_equity <-
+      audit_file %>%
+      filter(.data$valid_input == TRUE) %>%
+      filter(.data$asset_type == "Equity") %>%
+      mutate(pacta_sector = .data$financial_sector %in% .env$pacta_sectors) %>%
+      summarise(
+        value = sum(.data$value_usd, na.rm = TRUE) / .env$currency_exchange_value,
+        .by = "pacta_sector"
+      ) %>%
+      mutate(percent = .data$value / sum(.data$value)) %>%
+      filter(.data$pacta_sector == TRUE) %>%
+      pull("percent")
+
+    pacta_sectors_percent_total_value_bonds <-
+      audit_file %>%
+      filter(.data$valid_input == TRUE) %>%
+      filter(.data$asset_type == "Bonds") %>%
+      mutate(pacta_sector = .data$financial_sector %in% .env$pacta_sectors) %>%
+      summarise(
+        value = sum(.data$value_usd, na.rm = TRUE) / .env$currency_exchange_value,
+        .by = "pacta_sector"
+      ) %>%
+      mutate(percent = .data$value / sum(.data$value)) %>%
+      filter(.data$pacta_sector == TRUE) %>%
+      pull("percent")
+
     results_absolute_value_equity <- audit_file %>%
       filter(.data$asset_type == "Equity", .data$valid_input == TRUE) %>%
       mutate(value_curr = .data$value_usd / .env$currency_exchange_value) %>%
@@ -55,6 +82,8 @@ calculate_report_content_variables <-
       total_portfolio_percentage_bonds = sprintf("%.0f", 100 * total_portfolio_percentage_bonds),
       total_portfolio_percentage_other_asset_classes = sprintf("%.0f", 100 * total_portfolio_percentage_other_asset_classes),
       total_portfolio_percentage_coverage = sprintf("%.0f", 100 * total_portfolio_percentage_coverage),
+      pacta_sectors_percent_total_value_equity = sprintf("%.0f", 100 * pacta_sectors_percent_total_value_equity),
+      pacta_sectors_percent_total_value_bonds = sprintf("%.0f", 100 * pacta_sectors_percent_total_value_bonds),
       results_absolute_value_equity = format(results_absolute_value_equity, big.mark = ","),
       results_absolute_value_bonds = format(results_absolute_value_bonds, big.mark = ",")
     )
