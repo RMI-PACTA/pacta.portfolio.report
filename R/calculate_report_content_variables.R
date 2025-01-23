@@ -37,29 +37,29 @@ calculate_report_content_variables <-
 
     pacta_sectors_percent_total_value_equity <-
       audit_file %>%
-      filter(.data$valid_input == TRUE) %>%
-      filter(.data$asset_type == "Equity") %>%
-      mutate(pacta_sector = .data$financial_sector %in% .env$pacta_sectors) %>%
-      summarise(
+      dplyr::filter(.data$valid_input == TRUE) %>%
+      dplyr::filter(.data$asset_type == "Equity") %>%
+      dplyr::mutate(pacta_sector = .data$financial_sector %in% .env$pacta_sectors) %>%
+      dplyr::summarise(
         value = sum(.data$value_usd, na.rm = TRUE) / .env$currency_exchange_value,
         .by = "pacta_sector"
       ) %>%
-      mutate(percent = .data$value / sum(.data$value)) %>%
-      filter(.data$pacta_sector == TRUE) %>%
-      pull("percent")
+      dplyr::mutate(percent = .data$value / sum(.data$value)) %>%
+      dplyr::filter(.data$pacta_sector == TRUE) %>%
+      dplyr::pull("percent")
 
     pacta_sectors_percent_total_value_bonds <-
       audit_file %>%
-      filter(.data$valid_input == TRUE) %>%
-      filter(.data$asset_type == "Bonds") %>%
-      mutate(pacta_sector = .data$financial_sector %in% .env$pacta_sectors) %>%
-      summarise(
+      dplyr::filter(.data$valid_input == TRUE) %>%
+      dplyr::filter(.data$asset_type == "Bonds") %>%
+      dplyr::mutate(pacta_sector = .data$financial_sector %in% .env$pacta_sectors) %>%
+      dplyr::summarise(
         value = sum(.data$value_usd, na.rm = TRUE) / .env$currency_exchange_value,
         .by = "pacta_sector"
       ) %>%
-      mutate(percent = .data$value / sum(.data$value)) %>%
-      filter(.data$pacta_sector == TRUE) %>%
-      pull("percent")
+      dplyr::mutate(percent = .data$value / sum(.data$value)) %>%
+      dplyr::filter(.data$pacta_sector == TRUE) %>%
+      dplyr::pull("percent")
 
     results_absolute_value_equity <- audit_file %>%
       filter(.data$asset_type == "Equity", .data$valid_input == TRUE) %>%
