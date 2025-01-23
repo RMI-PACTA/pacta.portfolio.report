@@ -139,7 +139,8 @@ create_interactive_report <-
       audit_file = audit_file,
       investor_name = investor_name,
       portfolio_name = portfolio_name,
-      currency_exchange_value = currency_exchange_value
+      currency_exchange_value = currency_exchange_value,
+      pacta_sectors = pacta_sectors
     )
 
     portfolio_parameters %>%
