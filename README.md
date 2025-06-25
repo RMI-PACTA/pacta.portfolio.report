@@ -8,8 +8,7 @@
 <!-- badges: end -->
 
 The goal of pacta.portfolio.report is to provide the tools and functionality 
-necessary to render the PACTA interactive report, as it currently appears on the 
-[Capital Transition Monitor](https://platform.transitionmonitor.com/) website. 
+necessary to render a PACTA interactive report. 
 
 ## Installation
 
@@ -22,4 +21,4 @@ pak::pak("RMI-PACTA/pacta.portfolio.report")
 
 ## Usage
 
-The transition monitor platform is fuelled by the workflow repository found here: https://github.com/RMI-PACTA/workflow.transition.monitor
+The an online tool can be fuelled by the workflow repository found here: https://github.com/RMI-PACTA/workflow.transition.monitor
