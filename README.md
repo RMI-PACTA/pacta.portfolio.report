@@ -21,4 +21,4 @@ pak::pak("RMI-PACTA/pacta.portfolio.report")
 
 ## Usage
 
-The an online tool can be fuelled by the workflow repository found here: https://github.com/RMI-PACTA/workflow.transition.monitor
+An online tool can be fuelled by the workflow repository found here: https://github.com/RMI-PACTA/workflow.transition.monitor
